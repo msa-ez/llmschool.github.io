@@ -1,0 +1,131 @@
+.clearfix::after{content:""; display:block; clear:both;}
+
+.gs-top-apply-btn {
+    background-color:#5a67d8 !important;
+    color:white !important;
+    width:130px !important;
+    height:40px !important;
+    text-align:center !important;
+    line-height:24px !important;
+    font-size:24px !important;
+    margin:-7px 0 0 10px !important;
+}
+.gs-bottom-apply-btn {
+    background-color:#5a67d8 !important;
+    color:white !important;
+    width:100% !important;
+    height:50px !important;
+    text-align:center !important;
+}
+.gs-mobile-btn-title {
+    margin-left:10px;
+    font-size:16px;
+}
+.gs-review-btn {
+    width:90px !important;
+    height:30px !important;
+    text-align:center !important;
+    line-height:30px !important;
+    font-size:20px !important;
+    margin:-7px 0 10px 0 !important;
+}
+
+.gs-review-background {
+    width:45px;
+    height:45px;
+    border-radius:100%;
+    overflow:hidden;
+    float:left;
+    margin-right:10px;
+    text-align:center;
+    line-height:45px;
+    color:white;
+    font-weight:700;
+    font-size:24px;
+}
+
+.gs-review-star-color {
+    color:#5a67d8;
+}
+
+.gs-review-full-box {
+    margin:10px 10px 10px 0; 
+    width:100%;
+}
+.gs-review-box {
+    margin-top:20px;
+}
+.gs-review-page-number {
+    font-size:35px; 
+    color:#5a67d8 !important; 
+    cursor:pointer;
+}
+
+.gs-instructor-card {
+    width:49% !important;
+    margin-right:2% !important;
+    background-color: white !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 1px 8px rgba(22,22,22, 0.1) !important;
+    height:500px !important;
+}
+.gs-instructor-card-name {
+    width:80% !important;
+    height:50px !important;
+    background-color:#e6e9f9 !important;
+    margin:0 auto !important;
+    border-radius:10px !important;
+    margin-top:-25px !important;
+    text-align:center !important;
+    position:relative !important;
+}
+
+.gs-the-entire-package {
+    display:inline-flex; width:100% !important;
+}
+
+
+
+
+.gs-course-content {
+    font-weight:500 !important;
+    opacity:0.8 !important;
+}
+
+.gs-table-default {
+    width:100% !important;
+    border : 1px solid black !important;
+}
+
+.gs-table-default th {
+    border : 1px solid black !important;
+    border-collapse : collapse !important;
+    margin: auto !important;
+    text-align: center !important; 
+}
+
+.gs-table-default td {
+    border : 1px solid black !important;
+}
+.gs-manager {
+    margin:45px 20px 15px 0 !important;
+    font-weight:700 !important;
+}
+@media only screen and (max-width:750px){
+    .gs-the-entire-package {
+        display:block !important;
+        width:100% !important;
+    }
+
+    .gs-instructor-card {
+        width:100% !important;
+        margin-right:0% !important;
+        margin-top:10px !important;
+        background-color: white !important;
+        border: 1px solid #e5e5e5 !important;
+        border-radius: 10px !important;
+        box-shadow: 0 1px 8px rgba(22,22,22, 0.1) !important;
+        height:500px !important;
+    }
+}
