@@ -32,13 +32,13 @@
         mounted() {
             var me = this
             if(me.$route.path == '/' || me.$route.path == '/operation/'){
-                me.$router.push('/operation/introduction/');
+                me.$router.push('/operation/introduction/cursor');
             }
         },
         components: {},
         metaInfo() {
             const title = 'LLM School';
-            const description = 'Welcome to MSA School. "msaschool.io" ';
+            const description = 'Welcome to LLM School. "llmschool.io" ';
 
             return {
                 title: title,

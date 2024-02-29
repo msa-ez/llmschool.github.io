@@ -1,8 +1,12 @@
 const c1 = () => import(/* webpackChunkName: "page--src--templates--vue-page-vue" */ "/Users/user/Desktop/llmschool.github.io/src/templates/VuePage.vue")
-const c2 = () => import(/* webpackChunkName: "page--src--pages--404-vue" */ "/Users/user/Desktop/llmschool.github.io/src/pages/404.vue")
+const c2 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/user/Desktop/llmschool.github.io/node_modules/gridsome/app/pages/404.vue")
 const c3 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/user/Desktop/llmschool.github.io/src/pages/Index.vue")
 
 export default [
+  {
+    path: "/operation/operate/kubectl-ai/",
+    component: c1
+  },
   {
     path: "/operation/llm/llm-model/",
     component: c1
@@ -28,15 +32,7 @@ export default [
     component: c1
   },
   {
-    path: "/operation/planning/ai-fastfood/",
-    component: c1
-  },
-  {
     path: "/operation/introduction/gpt-engineer/",
-    component: c1
-  },
-  {
-    path: "/operation/operate/ai-ops/",
     component: c1
   },
   {
@@ -44,7 +40,7 @@ export default [
     component: c1
   },
   {
-    path: "/operation/introduction/codespaces-copilot/",
+    path: "/operation/introduction/continue/",
     component: c1
   },
   {
