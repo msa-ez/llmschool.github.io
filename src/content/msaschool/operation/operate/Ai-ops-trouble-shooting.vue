@@ -4,27 +4,25 @@
 
 ## OpenAI K8sGPT 활용
 
-CNCF에 등재된 K8sGPT OpenAI를 활용해 Kubernetes Cluster를 자동 진단하고 지속적인 운영을 위한 가이드로 내 클러스터의 문제점과 개선사항들을 자동으로 스캔하고 문제점을 해결할 수 있는 트러블 슈팅을 진행하는 방법은 다음과 같습니다. 
-
-### Instruction
+CNCF에 등재된 K8sGPT OpenAI를 활용해 Kubernetes Cluster를 자동 진단하고 지속적인 운영을 위한 가이드로 내 클러스터의 문제점과 개선사항들을 자동으로 스캔하고 문제점을 해결할 수 있는 트러블 슈팅을 안내하겠습니다. 
 
 Cli 버전의 K8sGPT를 설치하여 원격에서 자동 탐지하는 방법과 K8s를 클러스터에 설치하여 운영하는 2가지 방식이 있으며 아래와 같이 진행할 수 있습니다.
 
 ### K8sGPT Cli 설치
 
-#### Homebrew를 활용한 Cli 설치
+- Homebrew를 활용한 Cli 설치
 ```
 brew tap k8sgpt-ai/k8sgpt
 brew install k8sgpt
 ```
 
-#### 설치 확인
+- 설치 확인
 ```
 k8sgpt version
 k8sgpt --help
 ```
 
-#### Open AI Key 생성과 설정
+### Open AI Key 생성과 설정
 
 K8sGPT를 사용하기 위해서는 OpenAI 계정으로 생성한 API Key(https://platform.openai.com/account/api-keys)가 있어야 하며, 이를 K8s gpt에 아래 명령으로 등록합니다.
 ```
@@ -36,14 +34,14 @@ openai added to the AI backend provider list
 - K8s gpt에는 기본 프로바이더외에 AzureOpenAI, Cohere, Amazon Bedrock, SageMaker 등 다양한 AI엔진을 백엔드를 설정해 프로바이더로 활용할 수 있습니다.
 - 설정값들은 ~/.config/k8sgpt/k8sgpt.yaml에 저장됩니다.
 
-#### 등록된 Backends Provider 확인
+- 등록된 Backends Provider 확인
 ```
 k8sgpt auth list
 ```
 
 ### K8sGPT 사용하기
 
-#### 먼저, 다음 (존재하지 않는) nginx 이미지로 YAML을 배포합니다.
+먼저, 다음 (존재하지 않는) nginx 이미지로 YAML을 배포합니다.
 ```
 kubectl apply -f - <<EOF
 apiVersion: apps/v1
@@ -69,27 +67,22 @@ spec:
         - containerPort: 80
 EOF
 ```
-
-#### 클러스터를 분석하기 위해 다음의 명령어를 터미널에 입력합니다.
+- 클러스터를 분석하기 위해 다음의 명령어를 터미널에 입력합니다.
 ```
 k8sgpt analyze
 ```
-
-#### 분석결과와 추천 솔루션을 포함하도록 요청합니다.
+- 분석결과와 추천 솔루션을 포함하도록 요청합니다.
 ```
 k8sgpt analyse --explain
 ```
-
-#### 출력 언어를 한글로 설정하여 확인할 수 있습니다.
+- 출력 언어를 한글로 설정하여 확인할 수 있습니다.
 ```
 k8sgpt analyse --explain --language "Korean"
 ```
-
-#### 설정을 추가하여 JSON 응답으로 Pretty하게 생성되기 위해 프롬프팅을 추가합니다.
+- 설정을 추가하여 JSON 응답으로 Pretty하게 생성되기 위해 프롬프팅을 추가합니다.
 ```
 k8sgpt analyze -o json --explain --filter=Pod -c --language "Korean" | jq .
 ```
-
 - 출력된 결과는 다음과 같습니다.
 ```json
 {
