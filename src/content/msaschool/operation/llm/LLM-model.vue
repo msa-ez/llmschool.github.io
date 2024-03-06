@@ -1,79 +1,109 @@
 <template>
     <div>
         <mark-down class="content">
-            
-            ## Codespaces 기반 AI Copilot 맛보기
+# Open Source LLM
 
-## Codespaces 생성하기
+## 오픈소스 LLM의 성장
 
-Codespaces IDE에 코드를 몇가지 방법으로 로딩할 수 있다.
+![llm2](https://github.com/msa-ez/llmschool.github.io/assets/113568664/13b54509-413b-46b6-94f9-79a353a31fed)
 
-- 첫번째는, Codespaces에서 repository를 선택하는 방식이다. 다음의 사이트로 접속한 후, 우측 상단 'New codespace를 클릭한다.(Github 로그인 필요)
-```
-https://github.com/codespaces
-```
+상용화된 LLM들의 본격적인 성장은 OpenAI에서 GPT-3를 발표하면서 시작되었습니다.
 
-- 'Select a repository'를 눌러 repository를 선택하거나 접근 가능한 repository를 입력하여 선택할 수 있다.
-- 내 GitHub Repository에 모델이 없는 경우  'Select a repository'에 "kimkyusook/codespace-copilot"를 입력하여 나타난 repository를 선택한다.
+구글, 마이크로소프트, 메타 등에서 다양한 LLM을 연구하고 출시하기 시작했고, 2023년 7월에 메타에서 Llama2를 오픈소스로 공개하면서 기술력은 물론 상용화까지 아주 빠른 속도로 발전하고 있습니다.
 
-- Repository를 선택하면 Branch와 Machine type은 기본선택되며, 필요에 따라 옵션을 수정할 수 있고, 설정을 완료한 후 'Create codespace'를 클릭하면 Codespaces를 사용할 수 있다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/ba135ce9-36b3-4b98-9041-449b6a8beed7)
+## 주요 오픈소스 LLM
 
-- 두번째는, Github의 repository에 직접 접속하여 ‘Code’ > Create codespace on main을 클릭해서 Codespaces를 사용할 수 있다.
+- 기업 주도 모델 : 기업에서 연구한 성과를 공개해 사용자들이 자유롭게 활용할 수 있도록 한 모델 ex) Meta Llama2, Cerebras-GPT, Mosaic MPT 등
+- 커뮤니티 주도 모델 : Github 등 다양한 커뮤니티에서 공익을 위해 개발한 모델 ex) Polyglot, GPT-J, GPT4ALL 등
+- 국가 주도 모델 : 국가에서 직접 주도해 개발한 모델 ex) Falcon 등
 
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/9d9b4d0c-8d3d-4c11-a883-8f109f87fba7)
- 
-## 확장 플러그인 Continue 설치하기
+### Llama2
 
-- 생성한 Codespaces에서 플러그인 Continue를 설치하기 위해, 좌측 'Extension' 클릭 > Continue를 입력 > 설치 버튼을 클릭한다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/808d91dd-7bab-4290-8020-263ff5a4b14c)
+![스크린샷 2024-03-04 오후 3 34 45](https://github.com/msa-ez/llmschool.github.io/assets/113568664/524a5a0a-4cc4-4911-8306-1e96f9e557db)
 
-- 이후 Countinue의 버전을 최신상태로 변경하기 위해 더보기('...') > 확장 업데이트 확인을 클릭한 후 Codespaces를 재실행한다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/cd182f5f-6a96-4f89-a06f-a1235198f4a8)
+메타 AI에서 개발한 오픈소스 LLM으로, 가장 인기 있는 오픈소스 LLM 중 하나입니다. 
 
-- 재실행된 Codespaces에서 Continue의 버전이 0.8.12인지 확인한다.
+일종의 베이스 모델로, 초기 개발 비용을 들이지 않고 사용하는 기업 및 개인에 특화된 모델을 만들 수 있도록 하는 출발점 역할을 수행합니다. 
 
-## Continue 맛보기
+모델이 언어를 알아들을 수 있도록 형식, 문서 정렬, 검열 등 수많은 수작업을 사전 학습시켜 오픈소스로 공개함으로써 다양한 LLM 모델이 등장하는 데 큰 역할을 했습니다. 
 
-- 탐색기 영역에서 Gugudan.java 파일을 생성한다.
-- Ctrl + Shift + M을 입력하면 화면 우측에 Continue가 생성된 것을 확인할 수 있다.
-- 입력창에 '구구단 프로그램 짜줘'라고 입력 후 출력된 결과를 확인한다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/9ce86d06-0dee-4f22-a633-b16d33725a8a)
+![스크린샷 2024-03-04 오후 3 49 27](https://github.com/msa-ez/llmschool.github.io/assets/113568664/1d677031-60eb-47b3-9087-c20a7cb7d6d8)
 
-- 코드가 python언어 기반으로 생성되었기 때문에 이를 Java언어로 변경하기 위하여 '여기 자바거든.'을 입력하여 결과를 확인한다.
-- Java언어로 코드가 정상적으로 생성된 것이 확인되었다면 'Apply to current file' 아이콘을 클릭하여 Gugudan.java에 구구단 프로그램 코드를 적용한다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/8572e5bb-eb8b-4a3c-a77b-5f590deb70a0)
+Llama2는 보유한 파라미터의 양에 따라 모델 사이즈를 3가지로 구분하고 있습니다. 
 
+여기서 파라미터란 신경망을 만들어내는 일종의 웨이트 포인트로, 많으면 많을수록 더욱 정밀한 연산이 가능해 더 많은 내용을 학습하고, 이렇게 학습한 정보를 바탕으로 창작 활동까지 수행할 수 있습니다. 
 
-- 코드를 적용한 후, 터미널에서 다음과 같이 입력하여 Gugudan.java를 실행한다.
+반대로 파라미터 수가 낮은 모델의 경우, 인플루언서 속도가 빠르고 배포할 수 있는 환경의 범용성이 증가하는 장점이 있습니다.
 
-```
-javac Gugudan.java
-```
-- 다음과 같은 오류가 발생한 것을 확인할 수 있다.
+또한 Llama2는 Llama-2-Chat 이라는 기능을 탑재해 사용자의 피드백을 통한 강화학습도 가능하다는 특징이 있습니다. 
 
-```
-Gugudan.java:1: error: class Main is public, should be declared in a file named Main.java
-public class Main {
-       ^
-1 error
-}
-```
-- 해당 오류에 대한 해결하기위해 Ctrl + Shift + R을 입력하면 터미널의 오류가 프롬프트로 입력된다.
+### Mistral-7B
 
-- 출력된 답변을 확인하면 클래스의 이름과 파일이름이 달라 발생한 문제임을 확인할 수 있고, Apply버튼을 클릭하여 코드 수정을 진행한다.
+![스크린샷 2024-03-04 오후 3 33 23](https://github.com/msa-ez/llmschool.github.io/assets/113568664/e8f83ceb-2a92-4090-bd96-48daf93b6036)
 
-- 이후 다시 터미널에 다음과 같이 입력하여 Gugudan.java파일의 실행과 구구단프로그램이 정상적으로 실행되는지 확인한다.
-```
-javac Gugudan.java
-java Gugudan
-```
+Mistral AI 에서 출시한 모델입니다. 
 
-## GPT4 API-KEY 설정하기
-- Continue 화면 하단 '+' 클릭 > 'Open AI' 클릭 > APIKEY 입력을 진행한다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/c6706311-3bf2-4f18-ae86-b4a2d0d2260d)
+실제 서비스를 타겟으로 설계되어 반응성이 좋고, 한국어도 어느 정도 지원합니다. 
 
-- 이후 하단의 'Open config.json'을 클릭하면 config.json파일에 입력한 APIKEY를 확인할 수 있고 GPT4를 이용할 수 있다.
+동일한 모델 기준으로 Llama2의 13B, 34B 모델과 유사한 정도의 고성능을 보여줍니다. 
+
+좋은 성과를 많이 보여주어 인기가 많은 모델입니다. 
+
+### Mixtral 8x7B
+
+![스크린샷 2024-03-04 오후 3 33 30](https://github.com/msa-ez/llmschool.github.io/assets/113568664/4cbdc00e-5bf4-4428-a5d6-d995900647c8)
+
+Mistral AI 에서 출시한 모델입니다. 
+
+특정 부분에서 특화된 작업을 수행하는 MoE(Mixture of Expert) 모델을 채택했습니다.
+
+![스크린샷 2024-03-04 오후 4 32 33](https://github.com/msa-ez/llmschool.github.io/assets/113568664/c00330b5-6721-4884-826e-63cb91e20454)
+
+로고의 8X7은 7B 사이즈의 모델을 8개 붙여놨다는 의미로, 공통으로 사용하는 레이어를 포함해 34B 정도 파라미터 사이즈를 가지고 있습니다. 
+
+상대적으로 저렴한 가격에 준수하게 실행이 가능하며, Llama2의 70B 모델을 넘어서는 성능을 보여줍니다. 
+
+다만 용량이 크기 때문에 온디바이스로 설치하는 데에는 무리가 있고, 서버를 구축해 활용하기에 적합한 모델입니다. 
+
+### Yi
+
+![스크린샷 2024-03-04 오후 3 33 37](https://github.com/msa-ez/llmschool.github.io/assets/113568664/5a935980-7e90-4d9f-b47a-4f735a3b3b07)
+
+중국의 01.AI 에서 개발한 모델입니다. 
+
+6B, 34B 모델을 제공하며, 중국어를 기반으로 해 아시아계 언어 파잉튜닝에 특화되어 있습니다. 
+
+컨텍스트를 크게 인식하여 다양하게 연구되고 있는 모델입니다. 
+
+### Falcon
+
+![스크린샷 2024-03-04 오후 3 33 47](https://github.com/msa-ez/llmschool.github.io/assets/113568664/aa61982d-9b52-46b5-ae4b-ef2846db2bea)
+
+아랍에미리트(UAE)의 기술혁신연구소에서 개발한 모델입니다. 
+
+1.3B, 40B, 75B 등 다양한 모델 사이즈를 가지고 있으며 유일하게 180B를 만들어냈습니다. 
+
+스타팅 포인트로 굉장히 좋으며, 11개 언어를 지원하고 있으나 한국어는 포함되어 있지 않습니다. 
+
+그럼에도 멀티랭귀지를 탑재하고 나온 모델인 만큼 파인튜닝이 용이하고, 특히 영어와 아랍어 처리에 좋다고 알려져 있습니다. 
+
+## Gemma
+
+![스크린샷 2024-03-04 오후 4 28 00](https://github.com/msa-ez/llmschool.github.io/assets/113568664/fe64194c-29ac-419c-bc1f-fab7b2c90427)
+
+구글에서 발표한 모델입니다. 
+
+Llama2와 비교했을 때도 준수한 성능을 보이며, 2B와 7B를 제공합니다. 
+
+2B 모델은 임베디드에 들어갈 수 있을 정도로 작은 모델로 범용성이 굉장히 높고, 7B 모델의 경우에도 일반적인 인스트럭트 형태로 사용하기에 적합합니다.
+
+### LLaVA(Large Language and Vision Assistant)
+
+![스크린샷 2024-03-04 오후 3 33 56](https://github.com/msa-ez/llmschool.github.io/assets/113568664/4931d24f-0c00-41f6-b416-c58b8874f7ef)
+
+NeurIPS 2023 논문지에 게재된 모델로, 마이크로소프트 외 다양한 회사에서 합작해 개발한 모델입니다. 
+
+인풋 값을 이미지로 넣어도 어느 정도 인식해 문서 해석 및 사진 인식 등 다양하게 활용할 수 있습니다. 
 
         </mark-down>
 
@@ -82,7 +112,7 @@ java Gugudan
 
 
 <script>
-    // @group 01_01_04
+    // @group 05_01_03
     export default {
         name:'LLM-Model',
         data() {
