@@ -112,6 +112,10 @@
     margin:45px 20px 15px 0 !important;
     font-weight:700 !important;
 }
+code{
+    background: none !important;
+    color: black !important;
+}
 @media only screen and (max-width:750px){
     .gs-the-entire-package {
         display:block !important;
