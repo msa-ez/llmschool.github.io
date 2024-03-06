@@ -65,7 +65,7 @@ Cursor의 OPEN AI는 멘션(@) 기능을 통해 프롬프트에 참고자료를 
             return {}
         },
         props: {
-            "Cursor를 활용한 AI기반 코딩": {
+            "Cursor IDE": {
                 type: String
             },
         },

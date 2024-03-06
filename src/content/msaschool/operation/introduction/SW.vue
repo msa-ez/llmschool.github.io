@@ -44,7 +44,7 @@ if ~ then ~ else가 확장성이 떨어져 보여. 이를 해결할 디자인 �
             return {}
         },
         props: {
-            "Cursor를 통한 SW공학": {
+            "Cursor IDE - SW공학": {
                 type: String
             },
         },

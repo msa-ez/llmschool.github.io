@@ -112,7 +112,7 @@ NeurIPS 2023 논문지에 게재된 모델로, 마이크로소프트 외 다양�
 
 
 <script>
-    // @group 05_01_03
+    // @group 05_01_02
     export default {
         name:'LLM-Model',
         data() {

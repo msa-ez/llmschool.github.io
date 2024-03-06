@@ -12,7 +12,7 @@ import MainPage from '@/components/mainPage/main.vue'
     name: 'index',
     directory:'operation_introduction',
     props: {
-        "도구 소개": {
+        "AI": {
             type: String
         },
         
