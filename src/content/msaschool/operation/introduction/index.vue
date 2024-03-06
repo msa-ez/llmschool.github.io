@@ -15,6 +15,7 @@ import MainPage from '@/components/mainPage/main.vue'
         "도구 소개": {
             type: String
         },
+        
     },
 	components: {
 		  MainPage

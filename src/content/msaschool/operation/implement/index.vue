@@ -15,6 +15,7 @@
           "구현": {
               type: String
           },
+         
       },
       components: {
           MainPage

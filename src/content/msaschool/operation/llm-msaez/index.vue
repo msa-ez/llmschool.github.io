@@ -15,6 +15,7 @@
           "설치형 LLM 기반 MSAEZ 연동": {
               type: String
           },
+          
       },
       components: {
           MainPage

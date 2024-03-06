@@ -15,6 +15,7 @@
           "교육과정 소개": {
               type: String
           },
+          
       },
       components: {
           MainPage

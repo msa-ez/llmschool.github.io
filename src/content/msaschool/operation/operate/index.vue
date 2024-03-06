@@ -15,6 +15,7 @@
           "배포/운영": {
               type: String
           },
+          
       },
       components: {
           MainPage

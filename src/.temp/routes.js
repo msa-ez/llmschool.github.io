@@ -4,6 +4,10 @@ const c3 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/
 
 export default [
   {
+    path: "/operation/introduction/sw/",
+    component: c1
+  },
+  {
     path: "/operation/operate/kubectl-ai/",
     component: c1
   },
@@ -13,6 +17,10 @@ export default [
   },
   {
     path: "/operation/llm/llm-setting/",
+    component: c1
+  },
+  {
+    path: "/operation/introduction/legacy/",
     component: c1
   },
   {
@@ -32,6 +40,10 @@ export default [
     component: c1
   },
   {
+    path: "/operation/introduction/ide/",
+    component: c1
+  },
+  {
     path: "/operation/introduction/gpt-engineer/",
     component: c1
   },
@@ -41,10 +53,6 @@ export default [
   },
   {
     path: "/operation/introduction/continue/",
-    component: c1
-  },
-  {
-    path: "/operation/introduction/cursor/",
     component: c1
   },
   {

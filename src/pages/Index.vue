@@ -32,7 +32,7 @@
         mounted() {
             var me = this
             if(me.$route.path == '/' || me.$route.path == '/operation/'){
-                me.$router.push('/operation/introduction/cursor');
+                me.$router.push('/operation/introduction/ide');
             }
         },
         components: {},

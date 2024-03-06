@@ -47,7 +47,24 @@ module.exports = {
                         items: ["/docs/settings/", "/docs/sidebar/"]
                     }
                 ]
-            }
+            },
+            // {
+            //     name: "msaschool",
+            //     sections: [
+            //         {
+            //             title: "LLM School",
+            //             items: [
+            //                 '/msaschool/operation/introduction/',
+            //                 '/msaschool/operation/planning/',
+            //                 '/msaschool/operation/implement/',
+            //                 '/msaschool/operation/operate/',
+            //                 '/msaschool/operation/llm/',
+            //                 '/msaschool/operation/llm-msaez/',
+            //                 '/msaschool/operation/course/',
+            //             ]
+            //         },
+            //     ]
+            // }
         ]
     },
     chainWebpack: config => config.mode('development'),

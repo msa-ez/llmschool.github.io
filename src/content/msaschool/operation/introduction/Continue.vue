@@ -66,7 +66,7 @@ java Gugudan
 
 
 <script>
-    // @group 01_01_04
+    // @group 01_01_06
     export default {
         name:'Continue',
         data() {

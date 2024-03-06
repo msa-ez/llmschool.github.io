@@ -15,6 +15,7 @@
           "설치형 LLM": {
               type: String
           },
+          
       },
       components: {
           MainPage
