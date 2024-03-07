@@ -17,7 +17,7 @@
                     class="flex items-center py-1 font-semibold"
                     :style="styleBySize"
             >
-                <h3 class="pt-0 mt-0 mb-1 tracking-tight uppercase border-none  "
+                <h3 class="pt-0 mt-0 mb-1 tracking-tight border-none  "
                     style="font-size: 17px;"
                     :class="getDetailForHeader(parent)"
                 >
@@ -143,22 +143,38 @@
 
                 if (branches) {
                     branches.forEach(function (branchNode) {
-                        var branch = branchNode.node
-                        var branchPath = branch.path.substr(0, branch.path.length - 1).slice(1)
+                        var branch = branchNode.node;
+                        var branchPath = branch.path.substr(0, branch.path.length - 1).slice(1);
 
                         if (branchPath.split('/').length < 3) {
-                            if (!treeObj[branchPath]) treeObj[branchPath] = {}
-                            treeObj[branchPath].header = branch
+                            if (!treeObj[branchPath]) treeObj[branchPath] = {};
+                            treeObj[branchPath].header = branch;
                         } else {
-                            var parentPath = branchPath.split('/')[0] + '/' + branchPath.split('/')[1]
-                            if (!treeObj[parentPath]) treeObj[parentPath] = {}
-                            if (!treeObj[parentPath].children) treeObj[parentPath].children = {}
-                            treeObj[parentPath].children[branchPath] = branch
+                            var parentPath = branchPath.split('/')[0] + '/' + branchPath.split('/')[1];
+                            if (!treeObj[parentPath]) treeObj[parentPath] = {};
+                            if (!treeObj[parentPath].children) treeObj[parentPath].children = {};
+                            treeObj[parentPath].children[branchPath] = branch;
                         }
-                    })
-                    return treeObj
+                    });
+                    const orderedKeys = [
+                        "operation/introduction",
+                        "operation/planning",
+                        "operation/implement",
+                        "operation/operate",
+                        "operation/llm",
+                        "operation/llm-msaez",
+                        "operation/course"
+                    ];
+                    let orderedTreeObj = {};
+                    orderedKeys.forEach(key => {
+                        if (treeObj[key]) {
+                            orderedTreeObj[key] = treeObj[key];
+                        }
+                    });
+
+                    return orderedTreeObj;
                 }
-                return null
+                return null;
             },
             getClassesForHeader({path}) {
                 return {

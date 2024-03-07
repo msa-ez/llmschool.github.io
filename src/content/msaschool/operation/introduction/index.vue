@@ -12,7 +12,7 @@ import MainPage from '@/components/mainPage/main.vue'
     name: 'index',
     directory:'operation_introduction',
     props: {
-        "AI": {
+        "AI Tools": {
             type: String
         },
         
