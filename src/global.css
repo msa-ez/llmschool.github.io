@@ -1,7 +1,7 @@
 .clearfix::after{content:""; display:block; clear:both;}
 
 .gs-top-apply-btn {
-    background-color:#5a67d8 !important;
+    background-color:#147c7f !important;
     color:white !important;
     width:130px !important;
     height:40px !important;
@@ -11,7 +11,7 @@
     margin:-7px 0 0 10px !important;
 }
 .gs-bottom-apply-btn {
-    background-color:#5a67d8 !important;
+    background-color:#147c7f !important;
     color:white !important;
     width:100% !important;
     height:50px !important;
@@ -45,7 +45,7 @@
 }
 
 .gs-review-star-color {
-    color:#5a67d8;
+    color:#147c7f;
 }
 
 .gs-review-full-box {
@@ -57,7 +57,7 @@
 }
 .gs-review-page-number {
     font-size:35px; 
-    color:#5a67d8 !important; 
+    color:#147c7f !important; 
     cursor:pointer;
 }
 

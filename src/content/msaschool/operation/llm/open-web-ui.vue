@@ -2,7 +2,7 @@
     <div>
         <mark-down class="content">
             
-# Open Web UI
+## Open Web UI
 
 Open Web UI는 Chat GPT와 비슷한 인터페이스를 제공하며 반응형으로 모바일에서도 사용이 가능한 채팅 인터페이스를 제공합니다. 
 
@@ -16,7 +16,7 @@ GPT-S와 같은 프롬프트 사전 설정 기능을 지원해 사전에 정의�
 
 **https://github.com/open-webui/open-webui** 에서 설치할 수 있습니다. 
 
-## Open Web UI 설치
+### Open Web UI 설치
 
 Docker Desktop(**https://www.docker.com/products/docker-desktop/**)을 통한 설치를 권장합니다. 
 
@@ -46,7 +46,7 @@ Open Web UI에서는 기본적인 채팅 외에도 음성 인식, 파일 첨부 
 
 ![](https://github.com/msa-ez/llmschool.github.io/assets/113568664/e1438ca1-cd9f-4948-a3cc-55d546774047)
 
-## Open Web UI 커뮤니티
+### Open Web UI 커뮤니티
 
 ![](https://github.com/msa-ez/llmschool.github.io/assets/113568664/6cb87ea7-296d-40f0-abaf-52bd93d48b81)
 
@@ -64,7 +64,7 @@ Get 버튼으로 각 프롬프트를 바로 Open Web UI에 import 하거나 파�
 
 이미 만들어져있는 모델을 가져오는 것 뿐만 아니라 직접 모델명, 태그, 베이스모델, 프롬프트 제안 등 다양한 옵션을 적용해 새로운 모델을 만들어 커뮤니티에 공유할 수도 있습니다.
 
-## Open Web UI 권한 설정
+### Open Web UI 권한 설정
 
 ![](https://github.com/msa-ez/llmschool.github.io/assets/113568664/bf55543c-4c03-409a-be09-3086f4976dd6)
 
@@ -72,7 +72,7 @@ Get 버튼으로 각 프롬프트를 바로 Open Web UI에 import 하거나 파�
 
 그 이후 해당 포트로 접속한 유저들은 일반 user 권한이 주어지고, admin 사용자는 설정 상에서 새로운 멤버들을 user 로 설정할지, pending으로 설정할지 디폴트 값을 설정할 수 있습니다. 
 
-## 그 외 설정
+### 그 외 설정
 
 ![](https://github.com/msa-ez/llmschool.github.io/assets/113568664/1c06b4a4-b257-42e8-a2ba-19042fe1423c)
         </mark-down>

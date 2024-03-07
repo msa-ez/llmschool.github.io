@@ -36,7 +36,7 @@
             <h3 class="con-tit w190">웨비나 영상 다시보기</h3>
             <!-- <h3 class="con-tit-webinar">웨비나 영상 다시보기</h3> -->
             <a href="https://www.youtube.com/@uengine5309" target="_blank">
-                <v-btn style="background-color:#5a67d8 !important;
+                <v-btn style="background-color:#147c7f !important;
                     border-radius: 4px;
                     margin-left:30px;
                     margin-top: -25px;

@@ -124,7 +124,7 @@
                             <a href="/operation/education/fundamental/">
                                 <button style="background-color:#fff;
                                 border-radius: 4px;
-                                border:2px solid #5a67d8;
+                                border:2px solid #147c7f;
                                 height: 36px;
                                 width: 90px;
                                 text-align: center;
@@ -140,7 +140,7 @@
                             <a href="/operation/education/curriculum/">
                             <button style="background-color:#fff;
                                 border-radius: 4px;
-                                border:2px solid #5a67d8;
+                                border:2px solid #147c7f;
                                 height: 36px;
                                 width: 90px;
                                 text-align: center;
@@ -156,7 +156,7 @@
                             <a href="/operation/education/advanced/">
                             <button style="background-color:#fff;
                                 border-radius: 4px;
-                                border:2px solid #5a67d8;
+                                border:2px solid #147c7f;
                                 height: 36px;
                                 width: 90px;
                                 text-align: center;
@@ -220,7 +220,7 @@
                             <a href="/operation/education/fundamental/">
                             <button style="background-color:#fff;
                                 border-radius: 4px;
-                                border:2px solid #5a67d8;
+                                border:2px solid #147c7f;
                                 height: 36px;
                                 width: 90px;
                                 text-align: center;
@@ -280,7 +280,7 @@
                             <a href="/operation/education/curriculum/">
                                 <button style="background-color:#fff;
                                 border-radius: 4px;
-                                border:2px solid #5a67d8;
+                                border:2px solid #147c7f;
                                 height: 36px;
                                 width: 90px;
                                 text-align: center;
@@ -340,7 +340,7 @@
                             <a href="/operation/education/advanced/">
                                 <button style="background-color:#fff;
                                 border-radius: 4px;
-                                border:2px solid #5a67d8;
+                                border:2px solid #147c7f;
                                 height: 36px;
                                 width: 90px;
                                 text-align: center;

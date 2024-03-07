@@ -2,7 +2,7 @@
     <div>
         <mark-down class="content">
             
-# Ollama
+## Ollama
 
 Ollama는 로컬 LLM을 구축할 수 있는 솔루션으로, 모든 운영체제에서 사용 가능합니다(Windows는 베타 버전 지원).
 
@@ -18,7 +18,7 @@ Ollama는 로컬 LLM을 구축할 수 있는 솔루션으로, 모든 운영체�
 
 ![5 07 38](https://github.com/msa-ez/llmschool.github.io/assets/113568664/e3115dd8-f12f-4d4c-8313-0874c92616ab)
 
-## Ollama Model Tag
+### Ollama Model Tag
 
 |  기본 태그 | 용도 | 파라미터 | 양자화 |
 | ---|---|---|---|
@@ -39,7 +39,7 @@ q8은 원본과 거의 비슷한 수준의 정밀도를 보여주지만 용량 �
 
 하나의 예로 실제 Ollama에서 Mistral 모델의 태그 중 일부를 보면 **7b-instruct-q5_K_S** 와 같은 형태로 나타나는데, 이를 해석하면 7b 파라미터를 가진 instruct 모델을 q5 수준으로 양자화한 버전이라고 해석할 수 있습니다. 
 
-## Ollama 기본 명령어
+### Ollama 기본 명령어
 
 - **Serve** : 서버 시작 - Ollama를 실행하면 기본적으로 서버가 올라가므로 별도 입력할 필요 X
 - **Pull** : 모델을 받아서 로컬에 저장
