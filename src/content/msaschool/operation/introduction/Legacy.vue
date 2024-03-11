@@ -99,7 +99,7 @@ JSP란 Java를 이용한 서버 사이드 템플릿 엔진이며, 자바를 웹�
             return {}
         },
         props: {
-            "Cursor IDE -  레거시&모더나이징": {
+            "Cursor IDE - 레거시&전환": {
                 type: String
             },
         },
