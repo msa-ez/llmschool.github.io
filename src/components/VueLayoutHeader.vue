@@ -1,6 +1,6 @@
 <template>
     <!--    <div class="py-2 border-t-2 border-ui-primary" style="background-color: #1e88e5;">-->
-    <div class="py-2 border-t-2 border-ui-primary" style="box-shadow: 0 7x 7px -7px #ccc;">
+    <div class="py-2 border-t-2 border-ui-primary" style="box-shadow: 0 7x 7px -7px #ccc; border-color: #147c7f;">
         <!--        <div class="container">-->
         <div class="is-not-mobile-main-top">
 
@@ -20,9 +20,8 @@
                     <g-link
                             to="/operation/introduction/"
                             title="Home"
-                            style="margin-right:235px;"
                     >
-                        <Logo/>
+                        <img src="../img/llmschool_logo.png" style="width:208px; height:50px;">
                     </g-link>
                     <ClientOnly>
                         <VueSearch v-if="!isSmall"></VueSearch>
@@ -44,7 +43,7 @@
                                 font-weight: 500;
                                 font-size:24px;
                                 color: #fff;
-                                background: #5a67d8;
+                                background: #147c7f;
                                 font-size: 14px;
                                 border: 0;
                                 border-radius: 4px;
@@ -63,7 +62,7 @@
                             <g-image class="g-images" src="~/img/05_Community/04_교육상담_및_신청/image10.png"></g-image>
                         </div>
                     </div>  -->
-                    <v-btn style="background-color:#5a67d8 !important;
+                    <v-btn style="background-color:#147c7f !important;
                         border-radius: 4px;
                         margin-right:15px;
                         height: 36px;
@@ -75,9 +74,9 @@
                         :href="'/operation/education/one-point-lesson/'"
                     ><span style="color:white;">컨설팅 문의</span>
                     </v-btn>
-                    <v-btn style="background-color:#5a67d8 !important;
+                    <v-btn style="background-color:#147c7f !important;
                         border-radius: 4px;
-                        margin-right:15px;
+                        margin-right:40px;
                         height: 36px;
                         width: 120px;
                         text-align: center;
@@ -133,7 +132,7 @@
                                 font-weight: 500;
                                 font-size:24px;
                                 color: #fff;
-                                background: #5a67d8;
+                                background: #147c7f;
                                 font-size: 14px;
                                 border: 0;
                                 border-radius: 4px;
@@ -152,7 +151,7 @@
                             <g-image class="g-images" src="~/img/05_Community/04_교육상담_및_신청/image10.png"></g-image>
                         </div>
                     </div>  -->
-                    <v-btn style="background-color:#5a67d8 !important;
+                    <v-btn style="background-color:#147c7f !important;
                         border-radius: 4px;
                         margin-right:15px;
                         margin-bottom: 4px;
@@ -165,7 +164,7 @@
                         :href="'/operation/education/one-point-lesson/'"
                     ><span style="color:white;">컨설팅 문의</span>
                     </v-btn>
-                    <v-btn style="background-color:#5a67d8 !important;
+                    <v-btn style="background-color:#147c7f !important;
                         border-radius: 4px;
                         margin-right:15px;
                         height: 33px;

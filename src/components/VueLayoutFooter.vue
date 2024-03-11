@@ -1,6 +1,6 @@
 <template>
     <!--    <div class="py-2 border-t-2 border-ui-primary" style="background-color: #1e88e5;">-->
-    <div class="py-10 border-t-2 border-ui-primary">
+    <div class="py-10 border-t-2 border-ui-primary" style="border-color: #147c7f;">
         <div class="is-not-mobile-main-top" style="text-align:center;">
             <!-- <g-image style="width:150px; height:30px; position: absolute; left:50%;"
                 src="https://github.com/kykim97/factory-pattern/assets/113568664/2c714be7-81cc-4179-aa83-342e2f35c9d1">

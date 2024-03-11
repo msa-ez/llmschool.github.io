@@ -1,7 +1,7 @@
 <template>
     <v-btn id = "training-btn"
             style="padding: 5px !important;
-                    background-color:#5a67d8 !important;
+                    background-color:#147c7f !important;
                     color:white !important;
                     margin-bottom:-140px !important;
                     width:140px;

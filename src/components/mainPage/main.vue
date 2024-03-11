@@ -112,7 +112,7 @@ export default {
     width: 99.5%; 
     height: 60px; 
     text-align: center;
-    background-color: #5a67d8;
+    background-color: #147c7f;
     font-weight: 600;
     line-height: 60px;
     font-size: 20px;
