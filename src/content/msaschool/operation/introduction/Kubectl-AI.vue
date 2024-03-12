@@ -29,11 +29,7 @@ Copilot은 개발자들이 코드를 더 빠르고 효율적으로 작성할 수
 
 - 탐색기 영역에서 Gugudan.java 파일을 생성합니다.
 - Ctrl + Shift + M을 입력하면 화면 우측에 Continue가 생성된 것을 확인할 수 있습니다.
-- 입력창에 다음과 같이 프롬프트를 입력합니다.
-```
-Prompt: 구구단 프로그램 짜줘
-```
-프롬프팅 결과, 아래와 같이 구구단 프로그램에 대한 코드가 생성된 것을 확인할 수 있습니다.
+- 입력창에 '구구단 프로그램 짜줘'라고 입력 후 출력된 결과를 확인하면 다음과 같습니다.
 ![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/9ce86d06-0dee-4f22-a633-b16d33725a8a)
 
 - 코드가 python언어 기반으로 생성된 것을 확인할 수 있습니다. 이를 Java언어로 변경하기 위해 추가 요청을 보낸 후 정상적으로 생성된 것이 확인되었다면 'Apply to current file' 아이콘을 클릭하여 Gugudan.java에 구구단 프로그램 코드를 적용합니다.
@@ -70,14 +66,14 @@ java Gugudan
 
 
 <script>
-    // @group 01_01_06
+    // @group 01_01_07
     export default {
-        name:'Continue',
+        name:'Kubernetes',
         data() {
             return {}
         },
         props: {
-            "Continue": {
+            "Kubectl-ai / K8sGPT": {
                 type: String
             },
         },

@@ -24,7 +24,7 @@ k8sgpt --help
 
 ### Open AI Key 생성과 설정
 
-K8sGPT를 사용하기 위해서는 OpenAI 계정으로 생성한 API Key(https://platform.openai.com/account/api-keys)가 있어야 하며, 이를 K8s gpt에 아래 명령으로 등록합니다.
+K8sGPT를 사용하기 위해 K8s gpt에 아래 명령으로 k8sgpt 에 접근한 후 OPEN AI API_Key를 입력합니다.
 ```
 k8sgpt auth add openai
 Enter openai Key: 
