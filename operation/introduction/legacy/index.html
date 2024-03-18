@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <title>llmschool - llmschool</title><meta name="gridsome:hash" content="cf2ef57c2724a3ca239916008d8c704d1167df86"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.23"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><meta data-vue-tag="ssr" data-key="og:type" name="og:type" content="website"><meta data-vue-tag="ssr" data-key="twitter:card" name="twitter:card" content="summary_large_image"><meta data-vue-tag="ssr" data-key="og:image" name="og:image" content="undefined/logo.jpg"><meta data-vue-tag="ssr" data-key="twitter:image" name="twitter:image" content="undefined/logo.jpg"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.9b482207d81bcddc72c909765ab53026.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.9b482207d81bcddc72c909765ab53026.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.9b482207d81bcddc72c909765ab53026.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.9b482207d81bcddc72c909765ab53026.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.9b482207d81bcddc72c909765ab53026.png"><link data-vue-tag="ssr" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"><link data-vue-tag="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"><link rel="preload" href="/assets/css/styles.styles.5b0f84d5.css" as="style"><link rel="preload" href="/assets/js/app.4c841c88.js" as="script"><link rel="preload" href="/assets/js/page--src--templates--vue-page-vue.ddf4d22d.js" as="script"><link rel="prefetch" href="/assets/js/page--src--pages--404-vue.5966eadd.js"><link rel="prefetch" href="/assets/js/page--src--pages--index-vue.d428b565.js"><link rel="prefetch" href="/assets/js/search.f2cedf62.js"><link rel="stylesheet" href="/assets/css/styles.styles.5b0f84d5.css"><style data-vue-tag="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">.v-application a { color: #1976d2; }
+.v-application .primary {
+  background-color: #1976d2 !important;
+  border-color: #1976d2 !important;
+}
+.v-application .primary--text {
+  color: #1976d2 !important;
+  caret-color: #1976d2 !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: #c7fdff !important;
+  border-color: #c7fdff !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: #c7fdff !important;
+  caret-color: #c7fdff !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: #a8e0ff !important;
+  border-color: #a8e0ff !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: #a8e0ff !important;
+  caret-color: #a8e0ff !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: #8ac5ff !important;
+  border-color: #8ac5ff !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: #8ac5ff !important;
+  caret-color: #8ac5ff !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: #6aaaff !important;
+  border-color: #6aaaff !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: #6aaaff !important;
+  caret-color: #6aaaff !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: #488fef !important;
+  border-color: #488fef !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: #488fef !important;
+  caret-color: #488fef !important;
+}
+.v-application .primary.darken-1 {
+  background-color: #005eb6 !important;
+  border-color: #005eb6 !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: #005eb6 !important;
+  caret-color: #005eb6 !important;
+}
+.v-application .primary.darken-2 {
+  background-color: #00479b !important;
+  border-color: #00479b !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: #00479b !important;
+  caret-color: #00479b !important;
+}
+.v-application .primary.darken-3 {
+  background-color: #003180 !important;
+  border-color: #003180 !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: #003180 !important;
+  caret-color: #003180 !important;
+}
+.v-application .primary.darken-4 {
+  background-color: #001e67 !important;
+  border-color: #001e67 !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: #001e67 !important;
+  caret-color: #001e67 !important;
+}
+.v-application .secondary {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+.v-application .secondary--text {
+  color: #424242 !important;
+  caret-color: #424242 !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: #c1c1c1 !important;
+  border-color: #c1c1c1 !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: #c1c1c1 !important;
+  caret-color: #c1c1c1 !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: #a6a6a6 !important;
+  border-color: #a6a6a6 !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: #a6a6a6 !important;
+  caret-color: #a6a6a6 !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: #8b8b8b !important;
+  border-color: #8b8b8b !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: #8b8b8b !important;
+  caret-color: #8b8b8b !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: #727272 !important;
+  border-color: #727272 !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: #727272 !important;
+  caret-color: #727272 !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: #595959 !important;
+  border-color: #595959 !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: #595959 !important;
+  caret-color: #595959 !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: #2c2c2c !important;
+  border-color: #2c2c2c !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: #2c2c2c !important;
+  caret-color: #2c2c2c !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: #171717 !important;
+  border-color: #171717 !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: #171717 !important;
+  caret-color: #171717 !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .accent {
+  background-color: #82b1ff !important;
+  border-color: #82b1ff !important;
+}
+.v-application .accent--text {
+  color: #82b1ff !important;
+  caret-color: #82b1ff !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: #f8ffff !important;
+  border-color: #f8ffff !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: #f8ffff !important;
+  caret-color: #f8ffff !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: #daffff !important;
+  border-color: #daffff !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: #daffff !important;
+  caret-color: #daffff !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: #bce8ff !important;
+  border-color: #bce8ff !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: #bce8ff !important;
+  caret-color: #bce8ff !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: #9fccff !important;
+  border-color: #9fccff !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: #9fccff !important;
+  caret-color: #9fccff !important;
+}
+.v-application .accent.darken-1 {
+  background-color: #6596e2 !important;
+  border-color: #6596e2 !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: #6596e2 !important;
+  caret-color: #6596e2 !important;
+}
+.v-application .accent.darken-2 {
+  background-color: #467dc6 !important;
+  border-color: #467dc6 !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: #467dc6 !important;
+  caret-color: #467dc6 !important;
+}
+.v-application .accent.darken-3 {
+  background-color: #2364aa !important;
+  border-color: #2364aa !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: #2364aa !important;
+  caret-color: #2364aa !important;
+}
+.v-application .accent.darken-4 {
+  background-color: #004c90 !important;
+  border-color: #004c90 !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: #004c90 !important;
+  caret-color: #004c90 !important;
+}
+.v-application .error {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.v-application .error--text {
+  color: #ff5252 !important;
+  caret-color: #ff5252 !important;
+}
+.v-application .error.lighten-5 {
+  background-color: #ffe4d5 !important;
+  border-color: #ffe4d5 !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: #ffe4d5 !important;
+  caret-color: #ffe4d5 !important;
+}
+.v-application .error.lighten-4 {
+  background-color: #ffc6b9 !important;
+  border-color: #ffc6b9 !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: #ffc6b9 !important;
+  caret-color: #ffc6b9 !important;
+}
+.v-application .error.lighten-3 {
+  background-color: #ffa99e !important;
+  border-color: #ffa99e !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: #ffa99e !important;
+  caret-color: #ffa99e !important;
+}
+.v-application .error.lighten-2 {
+  background-color: #ff8c84 !important;
+  border-color: #ff8c84 !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: #ff8c84 !important;
+  caret-color: #ff8c84 !important;
+}
+.v-application .error.lighten-1 {
+  background-color: #ff6f6a !important;
+  border-color: #ff6f6a !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: #ff6f6a !important;
+  caret-color: #ff6f6a !important;
+}
+.v-application .error.darken-1 {
+  background-color: #df323b !important;
+  border-color: #df323b !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: #df323b !important;
+  caret-color: #df323b !important;
+}
+.v-application .error.darken-2 {
+  background-color: #bf0025 !important;
+  border-color: #bf0025 !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: #bf0025 !important;
+  caret-color: #bf0025 !important;
+}
+.v-application .error.darken-3 {
+  background-color: #9f0010 !important;
+  border-color: #9f0010 !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: #9f0010 !important;
+  caret-color: #9f0010 !important;
+}
+.v-application .error.darken-4 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.v-application .info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.v-application .info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.v-application .info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.v-application .info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.v-application .info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.v-application .info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.v-application .info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.v-application .info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.v-application .info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.v-application .info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.v-application .info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.v-application .success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.v-application .success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.v-application .success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.v-application .success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.v-application .success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.v-application .success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.v-application .success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.v-application .success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.v-application .success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.v-application .warning {
+  background-color: #fb8c00 !important;
+  border-color: #fb8c00 !important;
+}
+.v-application .warning--text {
+  color: #fb8c00 !important;
+  caret-color: #fb8c00 !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: #ffff9e !important;
+  border-color: #ffff9e !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: #ffff9e !important;
+  caret-color: #ffff9e !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: #fffb82 !important;
+  border-color: #fffb82 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: #fffb82 !important;
+  caret-color: #fffb82 !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: #ffdf67 !important;
+  border-color: #ffdf67 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: #ffdf67 !important;
+  caret-color: #ffdf67 !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: #ffc24b !important;
+  border-color: #ffc24b !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: #ffc24b !important;
+  caret-color: #ffc24b !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: #ffa72d !important;
+  border-color: #ffa72d !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: #ffa72d !important;
+  caret-color: #ffa72d !important;
+}
+.v-application .warning.darken-1 {
+  background-color: #db7200 !important;
+  border-color: #db7200 !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: #db7200 !important;
+  caret-color: #db7200 !important;
+}
+.v-application .warning.darken-2 {
+  background-color: #bb5900 !important;
+  border-color: #bb5900 !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: #bb5900 !important;
+  caret-color: #bb5900 !important;
+}
+.v-application .warning.darken-3 {
+  background-color: #9d4000 !important;
+  border-color: #9d4000 !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: #9d4000 !important;
+  caret-color: #9d4000 !important;
+}
+.v-application .warning.darken-4 {
+  background-color: #802700 !important;
+  border-color: #802700 !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: #802700 !important;
+  caret-color: #802700 !important;
+}</style><script data-vue-tag="ssr" src="https://www.googletagmanager.com/gtag/jsid=GTM-M9V65LQ5" async></script><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
+  </head>
+  <body >
+    <div data-server-rendered="true" id="app" class="font-sans antialiased text-ui-typo bg-ui-background" data-v-6b832e4e><div data-app="true" id="app" class="v-application v-application--is-ltr theme--light" data-v-6b832e4e><div class="v-application--wrap"><div class="flex flex-col justify-start min-h-screen" data-v-6b832e4e><header class="top-0 z-10 border-b bg-ui-background border-ui-border" style="position:fixed;width:100%;" data-v-6b832e4e><div class="py-2 border-t-2 border-ui-primary" style="box-shadow:0 7x 7px -7px #ccc;border-color:#147c7f;" data-v-0761eab2 data-v-6b832e4e><div class="is-not-mobile-main-top" data-v-0761eab2><div class="flex item-center justify-center" data-v-0761eab2><div class="flex flex-col items-center sm:flex-row" style="margin-left:40px; place-self:center; " data-v-0761eab2><a href="/operation/introduction/" title="Home" class="active" data-v-0761eab2><img src="/assets/img/llmschool_logo.ef150f0a.svg" style="width:200px;height:50px;" data-v-0761eab2></a><!----></div><div class="flex flex-col items-center px-3 mr-auto sm:flex-row" style="justify-content:flex-end;margin-right:1.5%;" data-v-0761eab2><a href="/operation/education/one-point-lesson/" class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default" style="background-color:#147c7f !important;border-radius:4px;margin-right:15px;height:36px;width:120px;text-align:center;line-height:36px;font-size:14px;font-weight:700;" data-v-0761eab2><span class="v-btn__content"><span style="color:white;" data-v-0761eab2>컨설팅 문의</span></span></a><a href="/operation/education/schedule/" class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default" style="background-color:#147c7f !important;border-radius:4px;margin-right:40px;height:36px;width:120px;text-align:center;line-height:36px;font-size:14px;font-weight:700;" data-v-0761eab2><span class="v-btn__content"><span style="color:white;" data-v-0761eab2>교과정 안내</span></span></a></div></div></div><div class="is-mobile-main-top" data-v-0761eab2><div class="flex item-center justify-center" data-v-0761eab2><div class="flex flex-col items-center sm:flex-row" style="margin-left:40px; place-self:center; " data-v-0761eab2><a href="/operation/introduction/" title="Home" class="active" style="margin-right:190px;" data-v-0761eab2><img src="data:image/png;base64,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" style="width:208px;height:50px;" data-v-0761eab2></a><!----></div><div class="flex flex-col items-center px-3 mr-auto sm:flex-row" style="justify-content:flex-end;margin-right:1.5%;" data-v-0761eab2><a href="/operation/education/one-point-lesson/" class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default" style="background-color:#147c7f !important;border-radius:4px;margin-right:15px;margin-bottom:4px;height:33px;width:120px;text-align:center;line-height:36px;font-size:14px;font-weight:700;" data-v-0761eab2><span class="v-btn__content"><span style="color:white;" data-v-0761eab2>컨설팅 문의</span></span></a><a href="/operation/education/schedule/" class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default" style="background-color:#147c7f !important;border-radius:4px;margin-right:15px;height:33px;width:120px;text-align:center;line-height:36px;font-size:14px;font-weight:700;" data-v-0761eab2><span class="v-btn__content"><span style="color:white;" data-v-0761eab2>교과정 안내</span></span></a></div></div></div></div></header><main class="container relative flex flex-wrap justify-start flex-1 w-full bg-ui-background is-mobile-main" style="max-width:1900px;padding-left:2.5%;padding-right:0;" data-v-6b832e4e><!----><div class="is-mobile-contents" style="max-width:100% !important;margin-top:3% !important;margin-left:-1%;padding-left:3% !important;padding-bottom:30px;" data-v-6b832e4e><div class="flex flex-wrap items-start justify-start"><div class="order-1 w-full" style="width:98%;margin-top:-2%;"><div><div class="content"></div><div class="content"><img src="https://github.com/msa-ez/llmschool.github.io/assets/123912988/f7f85504-2e84-4ded-ac84-da7d8802f017" width="700" height="600" alt="">
+</div><div class="content"></div><div class="content"><pre><code>1. 도메인 엔티티
+@Entity
+public class Order {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    private List&lt;MenuSelection&gt; menuSelections;
+
+    private String deliveryAddress;
+    private String paymentMethod;
+    private String status;
+
+    // Getters and setters
+}
+
+2. 리포지토리 인터페이스
+public interface OrderRepository extends JpaRepository&lt;Order, Long&gt; {
+}
+
+3. 서비스 계층
+기존의 JDBC를 사용하는 방식에서 JPA 리포지토리를 사용하는 방식으로 변경합니다.
+@Service
+public class OrderService {
+
+    private final OrderRepository orderRepository;
+
+    @Autowired
+    public OrderService(OrderRepository orderRepository) {
+        this.orderRepository = orderRepository;
+    }
+
+    public Order createOrder(OrderRequest orderRequest) {
+        Order order = new Order();
+        // Order 객체 생성
+        return orderRepository.save(order);
+    }
+}
+</code></pre>
+</div><div class="content"></div><div class="content"><pre><code>1. Domain
+package com.example.paymentmanagement.domain;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.math.BigDecimal;
+
+@Entity
+public class Payment {
+    @Id
+    private String paymentId;
+    private String method;
+    private BigDecimal amount;
+
+    // Constructors, Getters and Setters
+}
+
+2. Repository
+package com.example.paymentmanagement.repository;
+
+import com.example.paymentmanagement.domain.Payment;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PaymentRepository extends JpaRepository&lt;Payment, String&gt; {
+}
+
+3. Service
+
+package com.example.paymentmanagement.service;
+
+import com.example.paymentmanagement.domain.Payment;
+
+public interface PaymentService {
+    Payment createPayment(Payment payment);
+}
+
+</code></pre>
+</div><div class="content"></div><div class="content"><pre><code>    return (
+        &lt;div&gt;
+            &lt;h2&gt;Create Payment&lt;/h2&gt;
+            &lt;form onSubmit={handleSubmit}&gt;
+                Payment Method: &lt;input type=&quot;text&quot; value={paymentMethod} onChange={(e) =&gt; setPaymentMethod(e.target.value)} /&gt;
+                Amount: &lt;input type=&quot;text&quot; value={amount} onChange={(e) =&gt; setAmount(e.target.value)} /&gt;
+                &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    );
+}
+export default CreatePaymentComponent;
+</code></pre>
+</div></div></div></div></div></main><footer class="top-0 z-10 border-b bg-ui-background border-ui-border" data-v-6b832e4e><div class="py-10 border-t-2 border-ui-primary" style="border-color:#147c7f;" data-v-ffa9daa4 data-v-6b832e4e><div class="is-not-mobile-main-top" style="text-align:center;" data-v-ffa9daa4><div data-v-ffa9daa4> Copyright © uEngine All Rights Reserved | 주소 : 서울특별시 서초구 신반포로45길 18 502호(잠원동, 주일빌딩) </div><div data-v-ffa9daa4> 사업자등록번호 : 211-87-95355 | 전화번호 : 02-567-8301 | 대표이사 : 장진영 </div></div><div class="is-mobile-main-top" style="text-align:center;" data-v-ffa9daa4><div data-v-ffa9daa4>Copyright © uEngine All Rights Reserved</div><div data-v-ffa9daa4>주소 : 서울특별시 서초구 신반포로45길 18 502호(잠원동, 주일빌딩)</div><div data-v-ffa9daa4>사업자등록번호 : 211-87-95355</div><div data-v-ffa9daa4>전화번호 : 02-567-8301</div><div data-v-ffa9daa4>대표이사 : 장진영</div></div></div></footer></div><div style="position:fixed;z-index:999;right:5px;bottom:5px;" data-v-6b832e4e><button style="background-color:#147c7f;color:white;border-radius:100%;height:40px;width:40px;border:0;outline:0;" data-v-6b832e4e><span class="mdi mdi-wechat" style="font-size:30px;" data-v-6b832e4e></span></button></div></div></div></div>
+    <script>window.__INITIAL_STATE__={"data":{"thisPage":{"id":"ef65af528625f3df4341f189681a2066","name":"Legacy","mockData":"{\"Cursor IDE- 레거시 분석\u002F 전환\":\"compress\"}","source":"\u003Ctemplate\u003E\n    \u003Cdiv\u003E\n        \u003Cmark-down class=\"content\"\u003E\n            \n\n## AI를 활용한 레거시 분석 및 전환\n\n- 먼저 https:\u002F\u002Fgithub.com\u002Fmsa-school\u002Ffood-delivery-app-gen 에 접속하여 Github Repository fork를 진행합니다.\n\n- 이후, fork한 Repository를 PC에 내려받은 후 Cursor IDE에서 프로젝트를 실행합니다.\n\n- Ctrl + L \u003E '@'입력 \u003E 'Folders'클릭 \u003E 'order-management'클릭을 진행하여 폴더 내부의 파일 전체에 관한 질문을 보낼 수 있습니다.\n\n- 이후, 폴더 내부에 위치한 파일들의 이해를 목적으로 하는 프롬프트를 다음과 같이 입력합니다.\n```\nPrompt: 이 폴더가 전체적으로 뭘 하는지 설명해줘\n```\n- 프롬프팅 결과, 아래과 같이 코드 설명에 대한 내용을 생성합니다.\n```\norder-management 폴더는 주문 관리 시스템을 구현한 것입니다. \n이 시스템은 Spring Boot, JDBC, H2 데이터베이스를 사용하여 주문 생성 및 주문 상태를 업데이트하는 기능을 제공합니다. \n더불어 클래스나 JPA 리포지토리를 사용하지 않고, 서비스 레이어 컨트롤러에서 직접 SQL을 실행하여 데이터베이스와 상호작용합니다.\n\n\n주요 구성 요소는 다음과 같습니다:\n\n- Controller: HTTP 요청을 처리하며, 주문 생성 및 주문 상태 업데이트 요청을 서비스 계층으로 전달합니다.\n  - OrderController는 \u002Forders 엔드포인트를 통해 주문 생성(POST) 및 주문 상태 업데이트(PUT) 요청을 처리합니다.\n\n- Service: 비즈니스 로직을 수행합니다. 주문 생성 및 주문 상태 업데이트 요청을 처리합니다.\n  - OrderService는 JDBC를 사용하여 데이터베이스에 주문 정보를 생성하거나 업데이트합니다.\n\n- DTO(Data Transfer Object): 클라이언트와 서버 간 데이터 전송에 사용되는 객체입니다.\n  - OrderRequest와 UpdateOrderStatusRequest는 각각 주문 생성 및 주문 상태 업데이트 요청에 필요한 데이터를 담습니다.\n\n- Database Schema: H2 데이터베이스에 주문 정보를 저장하기 위한 스키마를 정의합니다.\n  - schema.sql 파일에는 orders 테이블 생성 구문이 포함되어 있습니다.\n\n- Maven Configuration (pom.xml): 프로젝트의 의존성 및 빌드 설정을 정의합니다. Spring Boot 3, H2 데이터베이스, JDBC 등의 의존성이 포함되어 있습니다.\n\n- Execution Script (run.sh): 프로젝트를 실행하고 실행하기 위한 스크립트입니다. Maven 명령어를 사용하여 Spring Boot 어플리케이션을 실행합니다.\n\n이 프로젝트는 주문 받고, 주문 상태를 업데이트하는 간단한 주문 관리 시스템을 구현하는 데 필요한 주요 구성 요소를 포함하고 있습니다.\n```\n\n다음은 폴더를 멘션한 상태에서 코드 품질을 평가하는 예제입니다.\n\n- 코드 분석을 진행한 Copilot 창에서 다음과 같이 프롬프트를 입력합니다.\n```\nPrompt: 어떤 아키텍쳐 스타일? 1.트랜잭션 스크립트 2. 액티브 오브젝트 3. 도메인 클래스\n```\n- 프롬프팅 결과, 아래와 같이 폴더가 사용중인 아키텍쳐 스타일에 대한 설명이 생성된 것을 확인할 수 있습니다.\n```\n이 프로젝트는 레거시 시스템을 아키텍처 스타일을 사용하고 있습니다. 이는 도메인 클래스나 JPA 리포지토리를 사용하지 않고, \n서비스 레이어에서 직접 SQL을 사용하여 데이터베이스와의 통신을 처리하는 방식으로 구현되어 있기 때문입니다. \n예를 들어, OrderService 클래스에서는 JDBC를 사용하여 직접 SQL 쿼리를 실행하고 있습니다.\nOrderService.java\npublic String createOrder(OrderRequest orderRequest) {\n    String sql = \"INSERT INTO orders (order_id, menu, delivery_address, payment_method) VALUES (?, ?, ?, ?)\";\n}\n\nOrderService.java\npublic String updateOrderStatus(String orderId, UpdateOrderStatusRequest updateOrderStatusRequest) {\n    String sql = \"UPDATE orders SET status = ? WHERE order_id = ?\";\n}\n이러한 형식은 각 트랜잭션을 개발 스크립트로 처리하는 트랜잭션 스크립트 패턴의 특징을 나타냅니다.\n```\n\n### 클래스다이어그램을 통한 정적분석\n\n- 클래스다이어그램을 통해 폴더를 분석하기 위해 다음과 같이 프롬프트를 입력합니다.\n```\nPrompt: 이 모듈의 구조를 클래스다이어그램으로 설명해줘\n```\n- 프롬프팅 결과, 아래와 같이 클래스 다이어그램으로 생성된 것을 확인할 수 있습니다.\n\u003C\u002Fmark-down\u003E\n\u003Cmark-down class=\"content\" source='\n\u003Cimg src=\"https:\u002F\u002Fgithub.com\u002Fmsa-ez\u002Fllmschool.github.io\u002Fassets\u002F123912988\u002Ff7f85504-2e84-4ded-ac84-da7d8802f017\" width=\"700\" height=\"600\" alt=\"\"\u003E\n'\u003E\u003C\u002Fmark-down\u003E\n\u003Cmark-down class=\"content\"\u003E\n### 시퀀스다이어그램을 통한 동적분석\n\n- 시퀀스다이어그램을 통해 폴더를 분석하기 위해 다음과 같이 프롬프트를 입력합니다.\n\n```\nPrompt: 이 모듈의 동작구조를 시퀀스다이어그램으로 설명해줘\n```\n- 프롬프팅 결과, 아래와 같이 시퀀스 다이어그램이 생성된 것을 확인할 수 있습니다.\n```\n시퀀스 다이어그램은 객체 간의 상호작용을 시간 순서에 따라 나타내는 UML 다이어그램입니다. OrderController와 관련된 클래스들의 동작 과정을 시퀀스 다이어그램으로 표현하면 다음과 같습니다.\n\n이 시나리오에서는 클라이언트가 OrderController를 통해 새로운 주문을 생성하는 과정을 나타냅니다.\n\n1. 클라이언트(Client)가 OrderController에 주문 생성 요청을 1회 요청합니다.\n2. OrderController는 OrderService의 createOrder 메소드를 호출하여 비즈니스 로직을 처리합니다.\n3. OrderService는 주문 정보를 데이터베이스에 저장하기 위해 JdbcTemplate을 사용합니다.\n4. 데이터베이스 작업이 성공적으로 완료되면, OrderService는 주문 ID를 반환합니다.\n5. OrderController는 클라이언트에게 응답을 반환합니다.\n\n+----------------+                     +-------------------+                     +----------------+\n|     Client     |                     |   OrderController |                     |  OrderService  |\n+----------------+                     +-------------------+                     +----------------+\n        |                                       |                                       |\n        |----- createOrder(request) -----------\u003E|                                       |\n        |                                       |----- createOrder(request) -----------\u003E|\n        |                                       |                                       |----- INSERT INTO orders(...) -----\u003E\n        |                                       |                                       |\u003C---- orderId -------------------|\n        |\u003C---- Response ------------------------|                                       |\n        |                                       |                                       |\n+----------------+                     +-------------------+                     +----------------+\n```\n\n* 결과값으로 다이어그램이 정상 생성되지 않는다면, 다음과 같이 프롬프트를 추가로 입력하여 나온 결과값을 복사하여 https:\u002F\u002Fsequencediagram.org\u002F 에 paste를 진행하면 생성된 결과값을 확인할 수 있습니다.\n\n```\nPrompt: sequencediagram.org 문법으로 작성해줘\n```\n\n### 신규 코드 스타일로 레거시 전환\n\nAI를 활용한다면 설계 패턴에 따라 코드를 변경하거나 다른 마이크로서비스의 코드를 참조하여 코드 스타일을 변경할 수 있습니다.\n\n먼저 설계 패턴에 따라 코드를 변경하는 방법입니다.\n\n- Copilot 창에 폴더 멘션을 진행한 상태에서 다음과 같이 프롬프트를 입력합니다.\n```\nPrompt: 해당 어플리케이션을 Clean Architecture와 JPA를 사용하는 방식으로 전환해줘\n```\n- 프롬프팅 결과, 아래와 같이 전환된 코드가 생성되는 것을 확인할 수 있습니다.\n\u003C\u002Fmark-down\u003E\n\u003Cmark-down class=\"content\" source='\n```\n1. 도메인 엔티티\n@Entity\npublic class Order {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n\n    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)\n    private List\u003CMenuSelection\u003E menuSelections;\n\n    private String deliveryAddress;\n    private String paymentMethod;\n    private String status;\n\n    \u002F\u002F Getters and setters\n}\n\n2. 리포지토리 인터페이스\npublic interface OrderRepository extends JpaRepository\u003COrder, Long\u003E {\n}\n\n3. 서비스 계층\n기존의 JDBC를 사용하는 방식에서 JPA 리포지토리를 사용하는 방식으로 변경합니다.\n@Service\npublic class OrderService {\n\n    private final OrderRepository orderRepository;\n\n    @Autowired\n    public OrderService(OrderRepository orderRepository) {\n        this.orderRepository = orderRepository;\n    }\n\n    public Order createOrder(OrderRequest orderRequest) {\n        Order order = new Order();\n        \u002F\u002F Order 객체 생성\n        return orderRepository.save(order);\n    }\n}\n```\n'\u003E\u003C\u002Fmark-down\u003E\n\u003Cmark-down class=\"content\"\u003E\n다음은 JSP기반으로 구성된 파일을 분리하여 요구사항에 맞게 코드를 전환하는 예제입니다.\nJSP란 Java를 이용한 서버 사이드 템플릿 엔진이며, 자바를 웹서버에서 사용하기 위한 도구를 의미합니다.\n\n- 먼저, 'createPayment.jsp'파일을 띄운 후 Ctrl + L OPEN AI를 실행합니다.\n\n- 이후 다음과 같이 프롬프트를 입력합니다.\n```\nPrompt: 이 jsp파일을 클린아키텍쳐로 전환하려고해. 프론트엔드는 react.js로 백엔드는 spring-boot로 전환할거고 이해했다면 ok라고만 답해줘.\n```\n프롬프트에 대한 결과값을 바로 반환하지 않는 이유는 예상되는 결과값 즉, context가 클 경우 OPEN AI가 가지고 있는 토큰수의 범위내에서 답변하려는 성질로 인해 좋은 결과값을 기대하기 어렵습니다.\n따라서 사전에 파일과 요구사항에 대한 정보를 제공하고 이후 전체 요구사항을 분리하여 더욱 좋은 결과값을 반환시키도록 해야합니다. \n\n- 먼저 백엔드에 대한 코드를 생성하기 위해 다음과 같이 프롬프트를 입력합니다.\n```\nPrompt: 백엔드부터 클린아키텍쳐로 전환해줘\n```\n- 프롬프팅 결과, 사전에 제공받은 정보중 백엔드에 관한 정보를 토대로 클린아키텍쳐로 전환한 코드를 아래와 같이 생성합니다.\n\u003C\u002Fmark-down\u003E\n\u003Cmark-down class=\"content\" source='\n```\n1. Domain\npackage com.example.paymentmanagement.domain;\n\nimport javax.persistence.Entity;\nimport javax.persistence.Id;\nimport java.math.BigDecimal;\n\n@Entity\npublic class Payment {\n    @Id\n    private String paymentId;\n    private String method;\n    private BigDecimal amount;\n\n    \u002F\u002F Constructors, Getters and Setters\n}\n\n2. Repository\npackage com.example.paymentmanagement.repository;\n\nimport com.example.paymentmanagement.domain.Payment;\nimport org.springframework.data.jpa.repository.JpaRepository;\n\npublic interface PaymentRepository extends JpaRepository\u003CPayment, String\u003E {\n}\n\n3. Service\n\npackage com.example.paymentmanagement.service;\n\nimport com.example.paymentmanagement.domain.Payment;\n\npublic interface PaymentService {\n    Payment createPayment(Payment payment);\n}\n\n```\n'\u003E\u003C\u002Fmark-down\u003E\n\u003Cmark-down class=\"content\"\u003E\n    \n- 이후 프론트엔드에 대한 코드를 생성하기 위해 다음과 같이 프롬프트를 입력합니다.\n```\nPrompt: 프론트엔트도 전환해줘\n```\n- 프롬프팅 결과, 백엔드와 마찬가지로 사전에 제공받은 정보중 프론트엔드에 관한 요구사항을 토대로 전환한 코드를 아래와 같이 생성된 것을 확인할 수 있습니다.\n\n```\nimport React, { useState } from 'react';\nimport axios from 'axios';\n\nfunction CreatePaymentComponent() {\n    const [paymentMethod, setPaymentMethod] = useState('');\n    const [amount, setAmount] = useState('');\n\n    const handleSubmit = async (e) =\u003E {\n        e.preventDefault();\n        try {\n            const response = await axios.post('\u002Fpayments', {\n                method: paymentMethod,\n                amount: amount,\n            });\n            console.log('Payment Created:', response.data);\n            \u002F\u002F Reset form or handle success\n        } catch (error) {\n            console.error('Error creating payment:', error);\n            \u002F\u002F Handle error\n        }\n    };\n\u003C\u002Fmark-down\u003E\n\u003Cmark-down class=\"content\" source='\n```\n    return (\n        \u003Cdiv\u003E\n            \u003Ch2\u003ECreate Payment\u003C\u002Fh2\u003E\n            \u003Cform onSubmit={handleSubmit}\u003E\n                Payment Method: \u003Cinput type=\"text\" value={paymentMethod} onChange={(e) =\u003E setPaymentMethod(e.target.value)} \u002F\u003E\n                Amount: \u003Cinput type=\"text\" value={amount} onChange={(e) =\u003E setAmount(e.target.value)} \u002F\u003E\n                \u003Cinput type=\"submit\" value=\"Submit\" \u002F\u003E\n            \u003C\u002Fform\u003E\n        \u003C\u002Fdiv\u003E\n    );\n}\nexport default CreatePaymentComponent;\n```\n'\u003E\u003C\u002Fmark-down\u003E\n    \u003C\u002Fdiv\u003E\n\u003C\u002Ftemplate\u003E\n\n\n\u003Cscript\u003E\n    \u002F\u002F @group 01_01_04\n    export default {\n        name:'Legacy',\n        data() {\n            return {}\n        },\n        props: {\n            \"Cursor IDE- 레거시 분석\u002F 전환\": {\n                type: String\n            },\n        },\n    }\n\u003C\u002Fscript\u003E\n","path":"\u002Foperation\u002Fintroduction\u002Flegacy\u002F","props":[{"name":"Cursor IDE- 레거시 분석\u002F 전환"}],"componentDesc":{"group":["01_01_04"]},"fileInfo":{"name":"Legacy","path":"operation\u002Fintroduction\u002FLegacy.vue","directory":"operation\u002Fintroduction"}},"allPagesByName":{"edges":[{"node":{"id":"ddac7512ff1cb42577161679388846a0","name":"index","path":"\u002Foperation\u002Fimplement\u002F","props":[{"name":"구현"}],"componentDesc":{"group":[]},"fileInfo":{"name":"index","path":"operation\u002Fimplement\u002Findex.vue","directory":"operation\u002Fimplement"}}},{"node":{"id":"491a019883e24d1ade45318efd39fa7e","name":"index","path":"\u002Foperation\u002Fcourse\u002F","props":[{"name":"교육과정 소개"}],"componentDesc":{"group":[]},"fileInfo":{"name":"index","path":"operation\u002Fcourse\u002Findex.vue","directory":"operation\u002Fcourse"}}},{"node":{"id":"f0100491817a80d842db3752e7a6c4f6","name":"index","path":"\u002Foperation\u002Fllm\u002F","props":[{"name":"설치형 LLM"}],"componentDesc":{"group":[]},"fileInfo":{"name":"index","path":"operation\u002Fllm\u002Findex.vue","directory":"operation\u002Fllm"}}},{"node":{"id":"455485b89fc07a2011135c71b3e5b06d","name":"index","path":"\u002Foperation\u002Fintroduction\u002F","props":[{"name":"AI Tools"}],"componentDesc":{"group":[]},"fileInfo":{"name":"index","path":"operation\u002Fintroduction\u002Findex.vue","directory":"operation\u002Fintroduction"}}},{"node":{"id":"dfe15286a0af9af4cf957c89714797f4","name":"index","path":"\u002Foperation\u002Fllm-msaez\u002F","props":[{"name":"설치형 LLM 기반 MSAEZ 연동"}],"componentDesc":{"group":[]},"fileInfo":{"name":"index","path":"operation\u002Fllm-msaez\u002Findex.vue","directory":"operation\u002Fllm-msaez"}}},{"node":{"id":"0bb6a8c5fa0e1266e2ccecc243fa5470","name":"index","path":"\u002Foperation\u002Foperate\u002F","props":[{"name":"배포\u002F운영"}],"componentDesc":{"group":[]},"fileInfo":{"name":"index","path":"operation\u002Foperate\u002Findex.vue","directory":"operation\u002Foperate"}}},{"node":{"id":"eeaab9630dc4711635747aa9fda862d7","name":"index","path":"\u002Foperation\u002Fplanning\u002F","props":[{"name":"분석\u002F설계"}],"componentDesc":{"group":[]},"fileInfo":{"name":"index","path":"operation\u002Fplanning\u002Findex.vue","directory":"operation\u002Fplanning"}}},{"node":{"id":"ca5edeb926047bc16e52379ccb4cdbd6","name":"IDE","path":"\u002Foperation\u002Fintroduction\u002Fide\u002F","props":[{"name":"Cursor IDE"}],"componentDesc":{"group":["01_01_02"]},"fileInfo":{"name":"IDE","path":"operation\u002Fintroduction\u002FIDE.vue","directory":"operation\u002Fintroduction"}}},{"node":{"id":"b226ba8089a5b8e4cc79a46bdf60d587","name":"SW","path":"\u002Foperation\u002Fintroduction\u002Fsw\u002F","props":[{"name":"Cursor IDE- 테스트\u002F 디자인 패턴"}],"componentDesc":{"group":["01_01_03"]},"fileInfo":{"name":"SW","path":"operation\u002Fintroduction\u002FSW.vue","directory":"operation\u002Fintroduction"}}},{"node":{"id":"ef65af528625f3df4341f189681a2066","name":"Legacy","path":"\u002Foperation\u002Fintroduction\u002Flegacy\u002F","props":[{"name":"Cursor IDE- 레거시 분석\u002F 전환"}],"componentDesc":{"group":["01_01_04"]},"fileInfo":{"name":"Legacy","path":"operation\u002Fintroduction\u002FLegacy.vue","directory":"operation\u002Fintroduction"}}},{"node":{"id":"d894f03fb84bd2357e5f6115f61b2cd9","name":"GPT-Engineer","path":"\u002Foperation\u002Fintroduction\u002Fgpt-engineer\u002F","props":[{"name":"GPT-Engineer"}],"componentDesc":{"group":["01_01_05"]},"fileInfo":{"name":"Gpt-engineer","path":"operation\u002Fintroduction\u002FGpt-engineer.vue","directory":"operation\u002Fintroduction"}}},{"node":{"id":"7e9f91dcd66fc903b29ed35c1bdb3953","name":"Continue","path":"\u002Foperation\u002Fintroduction\u002Fcontinue\u002F","props":[{"name":"Continue"}],"componentDesc":{"group":["01_01_06"]},"fileInfo":{"name":"Continue","path":"operation\u002Fintroduction\u002FContinue.vue","directory":"operation\u002Fintroduction"}}},{"node":{"id":"8436578d14e4c980d7c1ee8fa899962a","name":"Kubernetes","path":"\u002Foperation\u002Fintroduction\u002Fkubectl-ai\u002F","props":[{"name":"Kubectl-ai \u002F K8sGPT"}],"componentDesc":{"group":["01_01_07"]},"fileInfo":{"name":"Kubectl-AI","path":"operation\u002Fintroduction\u002FKubectl-AI.vue","directory":"operation\u002Fintroduction"}}},{"node":{"id":"3bd2f88491ffe8e5d3e0cb8f5ad49c5e","name":"GPT-Engineer-dev","path":"\u002Foperation\u002Fimplement\u002Fgpt-engineer-dev\u002F","props":[{"name":"GPT-Engineer를 활용한 MSA 구현"}],"componentDesc":{"group":["01_03_02"]},"fileInfo":{"name":"GPT-Engineer-dev","path":"operation\u002Fimplement\u002FGPT-Engineer-dev.vue","directory":"operation\u002Fimplement"}}},{"node":{"id":"bec8e6134b4833a31df0a230c20b0464","name":"Copilot-dev","path":"\u002Foperation\u002Fimplement\u002Fcopilot-dev\u002F","props":[{"name":"Copilot을 활용한 비즈니스 로직 구현"}],"componentDesc":{"group":["01_03_03"]},"fileInfo":{"name":"Copilot-dev","path":"operation\u002Fimplement\u002FCopilot-dev.vue","directory":"operation\u002Fimplement"}}},{"node":{"id":"c6aafe599a891c74b0fb229795490cdd","name":"Fastfood","path":"\u002Foperation\u002Foperate\u002Fcopilot-dockerising\u002F","props":[{"name":"Copilot을 활용한 클라우드 배포 준비"}],"componentDesc":{"group":["01_04_02"]},"fileInfo":{"name":"Copilot-dockerising","path":"operation\u002Foperate\u002FCopilot-dockerising.vue","directory":"operation\u002Foperate"}}},{"node":{"id":"ac0be07f9c57dce30509a7d323a406e6","name":"Kubectl-ai","path":"\u002Foperation\u002Foperate\u002Fkubectl-ai\u002F","props":[{"name":"AI기반 YAML 자동생성&오케스트레이션"}],"componentDesc":{"group":["01_04_03"]},"fileInfo":{"name":"Kubectl-ai","path":"operation\u002Foperate\u002FKubectl-ai.vue","directory":"operation\u002Foperate"}}},{"node":{"id":"f3d7168080d3c0d2ee96cd83a9434c8c","name":"Ai-ops-trouble-shooting","path":"\u002Foperation\u002Foperate\u002Fai-ops-trouble-shooting\u002F","props":[{"name":"AI Ops Trouble shooting"}],"componentDesc":{"group":["01_04_04"]},"fileInfo":{"name":"Ai-ops-trouble-shooting","path":"operation\u002Foperate\u002FAi-ops-trouble-shooting.vue","directory":"operation\u002Foperate"}}},{"node":{"id":"8de86484c2e4943142d33cb5568bad99","name":"AutoModeling","path":"\u002Foperation\u002Fplanning\u002Fai-auto-modeling\u002F","props":[{"name":"AI를 활용한 MSA설계"}],"componentDesc":{"group":["02_01_02"]},"fileInfo":{"name":"Ai-auto-modeling","path":"operation\u002Fplanning\u002FAi-auto-modeling.vue","directory":"operation\u002Fplanning"}}},{"node":{"id":"67fce1267a39c0a7bb0c5dd6c672bf5c","name":"LLM-Model","path":"\u002Foperation\u002Fllm\u002Fllm-model\u002F","props":[{"name":"Open source LLM"}],"componentDesc":{"group":["05_01_02"]},"fileInfo":{"name":"LLM-model","path":"operation\u002Fllm\u002FLLM-model.vue","directory":"operation\u002Fllm"}}},{"node":{"id":"9c1074d7fbbfa5a2fe4bb5f110a69a37","name":"LLM-Setting","path":"\u002Foperation\u002Fllm\u002Fllm-setting\u002F","props":[{"name":"설치형 LLM 기반 개발 환경 구성"}],"componentDesc":{"group":["05_01_03"]},"fileInfo":{"name":"LLM-setting","path":"operation\u002Fllm\u002FLLM-setting.vue","directory":"operation\u002Fllm"}}},{"node":{"id":"54af858485f4cecbf0bea2b4c50dd6ca","name":"Ollama","path":"\u002Foperation\u002Fllm\u002Follama\u002F","props":[{"name":"Ollama"}],"componentDesc":{"group":["05_01_04"]},"fileInfo":{"name":"ollama","path":"operation\u002Fllm\u002Follama.vue","directory":"operation\u002Fllm"}}},{"node":{"id":"0e989c2b68ff917575cb42a2c11b2b59","name":"Open-Web","path":"\u002Foperation\u002Fllm\u002Fopen-web-ui\u002F","props":[{"name":"Open Web UI"}],"componentDesc":{"group":["05_01_05"]},"fileInfo":{"name":"open-web-ui","path":"operation\u002Fllm\u002Fopen-web-ui.vue","directory":"operation\u002Fllm"}}}]},"allPages":{"edges":[{"node":{"name":"Legacy","path":"\u002Foperation\u002Fintroduction\u002Flegacy\u002F","fileInfo":{"name":"Legacy","directory":"operation\u002Fintroduction"}}},{"node":{"name":"index","path":"\u002Foperation\u002Fplanning\u002F","fileInfo":{"name":"index","directory":"operation\u002Fplanning"}}},{"node":{"name":"AutoModeling","path":"\u002Foperation\u002Fplanning\u002Fai-auto-modeling\u002F","fileInfo":{"name":"Ai-auto-modeling","directory":"operation\u002Fplanning"}}},{"node":{"name":"Continue","path":"\u002Foperation\u002Fintroduction\u002Fcontinue\u002F","fileInfo":{"name":"Continue","directory":"operation\u002Fintroduction"}}},{"node":{"name":"Kubernetes","path":"\u002Foperation\u002Fintroduction\u002Fkubectl-ai\u002F","fileInfo":{"name":"Kubectl-AI","directory":"operation\u002Fintroduction"}}},{"node":{"name":"Ai-ops-trouble-shooting","path":"\u002Foperation\u002Foperate\u002Fai-ops-trouble-shooting\u002F","fileInfo":{"name":"Ai-ops-trouble-shooting","directory":"operation\u002Foperate"}}},{"node":{"name":"index","path":"\u002Foperation\u002Foperate\u002F","fileInfo":{"name":"index","directory":"operation\u002Foperate"}}},{"node":{"name":"Kubectl-ai","path":"\u002Foperation\u002Foperate\u002Fkubectl-ai\u002F","fileInfo":{"name":"Kubectl-ai","directory":"operation\u002Foperate"}}},{"node":{"name":"Fastfood","path":"\u002Foperation\u002Foperate\u002Fcopilot-dockerising\u002F","fileInfo":{"name":"Copilot-dockerising","directory":"operation\u002Foperate"}}},{"node":{"name":"index","path":"\u002Foperation\u002Fllm-msaez\u002F","fileInfo":{"name":"index","directory":"operation\u002Fllm-msaez"}}},{"node":{"name":"LLM-Setting","path":"\u002Foperation\u002Fllm\u002Fllm-setting\u002F","fileInfo":{"name":"LLM-setting","directory":"operation\u002Fllm"}}},{"node":{"name":"index","path":"\u002Foperation\u002Fintroduction\u002F","fileInfo":{"name":"index","directory":"operation\u002Fintroduction"}}},{"node":{"name":"Ollama","path":"\u002Foperation\u002Fllm\u002Follama\u002F","fileInfo":{"name":"ollama","directory":"operation\u002Fllm"}}},{"node":{"name":"GPT-Engineer","path":"\u002Foperation\u002Fintroduction\u002Fgpt-engineer\u002F","fileInfo":{"name":"Gpt-engineer","directory":"operation\u002Fintroduction"}}},{"node":{"name":"Open-Web","path":"\u002Foperation\u002Fllm\u002Fopen-web-ui\u002F","fileInfo":{"name":"open-web-ui","directory":"operation\u002Fllm"}}},{"node":{"name":"index","path":"\u002Foperation\u002Fllm\u002F","fileInfo":{"name":"index","directory":"operation\u002Fllm"}}},{"node":{"name":"Copilot-dev","path":"\u002Foperation\u002Fimplement\u002Fcopilot-dev\u002F","fileInfo":{"name":"Copilot-dev","directory":"operation\u002Fimplement"}}},{"node":{"name":"LLM-Model","path":"\u002Foperation\u002Fllm\u002Fllm-model\u002F","fileInfo":{"name":"LLM-model","directory":"operation\u002Fllm"}}},{"node":{"name":"SW","path":"\u002Foperation\u002Fintroduction\u002Fsw\u002F","fileInfo":{"name":"SW","directory":"operation\u002Fintroduction"}}},{"node":{"name":"IDE","path":"\u002Foperation\u002Fintroduction\u002Fide\u002F","fileInfo":{"name":"IDE","directory":"operation\u002Fintroduction"}}},{"node":{"name":"index","path":"\u002Foperation\u002Fcourse\u002F","fileInfo":{"name":"index","directory":"operation\u002Fcourse"}}},{"node":{"name":"index","path":"\u002Foperation\u002Fimplement\u002F","fileInfo":{"name":"index","directory":"operation\u002Fimplement"}}},{"node":{"name":"GPT-Engineer-dev","path":"\u002Foperation\u002Fimplement\u002Fgpt-engineer-dev\u002F","fileInfo":{"name":"GPT-Engineer-dev","directory":"operation\u002Fimplement"}}}]}},"context":{"pathRegexp":"^$path.+$"}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.4c841c88.js" defer></script><script src="/assets/js/page--src--templates--vue-page-vue.ddf4d22d.js" defer></script>
+  </body>
+</html>
