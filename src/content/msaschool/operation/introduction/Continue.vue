@@ -3,13 +3,13 @@
         <mark-down class="content">
             
 
-## Copilot
+## Continue Copilot
 
 Copilot은 개발자들이 코드를 더 빠르고 효율적으로 작성할 수 있도록 돕는 AI 기반의 코드 생성 및 보조 도구를 의미합니다. 
 
-그중 Continue는 Copilot의 확장 기능 중 하나로 작성한 코드를 기반으로 추가적인 코드를 생성 및 수정하거나 특정 작업을 수행하는 도구입니다.
+그중 Continue는 Copilot의 확장 기능 중 하나로, 작성한 코드를 기반으로 추가적인 코드를 생성 및 수정하거나 특정 작업을 수행하는 도구입니다. 이러한 Copilot은 최근 클라우드 IDE(Cursor, VSCode, GitHub Codespaces)상에서 확장 플러그인으로 설치 가능합니다.
 
-다음은 Codespace 환경에서 Continue를 설정하고 활용하는 예제입니다.
+다음은 Continue를 설정하고 활용하는 예제입니다.
  
 ## 확장 플러그인 Continue 설치
 

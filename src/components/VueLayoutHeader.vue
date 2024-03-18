@@ -110,7 +110,7 @@
                             title="Home"
                             style="margin-right:190px;"
                     >
-                        <Logo/>
+                    <img src="../img/llmschool_logo.png" style="width:208px; height:50px;">
                     </g-link>
                     <ClientOnly>
                         <VueSearch v-if="!isSmall"></VueSearch>

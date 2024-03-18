@@ -3,62 +3,81 @@
         <mark-down class="content">
             
 
-## Copilot
 
-Copilot은 개발자들이 코드를 더 빠르고 효율적으로 작성할 수 있도록 돕는 AI 기반의 코드 생성 및 보조 도구를 의미합니다. 
+## Kubernetes AI Plug-in
 
-그중 Continue는 Copilot의 확장 기능 중 하나로 작성한 코드를 기반으로 추가적인 코드를 생성 및 수정하거나 특정 작업을 수행하는 도구입니다.
+AI 어시스턴트를 활용한 페어 프로그래밍으로 구현 및 테스트가 끝난 마이크로서비스는 메뉴얼 방식, 또는 파이프라인을 통한 자동방식으로 쿠버네티스에 배포합니다. 쿠버네티스에 배포하려면 배포를 위한 메니페스트(Manifest), 즉 배포 내용을 선언적으로 기술한 배포 기술자(Deployment Descriptor)가 필요합니다.
 
-다음은 Codespace 환경에서 Continue를 설정하고 활용하는 예제입니다.
- 
-## 확장 플러그인 Continue 설치
+LLM School에서는 배포를 위한 Manifest 자동생성과 배포된 마이크로서비스에 대한 오케스트레이션, 쿠버네티스 Security Scanning 및 트러블 슈팅을 위한 Kubernetes AIOps Plug-in인 Kubectl-ai, Kubectl GPT, K8sGPT에 대해 간략히 소개합니다.
 
-- 생성한 Codespaces에서 플러그인 Continue를 설치하기 위해, 좌측 'Extension' 클릭 > Continue를 입력 > 설치 버튼을 클릭합니다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/808d91dd-7bab-4290-8020-263ff5a4b14c)
+### AIOps Plug-ins
 
-- 이후 Countinue의 버전을 변경하기 위해 더보기('...') > 확장 업데이트 확인을 클릭한 후 Codespaces를 재실행하면 최신 버전의 Continue를 이용할 수 있습니다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/cd182f5f-6a96-4f89-a06f-a1235198f4a8)
+1. Kubectl-ai
 
-## GPT4 API-KEY 설정
-- Continue 화면 하단 '+' 클릭 > 'Open AI' 클릭 > APIKEY 입력을 진행합니다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/c6706311-3bf2-4f18-ae86-b4a2d0d2260d)
-
-- 이후 하단의 'Open config.json'을 클릭하면 config.json파일에 입력한 APIKEY를 확인할 수 있고 GPT4를 이용할 수 있습니다.
-
-## Continue 맛보기
-
-- 탐색기 영역에서 Gugudan.java 파일을 생성합니다.
-- Ctrl + Shift + M을 입력하면 화면 우측에 Continue가 생성된 것을 확인할 수 있습니다.
-- 입력창에 '구구단 프로그램 짜줘'라고 입력 후 출력된 결과를 확인하면 다음과 같습니다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/9ce86d06-0dee-4f22-a633-b16d33725a8a)
-
-- 코드가 python언어 기반으로 생성된 것을 확인할 수 있습니다. 이를 Java언어로 변경하기 위해 추가 요청을 보낸 후 정상적으로 생성된 것이 확인되었다면 'Apply to current file' 아이콘을 클릭하여 Gugudan.java에 구구단 프로그램 코드를 적용합니다.
-![image](https://github.com/kimkyusook/codespace-copilot/assets/123912988/8572e5bb-eb8b-4a3c-a77b-5f590deb70a0)
-
-
-- 코드를 실행하기 위해 터미널에서 다음과 같이 입력하여 Gugudan.java를 실행합니다.
-
+쿠버네티스를 컨트롤하는 로컬 머신에 설치되어 'kubectl ai'와 같이 쿠버네티스 클라이언트의 오퍼레이션으로 동작합니다.
+동작을 위한 샘플 프롬프트와 그 결과는 아래와 같습니다. 
 ```
-javac Gugudan.java
+kubectl ai "3개의 복제본을 가지는 주문서비스 배포 YAML을 생성해"
 ```
-- 파일을 실행하면 다음과 같은 오류가 발생한 것을 확인할 수 있습니다.
 
+위 프롬프트에 대해, AI 어시스턴트는 아래 YAML을 생성해 줍니다.
 ```
-Gugudan.java:1: error: class Main is public, should be declared in a file named Main.java
-public class Main {
-       ^
-1 error
-}
-```
-- 오류를 해결하기위해 Ctrl + Shift + R을 입력하면 터미널의 오류가 프롬프트로 입력되며 답변이 자동으로 생성되는 것을 확인할 수 있습니다.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+	app: nginx
+spec:
+  replicas: 3
+  selector:
+	matchLabels:
+  	app: nginx
+  template:
+	metadata:
+  	labels:
+    	app: nginx
+	spec:
+  	containers:
+  	- name: nginx
+    	image: nginx:1.7.9
+    	ports:
+    	- containerPort: 80
+```    	
 
-- 출력된 답변을 확인하면 클래스의 이름과 파일이름이 달라 발생한 문제임을 확인할 수 있고, Apply버튼을 클릭하여 기존 코드를 수정합니다.
+응답 결과에서 사용자는 'Reprompt'로 재 생성하거나, 'Apply'를 통해 바로 내 클러스터에 객체를 생성할 수 있습니다.  
 
-- 이후 다시 터미널에 다음과 같이 입력하여 Gugudan.java파일의 실행과 구구단프로그램을 실행하면 정상적으로 실행되는 것을 확인할 수 있습니다.
+
+2. Kubectl-gpt
+
+이 플러그인은 배포된 마이크로서비스에 대해 운영 관점에서 오케스트레이션 명령을 생성해 주는 AI 어시스턴트로, 자동 스케일 아웃, 클라우드 볼륨 핸들링(PVC), 등 배포된 서비스에 대한 지속적인 관리에 필요한 쿠버네티스 커맨드를 자동 생성해 줍니다.
+
+쿠버네티스를 컨트롤하는 로컬 머신에 설치되어 'kubectl gpt'와 같이 쿠버네티스 클라이언트의 오퍼레이션으로 동작합니다.
+동작을 위한 샘플 프롬프트와 그 결과는 아래와 같습니다. 
 ```
-javac Gugudan.java
-java Gugudan
+kubectl gpt "주문 서비스의 복제본을 5개로 확장시켜 줘."
 ```
+
+위 프롬프트에 대해, AI 어시스턴트는 아래 Kubernetes Command를 생성해 줍니다.
+```
+kubectl scale deployment order --replicas=5
+```
+
+3. K8sGPT
+
+K8sGPT는 Kubernetes 클러스터 내에서 발생하는 문제를 표시하도록 설계된 기본 명령이 포함된 CLI 도구입니다. 현재 쿠버네티스 클라이언트에 설정된 컨텍스트 클러스트 상에 문제점을 파악하고, 문제점을 해결하기 위한 솔루션을 자연어 기반으로 제공해 줍니다.
+
+
+쿠버네티스를 컨트롤하는 로컬 머신에 설치되어 'k8sgpt'와 같이 별도의 바이너리로 실행되어 동작합니다.
+동작을 위한 샘플 프롬프트와 그 결과는 아래와 같습니다. 
+```
+k8sgpt analyze --explain
+```
+
+위 프롬프트에 대해, AI 어시스턴트는 설정된 타겟 클러스터의 문제점을 파악하고, 모든 문제점에 대한 솔루션을 제시하며, 노드, 포드, PVC, ReplicaSet, 서비스, 이벤트, 수신, StatefulSet, 배포, CronJobs, NetworkPolicies, 심지어 HPA 및 PDB를 포함한 수많은 Kubernetes 객체에 대한 내장 분석기를 제공합니다. 
+
+
+위에 언급된 AIOps 플러그인들은 최신 LLM 모델상에서도 동작하며 자연어(NLP: Natural Language Processing)처리를 지원합니다. 플러그인들이 동작하려면 OpenAI API 키 설정이 추가로 필요합니다.
         </mark-down>
 
     </div>
