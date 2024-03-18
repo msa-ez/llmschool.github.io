@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 const c1 = () => import(/* webpackChunkName: "page--src--templates--vue-page-vue" */ "/Users/dufwjdrndl/Desktop/uengine/llmschool.github.io/src/templates/VuePage.vue")
 const c2 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/dufwjdrndl/Desktop/uengine/llmschool.github.io/node_modules/gridsome/app/pages/404.vue")
 const c3 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/dufwjdrndl/Desktop/uengine/llmschool.github.io/src/pages/Index.vue")
+=======
+const c1 = () => import(/* webpackChunkName: "page--src--templates--vue-page-vue" */ "/Users/user/Desktop/llmschool.github.io/src/templates/VuePage.vue")
+const c2 = () => import(/* webpackChunkName: "page--src--pages--404-vue" */ "/Users/user/Desktop/llmschool.github.io/src/pages/404.vue")
+const c3 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/user/Desktop/llmschool.github.io/src/pages/Index.vue")
+>>>>>>> 917170dea569772c0c2209956bb2e361a5cd779b
 
 export default [
   {
@@ -25,6 +31,10 @@ export default [
   },
   {
     path: "/operation/llm/llm-setting/",
+    component: c1
+  },
+  {
+    path: "/operation/introduction/kubectl-ai/",
     component: c1
   },
   {

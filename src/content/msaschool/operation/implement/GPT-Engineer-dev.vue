@@ -25,11 +25,11 @@ sdk install java 17.0.4.1-tem &lt; /dev/null
 ``` 
 
 3. Continue Copilot 설정
+Continue는 OPENAI의 API-Key를 설정하여 다양한 LLM 모델을 지정할 수 있습니다. 다음은 Continue로 GPT-4 모델을 지정하는 방법입니다.
 ```
-- 좌측 사이드바에 생긴 'Continue' 아이콘을 클릭 후 드래그하여 (편의상) IDE 우측에 위치시킨다.
-- 'Continue' 패널 아래쪽 '+'를 눌러, AI Backend Provider와 LLM 모델을 지정한다.
-- 랩에서는 'OepnAI' 프로바이더에 API-Key를 넣은 다음 'GPT-4' 모델을 선택한다.
-- 하단 모델 선택창에서 추가된 'GPT-4'를 선택해 설정을 마무리한다.
+- 좌측 사이드바에 생긴 'Continue' 아이콘을 클릭 후 드래그하여 (편의상) IDE 우측에 위치시킵니다.
+- 'Continue' 패널 아래쪽 '+'를 눌러, AI Backend Provider와 LLM 모델을 지정합니다.
+- 'OepnAI' 프로바이더에 API-Key를 넣은 다음 'GPT-4' 모델을 선택합니다.
 ```
 
 ## Auto Pilot 스크립트 설정
@@ -37,7 +37,7 @@ sdk install java 17.0.4.1-tem &lt; /dev/null
 ![image](https://github.com/acmexii/demo/assets/35618409/84537a7e-7b18-4377-ad58-3a0cb1eefef9)
 
 - Auto Pilot(GPT Engineer)가 사용할 LLM 연동을 위해 API Key를 등록합니다. 
-- gpt-engineer 폴더 하위에 .env 파일을 생성하고 다음과 같이 API-Key를 설정한다.
+- gpt-engineer 폴더 하위에 .env 파일을 생성하고 다음과 같이 API-Key를 설정합니다.
 ```
 OPENAI_API_KEY=my api key
 ```

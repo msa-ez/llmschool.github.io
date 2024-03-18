@@ -23,11 +23,9 @@ public Consumer<Message<OrderPlaced>> wheneverOrderPlaced_AcceptOrder() {
 <mark-down class="content">
 
 이후, ^M('Select Code')을 눌러 나타난 프롬프트 창에서 Food Delivery의 다음의 시나리오를 만족하도록 프롬프트를 입력합니다.
-
-
 ```
 시나리오: 주문이 발생하면 상점주를 위한 'store' 서비스로 주문 정보가 자동 전달된다.
-Prompt (example) : 
+Prompt: 
 
 - @Codebase OrderPlaced 이벤트를 읽어, Store 도메인에 저장하는 코드를 생성하고, OrderAccepted 이벤트를 발송하는 코드를 생성해
 - @Codebase 저장할 도메인 클래스는 Store이고, 저장이 끝나면 OrderAccepted로 저장된 정보를 복사해 발송하는 로직으로 수정해 

@@ -4,8 +4,7 @@
             
 ## Kubectl OpenAI 활용
 
-Kubectl OpenAI plugin을 활용하여 배포 Manifest를 자동 생성하고, 배포된 컨테이너 객체에 대한 오케스트레이션을 수행하는 과정은 다음과 같습니다.
-각 서비스들의 배포 및 객체들의 Manifest 생성에는 Kubectl-ai 플러그인을, 배포된 서비스 오케스트레이션에는 Kubectl-gpt 플러그인을 활용하겠습니다.
+Kubectl-ai를 활용하여 각 서비스들의 배포 Manifest를 자동 생성하고, 배포된 컨테이너 객체에 대하여 Kubectl-gpt를 통해 오케스트레이션을 수행하는 과정은 다음과 같습니다.
 
 먼저 K8s Copliot 사용을 위해 다음과 같이 설치를 진행합니다.
 ```
@@ -15,18 +14,19 @@ brew install kubectl-ai
         </mark-down>
         <mark-down class="content" source="
 ### Set Open-API Key & Endpoint
-Kubectl ai를 사용하기 위해서는 OpenAI 계정으로 생성한 API Key(https://platform.openai.com/account/api-keys)가 있어야 합니다.
-export OPENAI_API_KEY=<your-key\>
-    
-    * 3.5 모델 사용시,
-    export OPENAI_DEPLOYMENT_NAME=gpt-3.5-turbo	
-    
-    * OPENAI_ENDPOINT 에는 AI 백엔드 및 모델(e.g Azure OpenAI, LocalAI, Cohere, Amazon Bedrock. etc) 엔드 포인트를 기술합니다. 
-    * 생략 시 기본 Open AI 사용합니다.
-    export OPENAI_ENDPOINT=<your OpenAI endpoint, like 'https://my-aoi-endpoint.openai.azure.com' or 'http://localhost:8080/v1'> 
-        ">
-        </mark-down>
-        <mark-down class="content">
+Kubectl ai를 사용하기 위해서 OPENAI API Key를 터미널에 다음과 같이 입력합니다.
+```
+export OPENAI_API_KEY=<your-key>
+``` 
+* 3.5 모델 사용시,
+export OPENAI_DEPLOYMENT_NAME=gpt-3.5-turbo	
+
+* OPENAI_ENDPOINT 에는 AI 백엔드 및 모델(e.g Azure OpenAI, LocalAI, Cohere, Amazon Bedrock. etc) 엔드 포인트를 기술합니다. 
+* 생략 시 기본 Open AI 사용합니다.
+export OPENAI_ENDPOINT=<your OpenAI endpoint, like 'https://my-aoi-endpoint.openai.azure.com' or 'http://localhost:8080/v1'> 
+">
+</mark-down>
+<mark-down class="content">
 ### AI를 활용한 주문서비스 자동 배포
         
 주문서비스 배포를 위해 apexacme/order:v1 이미지를 사용하는 배포 YAML 생성을 위한 프롬프트를 다음과 같이 입력합니다.
@@ -144,6 +144,7 @@ kubectl gpt "배포된 store 서비스 명을 찾아서 CPU 기반 평균 30%이
 ```
 kubectl gpt "store 서비스에 적용된 HPA 설정이 있으면 확인해서 알려줘."
 ```
+- 프롬프트의 결과로 HPA설정이 적용된 store 서비스를 나타내는 것을 확인할 수 있습니다. 
         </mark-down>
 
     </div>
@@ -158,7 +159,7 @@ kubectl gpt "store 서비스에 적용된 HPA 설정이 있으면 확인해서 �
             return {}
         },
         props: {
-            "AI기반 YAML 자동생성 & 오케스트레이션": {
+            "AI기반 YAML 자동생성&오케스트레이션": {
                 type: String
             },
         },

@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="content" style="margin-top:-30px;">
-            <h3 class="con-tit w190">LLM School 에는</h3>
-            <p style="font-weight: 700;">AI 코딩 전문가 양성을 위한 체계적인 업계 최고 커리큘럼이 준비되어 있습니다. 또한, 수강하시는 기업을 위해 다양하게 스케줄링된 학습 유형을 제공합니다.</p>
+            <h3 class="con-tit w220">LLM School 교과정은</h3>
+            <p style="font-weight: 700;">클라우드 네이티브 전문가가 되는 체계적인 업계 최고 커리큘럼이 준비되어 있습니다. 또한, 수강하시는 기업을 위해 다양하게 스케줄링된 학습 유형을 제공합니다.</p>
         </div>
         <br>
         <div class="is-not-mobile-main-top">

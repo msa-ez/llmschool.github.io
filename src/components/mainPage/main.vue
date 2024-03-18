@@ -5,8 +5,8 @@
         <mainCurriculumVue />
         <mainInstructorVue />
 
-        <!-- <div style="margin-top: -30px;" class="content">
-            <h3 class="con-tit w400">LLM School 교육 실적 및 주요 수강 기업</h3>
+        <div style="margin-top: -30px;" class="content">
+            <h3 class="con-tit w400">MSA School 교육 실적 및 주요 수강 기업</h3>
         </div>
         <v-row style="margin: 0; text-align: center;">
             <g-image class="is-not-mobile-main-top" style="margin: 10px 10px 0 0; width: 100%;"
@@ -24,7 +24,7 @@
         </div> 
         <iframe style="border: 0; width: 100%; height: 600px; margin: 10px 0;" frameborder="0" scrolling="no"
             src="https://calendar.google.com/calendar/embed?src=help%40uengine.org&ctz=Asia%2FSeoul">
-        </iframe>
+        </iframe> -->
     </div>
 </template>
   
@@ -81,7 +81,7 @@ export default {
 .con-tit::after {
     content: "";
     display: block;
-    width: 170px;
+    width: 200px;
     height: 2px;
     background-color: #333;
     margin-top: 5px;
@@ -89,6 +89,9 @@ export default {
 }
 .w120::after {
     width: 120px;
+}
+.w160::after {
+    width: 160px;
 }
 .w190::after {
     width: 190px;
