@@ -38,7 +38,7 @@
         components: {},
         metaInfo() {
             const title = 'LLM School';
-            const description = 'Welcome to LLM School. "llmschool.io" ';
+            const description = 'Welcome to LLM School. "llmschool.ai" ';
 
             return {
                 title: title,

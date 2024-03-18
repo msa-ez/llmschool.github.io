@@ -18,18 +18,9 @@
                         <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/fundamental/">LLM Application Development</a>
                     </div>
                 </th>
-                <th style="padding: 0;">
-                    <div class="tbl-title">
-                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/curriculum/">Intermediate</a>
-                    </div>
-                </th>
-                <th style="padding: 0;">
-                    <div class="tbl-title">
-                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/advanced/">Advanced</a>
-                    </div>
-                </th>
+                
                 <tr style="border-bottom: 1px solid #aaa;">
-                    <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">Biz</td>
+                    <td class="main-table-subtitle" style="padding-left:15px; text-align:center;"></td>
                     <td style="border-left: 1px solid #aaa;">
                         • Prompt Engineering의 기본<br>
                         &nbsp;&nbsp;- In-Context Learning<br>
@@ -66,24 +57,7 @@
                         • 파인튜닝<br>
                         &nbsp;&nbsp;- LORA<br><br>
                     </td>
-                    <td style="border-left: 1px solid #aaa;">
-                        • Eventstorming<br>
-                        - Eventstorming E-Commerce Domain<br>
-                        - Big picture & Design level Eventstorming<br>
-                        - Context Mapping, CQRS<br><br>
-                        
-                        • Aggregate Modeling<br>
-                        -  Entity Design with Class Diagrams
-                    </td>
-                    <td style="border-left: 1px solid #aaa;">
-                        • Eventstorming for various Domains<br><br>
-                        • Core-supporting-generic domain prioritization<br>
-                        - Wardlley mapping, Impact mapping<br><br>
-                        
-                        • 중요도에 따른 구현 전략<br>
-                        - Transaction Script<br><br>
-                        • Apply Ubiquitous Language 
-                    </td>
+                    
                 </tr>
                 <!-- <tr style="border-bottom: 1px solid #aaa;">
                     <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">Dev</td>
@@ -163,38 +137,6 @@
                                 font-size: 14px;
                                 font-weight: 700;">세부사항
                                 </button>
-                            </a>
-                        </div>
-                    </td>
-                    <td>
-                        <div style="text-align:center;">
-                            <a href="/operation/education/curriculum/">
-                            <button style="background-color:#fff;
-                                border-radius: 4px;
-                                border:2px solid #147c7f;
-                                height: 36px;
-                                width: 90px;
-                                text-align: center;
-                                line-height: 1.2;
-                                font-size: 14px;
-                                font-weight: 700;">세부사항
-                            </button>
-                            </a>
-                        </div>
-                    </td>
-                    <td>
-                        <div style="text-align:center;">
-                            <a href="/operation/education/advanced/">
-                            <button style="background-color:#fff;
-                                border-radius: 4px;
-                                border:2px solid #147c7f;
-                                height: 36px;
-                                width: 90px;
-                                text-align: center;
-                                line-height: 1.2;
-                                font-size: 14px;
-                                font-weight: 700;">세부사항
-                            </button>
                             </a>
                         </div>
                     </td>

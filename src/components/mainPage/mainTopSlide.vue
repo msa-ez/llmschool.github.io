@@ -79,16 +79,16 @@
         </div>
 
         <div class="is-mobile-main-top">
-            <div style="background-color:#E9E6F8; padding:30px; padding-left:30px; box-shadow: 0 -7px 7px -7px #999 inset;">
+            <div style="background-color:#d3eff0; padding:30px; padding-left:30px; box-shadow: 0 -7px 7px -7px #999 inset;">
                 <h2 style="color:#147c7f;
                 font-family:'NanumSquareNeo';
                 line-height:45px;
                 font-size:30px;
                 margin-bottom:15px;"
                 >
-                    클라우드 네이티브 앱
-                    <br/>구현의 전문 배움터
-                    <br/>CNA Best Partner 
+                    생성형 AI와 LLM을
+                    <br/>SW 아키텍처링에 적용한
+                    <br/>전문 교육 플랫폼
                 </h2>
 
                 <button @click="mobileClickBtn1"

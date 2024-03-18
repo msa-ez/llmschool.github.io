@@ -1,5 +1,5 @@
 {
-  "name": "msaschool-project",
+  "name": "llmschool-project",
   "private": true,
   "scripts": {
     "build": "gridsome build",
