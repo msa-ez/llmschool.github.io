@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="content" style="margin-top:-40px;">
-            <h3 class="con-tit">MSA School 은</h3>
-            <p style="font-weight: 700;">MSA분야 최고의 전문 컨텐츠로 마이크로서비스 시장을 선도할 클라우드 네이티브 전문가를 배출하고 있습니다.</p>
+            <h3 class="con-tit">LLM School 은</h3>
+            <p style="font-weight: 700;">MSA분야 최고의 전문 컨텐츠로 클라우드 네이티브 전문가를 양성하는 MSA School과 함께 합니다.</p>
             <div style="margin-bottom: 15px; line-height: 1.5; color:#444d56;">
                 MSA School은 분석, 설계에서 구현, 배포까지 마이크로서비스 전 생명주기를 지원하는 학습 교구와 전문 커리큘럼으로 End-to-End 학습 및 실습이 가능한 환경을 제공합니다.
                 <br>Cloud native한 최신 컨텐츠는 물론, 이벤트 드리븐 마이크로서비스 구현에 필수인 전용 프레임워크(Eventuate, Axon 등)와 최신 MSA 기술이 반영된 실습코드로 MSA School은 항상 진화합니다.
@@ -85,7 +85,7 @@
                         src="https://github.com/msa-ez/msaschool.github.io/assets/149130268/c080271b-d7dc-4e5e-ba90-ba8af41b792d">
                     </g-image>
                     <div>
-                        <div class="card-main-text">1월 웨비나</div>
+                        <div class="card-main-text">24년 1월 웨비나</div>
                         <div class="card-sub-text">생성형 AI를 이용한 SW아키텍처링과 마이크로서비스 구현</div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                         src="https://github.com/msa-ez/msaschool.github.io/assets/149130268/517e2fc5-3064-4534-9e9c-bce75838404f">
                     </g-image>
                     <div>
-                        <div class="card-main-text">11월 웨비나</div>
+                        <div class="card-main-text">23년 11월 웨비나</div>
                         <div class="card-sub-text">오픈소스 기반의 Private 온-프렘 클라우드 플랫폼 사례 및 소개</div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                         src="https://github.com/msa-ez/msaschool.github.io/assets/113568664/bc3467a2-2b1e-4eab-abd3-bdd490a3b6a6">
                     </g-image>
                     <div>
-                        <div class="card-main-text">10월 웨비나</div>
+                        <div class="card-main-text">23년 10월 웨비나</div>
                         <div class="card-sub-text">ChatGPT와 MSAEZ로 쉽고 빠르게 애견용품 사업을 디지털 비즈니스로 바꿔보자!</div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                         src="https://github.com/kykim97/factory-pattern/assets/113568664/1b393e58-f09d-4fdc-9126-244ac4a5d98c">
                     </g-image>
                     <div>
-                        <div class="card-main-text">8월 웨비나</div>
+                        <div class="card-main-text">23년 8월 웨비나</div>
                         <div class="card-sub-text">ChatGPT와 MSAEZ를 활용해 1시간 만에 기업 기존 시스템을 SaaS로 전환해보기</div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                         src="https://github.com/kykim97/factory-pattern/assets/113568664/271e0ff2-5aaf-4f73-a27b-c62e14a41fbb">
                     </g-image>
                     <div>
-                        <div class="card-main-text">7월 웨비나</div>
+                        <div class="card-main-text">23년 7월 웨비나</div>
                         <div class="card-sub-text">ChatGPT를 활용하여 쉽고 빠르게 서비스 기획부터 사업 구현하기</div>
                     </div>
                 </div>

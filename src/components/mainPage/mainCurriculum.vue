@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="content" style="margin-top:-30px;">
-            <h3 class="con-tit w190">MSA School 에는</h3>
-            <p style="font-weight: 700;">클라우드 네이티브 전문가가 되는 체계적인 업계 최고 커리큘럼이 준비되어 있습니다. 또한, 수강하시는 기업을 위해 다양하게 스케줄링된 학습 유형을 제공합니다.</p>
+            <h3 class="con-tit w190">LLM School 에는</h3>
+            <p style="font-weight: 700;">AI 코딩 전문가 양성을 위한 체계적인 업계 최고 커리큘럼이 준비되어 있습니다. 또한, 수강하시는 기업을 위해 다양하게 스케줄링된 학습 유형을 제공합니다.</p>
         </div>
         <br>
         <div class="is-not-mobile-main-top">
@@ -15,7 +15,7 @@
                 </th>
                 <th style="padding: 0;">
                     <div class="tbl-title">
-                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/fundamental/">Fundamental</a>
+                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/fundamental/">LLM Application Development</a>
                     </div>
                 </th>
                 <th style="padding: 0;">
@@ -31,9 +31,40 @@
                 <tr style="border-bottom: 1px solid #aaa;">
                     <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">Biz</td>
                     <td style="border-left: 1px solid #aaa;">
-                        • Object Oriented Design<br>
-                        - OOP Design Principles<br><br>
-                        • UML & Design Patterns
+                        • Prompt Engineering의 기본<br>
+                        &nbsp;&nbsp;- In-Context Learning<br>
+                        &nbsp;&nbsp;- CoT; Chain of Thought<br>
+                        &nbsp;&nbsp;- ReAct<br>
+                        &nbsp;&nbsp;- Plan-and-solve<br>
+                        &nbsp;&nbsp;- Context Window Limitations<br><br>
+                        • Open Al API를 직접 사용하기<br>
+                        &nbsp;&nbsp;- curl을 기반으로 한 간단한 회원 안내 서비스<br>
+                        &nbsp;&nbsp;- 비전 api를 이용한 회원 가입 사진 등록 판독<br>
+                        &nbsp;&nbsp;- 회원 아바타 이미지 자동 생성<br><br>
+                        • Langchain 기본<br>
+                        &nbsp;&nbsp;- 파이썬 기본과 개발환경 설정<br>
+                        &nbsp;&nbsp;- Why Langchain<br>
+                        &nbsp;&nbsp;- 간단한 Tool 호출을 하는 챗봇 만들기<br>
+                        &nbsp;&nbsp;- chain 구현<br>
+                        &nbsp;&nbsp;- Langsmith을 이용한 디버깅<br><br>
+                        • Langchain 심화 - RAG 애플리케이션 만들기<br>
+                        &nbsp;&nbsp;- RDB를 기반한 RAG<br>
+                        &nbsp;&nbsp;- 벡터 데이터베이스와 Pinecone을 기반한 RAG<br>
+                        &nbsp;&nbsp;- Knowledge Graph와 RAG<br>
+                        &nbsp;&nbsp;- LlamaIndex<br><br>
+                        • 서비스 론칭<br>
+                        &nbsp;&nbsp;- Langserve을 이용한 웹 서비스화<br>
+                        &nbsp;&nbsp;- 도커라이징 하여 서비스를 구글 클라우드 런에 서비스 하기<br>
+                        &nbsp;&nbsp;- 서비스를 GPTs 를 통하여 OpenAI 마켓에 공유하기<br><br>
+                        • 하이퍼 오토메이션- Langgraph<br>
+                        •&nbsp;&nbsp;- Langraph 을 이용한 복잡한 에이전트 연동<br>
+                        &nbsp;&nbsp;- CrewAl와 Langgraph를 연한 멀티에이전트<br>
+                        &nbsp;&nbsp;- (ProcessGPT)<br><br>
+                        • 폐쇄형 환경<br>
+                        &nbsp;&nbsp;- 설치형 LLM<br>
+                        &nbsp;&nbsp;- 설치형 VSCode Copilot<br><br>
+                        • 파인튜닝<br>
+                        &nbsp;&nbsp;- LORA<br><br>
                     </td>
                     <td style="border-left: 1px solid #aaa;">
                         • Eventstorming<br>
@@ -54,7 +85,7 @@
                         • Apply Ubiquitous Language 
                     </td>
                 </tr>
-                <tr style="border-bottom: 1px solid #aaa;">
+                <!-- <tr style="border-bottom: 1px solid #aaa;">
                     <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">Dev</td>
                     <td style="border-left: 1px solid #aaa;">
                         • Obejct Oriented Programming<br>
@@ -115,7 +146,7 @@
                         • Serverless<br>
                         - Knative, Tekton 
                     </td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td>
                     </td>
@@ -374,4 +405,4 @@ export default {
 </script>
   
 <style>
-</style>
+</style>    

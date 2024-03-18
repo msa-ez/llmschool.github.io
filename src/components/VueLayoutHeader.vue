@@ -21,7 +21,7 @@
                             to="/operation/introduction/"
                             title="Home"
                     >
-                        <img src="../img/llmschool_logo.png" style="width:208px; height:50px;">
+                        <img src="../img/llmschool_logo.svg" style="width:200px; height:50px;">
                     </g-link>
                     <ClientOnly>
                         <VueSearch v-if="!isSmall"></VueSearch>

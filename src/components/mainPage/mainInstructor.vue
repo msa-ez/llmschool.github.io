@@ -1,7 +1,7 @@
 <template>
     <div>
         <div style="margin-top:-10px;" class="content">
-            <h3 class="con-tit w250">MSA School 강사진 소개</h3>
+            <h3 class="con-tit w250">LLM School 강사진 소개</h3>
         </div>
         <div class="mainInstructor-box" style="margin-top: 20px;">
             <div style="margin-left:1% !important;
@@ -82,7 +82,7 @@
                     • ‘19. 02 : LG CNS 이벤트스토밍 교육<br>
                 </div>
             </div>
-            <div style="margin-left:1% !important;
+            <!-- <div style="margin-left:1% !important;
                         margin-right:1% !important;
                         background-color: white !important;
                         border: 1px solid #e5e5e5 !important;
@@ -120,7 +120,7 @@
                     • KT CleanCode 및 소프트웨어 아키텍트 과정<br>
                     • 그 외 다수
                 </div>
-            </div>
+            </div> -->
             <div style="margin-left:1% !important;
                         margin-right:1% !important;
                         background-color: white !important;

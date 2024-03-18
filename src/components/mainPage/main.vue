@@ -5,8 +5,8 @@
         <mainCurriculumVue />
         <mainInstructorVue />
 
-        <div style="margin-top: -30px;" class="content">
-            <h3 class="con-tit w400">MSA School 교육 실적 및 주요 수강 기업</h3>
+        <!-- <div style="margin-top: -30px;" class="content">
+            <h3 class="con-tit w400">LLM School 교육 실적 및 주요 수강 기업</h3>
         </div>
         <v-row style="margin: 0; text-align: center;">
             <g-image class="is-not-mobile-main-top" style="margin: 10px 10px 0 0; width: 100%;"
@@ -15,12 +15,12 @@
             <g-image class="is-mobile-main-top" style="margin: 10px 10px 0 0; width: 100%; max-width: 700px;"
                 src="https://github.com/msa-ez/msaschool.github.io/assets/149130268/2aea2ae6-1b31-4e1b-8593-4fb745fa1db8">
             </g-image>
-        </v-row>
+        </v-row> -->
 
-        <mainSampleExerciseVue />
+        <!-- <mainSampleExerciseVue /> -->
 
         <div style="margin-top: -30px; margin-bottom: 15px;" class="content">
-            <h3 class="con-tit w280">MSA School 교육 일정 확인</h3>
+            <h3 class="con-tit w280">LLM School 교육 일정 확인</h3>
         </div> 
         <iframe style="border: 0; width: 100%; height: 600px; margin: 10px 0;" frameborder="0" scrolling="no"
             src="https://calendar.google.com/calendar/embed?src=help%40uengine.org&ctz=Asia%2FSeoul">

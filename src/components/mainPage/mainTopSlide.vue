@@ -1,27 +1,27 @@
 <template>
     <div>
         <div class="is-not-mobile-main-top">
-            <v-row style="background-color:#E9E6F8; padding:30px; margin-left:0px; height:390px;">
+            <v-row style="background-color:#d3eff0; padding:30px; margin-left:0px; height:390px;">
                 <v-row style="position:absolute;
                 left: 44%;
                 transform: translate(-50%, 0%);
                 ">
                     <div style="float: left;">
-                        <h2 style="color:rgba(107, 59, 165, 1);
+                        <h2 style="color:#147c7f;
                         font-family: 'JalnanGothic';
                         line-height:55px;
                         font-size:34px;
                         font-weight: 500;
                         margin:10px 0 15px 0;"
                         >
-                            클라우드 네이티브 앱
-                            <br/>구현의 전문 배움터
-                            <br/>CNA Best Partner 
+                            생성형 AI와 LLM을
+                            <br/>SW 아키텍처링에 적용한
+                            <br/>전문 교육 플랫폼
                         </h2>
                         <div style="position:relative;">
                             <span class="clearfix">
                                 <button @click="slideClickBtn1"
-                                :style="slideBtn1 == true ? 'color:rgba(107, 59, 165, 1);text-decoration:underline;font-weight:bold;':''"
+                                :style="slideBtn1 == true ? 'color:#147c7f;text-decoration:underline;font-weight:bold;':''"
                                 class="clearfix main-page-slide-btn"
                                 type="button"
                                 >
@@ -30,7 +30,7 @@
                                 </button>
 
                                 <button @click="slideClickBtn2"
-                                :style="slideBtn2 == true ? 'color:rgba(107, 59, 165, 1);text-decoration:underline;font-weight:bold;':''"
+                                :style="slideBtn2 == true ? 'color:#147c7f;text-decoration:underline;font-weight:bold;':''"
                                 class="clearfix main-page-slide-btn"
                                 type="button"
                                 >
@@ -39,7 +39,7 @@
                                 </button>
 
                                 <button @click="slideClickBtn3"
-                                :style="slideBtn3 == true ? 'color:rgba(107, 59, 165, 1);text-decoration:underline;font-weight:bold;':''"
+                                :style="slideBtn3 == true ? 'color:#147c7f;text-decoration:underline;font-weight:bold;':''"
                                 class="clearfix main-page-slide-btn"
                                 type="button"
                                 >
@@ -80,7 +80,7 @@
 
         <div class="is-mobile-main-top">
             <div style="background-color:#E9E6F8; padding:30px; padding-left:30px; box-shadow: 0 -7px 7px -7px #999 inset;">
-                <h2 style="color:rgba(107, 59, 165, 1);
+                <h2 style="color:#147c7f;
                 font-family:'NanumSquareNeo';
                 line-height:45px;
                 font-size:30px;
@@ -92,7 +92,7 @@
                 </h2>
 
                 <button @click="mobileClickBtn1"
-                :style="mobileBtn1 == true ? 'color:rgba(107, 59, 165, 1);text-decoration:underline;font-weight:bold;':''"
+                :style="mobileBtn1 == true ? 'color:#147c7f;text-decoration:underline;font-weight:bold;':''"
                 class="clearfix main-page-slide-mobile-btn"
                 type="button"
                 >
@@ -107,7 +107,7 @@
                 </button>
 
                 <button @click="mobileClickBtn2"
-                :style="mobileBtn2 == true ? 'color:rgba(107, 59, 165, 1);text-decoration:underline;font-weight:bold;':''"
+                :style="mobileBtn2 == true ? 'color:#147c7f;text-decoration:underline;font-weight:bold;':''"
                 class="clearfix main-page-slide-mobile-btn"
                 type="button"
                 >
@@ -123,7 +123,7 @@
                 </button>
 
                 <button @click="mobileClickBtn3"
-                :style="mobileBtn3 == true ? 'color:rgba(107, 59, 165, 1);text-decoration:underline;font-weight:bold;':''"
+                :style="mobileBtn3 == true ? 'color:#147c7f;text-decoration:underline;font-weight:bold;':''"
                 class="clearfix main-page-slide-mobile-btn"                   
                 type="button"
                 >
