@@ -12,7 +12,7 @@
       name: 'index',
       directory:'operation_llm-msaez',
       props: {
-          "설치형 LLM 기반 MSAEZ 연동": {
+          "Overview": {
               type: String
           },
           
