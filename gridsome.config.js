@@ -54,12 +54,12 @@ module.exports = {
             //         {
             //             title: "LLM School",
             //             items: [
+            //                 '/msaschool/operation/llm-msaez/',
             //                 '/msaschool/operation/introduction/',
             //                 '/msaschool/operation/planning/',
             //                 '/msaschool/operation/implement/',
             //                 '/msaschool/operation/operate/',
             //                 '/msaschool/operation/llm/',
-            //                 '/msaschool/operation/llm-msaez/',
             //                 '/msaschool/operation/course/',
             //             ]
             //         },

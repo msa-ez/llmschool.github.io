@@ -5,7 +5,7 @@
         <mainCurriculumVue />
         <mainInstructorVue />
 
-        <div style="margin-top: -30px;" class="content">
+       <!-- <div style="margin-top: -30px;" class="content">
             <h3 class="con-tit w400">MSA School 교육 실적 및 주요 수강 기업</h3>
         </div>
         <v-row style="margin: 0; text-align: center;">

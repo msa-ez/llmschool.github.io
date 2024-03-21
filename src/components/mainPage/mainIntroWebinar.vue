@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="content" style="margin-top:-40px;">
-            <h3 class="con-tit w160">LLM School 은</h3>
+        <!-- <div class="content" style="margin-top:-40px;"> -->
+            <!-- <h3 class="con-tit w160">LLM School 은</h3>
             <p>LLM(Large Language Model) School은 AI 기반의 협업 도구와 AI Backend를 활용하여 마이크로서비스를 좀더 쉽고 더욱 더 에자일하게 구현하는 다양한 분석, 설계 및 코딩 기법(Pair Programming)과 운영 방법론 배양을 그 목표로 합니다. </p>
             <div style="margin-bottom: 15px; line-height: 1.5; color:#444d56;">
                 LLM(대규모 언어모델)이란, 방대한 양의 데이터를 기반으로 사전 학습된 머신 러닝 모델로 주어진 프롬프트에 대해 인간과 유사한 응답을 생성하기 위해 방대한 양의 텍스트 데이터로 훈련된 고급 AI 모델입니다. 이러한 LLM을 SW개발 아키텍처에 잘 활용하기 위해서는 양질의 응답을 위한 양질의 프롬프트(Prompt)로 질의해야 합니다. 그렇게 함으로써 LLM은 입력에 대한 포괄적인 이해를 활용, 상황에 대한 더 적절한 응답을 생성할 수 있습니다.
@@ -47,7 +47,7 @@
                     - <span style="font-weight: 700;">비용 관리:</span> 클라우드 기반 서비스의 사용량이 늘어날수록 비용이 증가하는 반면, 자체 서버에서 모델을 운영할 경우 장기적으로 비용을 절감할 수 있습니다.
                 </p>
                 <img src="https://github.com/acmexii/demo/assets/35618409/4a3cb1c5-b2a5-4be2-b536-f086be57f084" alt="">
-            </div>
+            </div> -->
                 
 
             <!-- <div style="margin-bottom: 5px; line-height: 1.5; color:#444d56;">
@@ -55,7 +55,7 @@
             <div style="color:#444d56;">
                 
             </div> -->
-        </div>
+        <!-- </div> -->
         <!-- <v-row style="margin:0;">
             <a href="https://www.youtube.com/playlist?list=PLEr96Fo5umW_j5qld31Owdmf1XvqAinR1" target="_blank">
                 <div

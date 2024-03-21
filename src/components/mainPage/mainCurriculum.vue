@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="content" style="margin-top:-30px;">
-            <h3 class="con-tit w220">LLM School 교과정은</h3>
-            <p style="font-weight: 700;">클라우드 네이티브 전문가가 되는 체계적인 업계 최고 커리큘럼이 준비되어 있습니다. 또한, 수강하시는 기업을 위해 다양하게 스케줄링된 학습 유형을 제공합니다.</p>
+            <h3 class="con-tit w220">LLM School 에는</h3>
+            <p style="font-weight: 700;">AI 코딩과 LLM 개발 분야의 전문가가 되는 체계적인 업계 최고 커리큘럼이 준비되어 있습니다. 또한, 수강하시는 기업을 위해 다양하게 스케줄링된 학습 유형을 제공합니다.</p>
         </div>
         <br>
         <div class="is-not-mobile-main-top">
@@ -15,21 +15,44 @@
                 </th>
                 <th style="padding: 0;">
                     <div class="tbl-title">
-                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/fundamental/">LLM Application Development</a>
+                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/fundamental/">Standard</a>
                     </div>
                 </th>
                 <th style="padding: 0;">
                     <div class="tbl-title">
-                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/curriculum/">Intermediate</a>
-                    </div>
-                </th>
-                <th style="padding: 0;">
-                    <div class="tbl-title">
-                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/advanced/">Advanced</a>
+                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/curriculum/">Advanced</a>
                     </div>
                 </th>
                 <tr style="border-bottom: 1px solid #aaa;">
-                    <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">Biz</td>
+                    <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">AI Coding</td>
+                    <td style="border-left: 1px solid #aaa;">
+                        • AI 기반 소프트웨어 개발 도구들의 이해<br>
+                        &nbsp;&nbsp;- Copilot<br>
+                        &nbsp;&nbsp;- Cursor IDE<br>
+                        &nbsp;&nbsp;- GPT-Engineer<br>
+                        &nbsp;&nbsp;- Crew AI, Meta GPT<br><br>
+                        • Chat GPT를 통한 서비스 기획 및 모델 도출<br>
+                        &nbsp;&nbsp;- Customer Journey Map<br>
+                        &nbsp;&nbsp;- Business Model Canvas<br>
+                        &nbsp;&nbsp;- Eventstorming Model<br>
+                        &nbsp;&nbsp;- 실습 : EDA 기반 음식 배달앱<br><br>
+                        • 클라우드 네이티브 아키텍처/MSA/클린 아키텍처의 이해<br><br>
+                        • 도메인 주도 설계 방식과 AI 기반 애플리케이션 개발의 효율성<br><br>
+                        • Chat GPT를 통한 레가시 애플리케이션 분석<br>
+                        &nbsp;&nbsp;- GPT-Engineer 이용한 클라우드 네이티브 애플리케이션 생성<br>
+                        &nbsp;&nbsp;- GPT-Engineer 이용한 기존 애플리케이션 개선 자동화<br><br>
+                        • Chat GPT를 통한 쿠버네티스 배포/운영/트러블 슈팅 자동화(K8s GPT, Kubectl ai)<br><br>
+                        • 자사를 위한 개발 에이전트 구현(GPTs)<br><br>
+                        • AI 기반 DevOps 환경 구축(MSA Easy + GPT-Engineer)<br><br>
+                        • 자사 맞춤형 프롬프트 작성법<br><br>
+                        • 폐쇄형 LLM 설치 및 구성 방법
+                    </td>
+                    <td style="border-left: 1px solid #aaa;">
+                        
+                    </td>
+                </tr>
+                <tr style="border-bottom: 1px solid #aaa;">
+                    <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">LLM Application<br><br>Development</td>
                     <td style="border-left: 1px solid #aaa;">
                         • Prompt Engineering의 기본<br>
                         &nbsp;&nbsp;- In-Context Learning<br>
@@ -47,6 +70,11 @@
                         &nbsp;&nbsp;- 간단한 Tool 호출을 하는 챗봇 만들기<br>
                         &nbsp;&nbsp;- chain 구현<br>
                         &nbsp;&nbsp;- Langsmith을 이용한 디버깅<br><br>
+                        • 폐쇄형 환경<br>
+                        &nbsp;&nbsp;- 설치형 LLM<br>
+                        &nbsp;&nbsp;- 설치형 VSCode Copilot<br><br>
+                    </td>
+                    <td style="border-left: 1px solid #aaa;">
                         • Langchain 심화 - RAG 애플리케이션 만들기<br>
                         &nbsp;&nbsp;- RDB를 기반한 RAG<br>
                         &nbsp;&nbsp;- 벡터 데이터베이스와 Pinecone을 기반한 RAG<br>
@@ -60,65 +88,11 @@
                         •&nbsp;&nbsp;- Langraph 을 이용한 복잡한 에이전트 연동<br>
                         &nbsp;&nbsp;- CrewAl와 Langgraph를 연한 멀티에이전트<br>
                         &nbsp;&nbsp;- (ProcessGPT)<br><br>
-                        • 폐쇄형 환경<br>
-                        &nbsp;&nbsp;- 설치형 LLM<br>
-                        &nbsp;&nbsp;- 설치형 VSCode Copilot<br><br>
                         • 파인튜닝<br>
                         &nbsp;&nbsp;- LORA<br><br>
                     </td>
-                    <td style="border-left: 1px solid #aaa;">
-                        • Eventstorming<br>
-                        - Eventstorming E-Commerce Domain<br>
-                        - Big picture & Design level Eventstorming<br>
-                        - Context Mapping, CQRS<br><br>
-                        
-                        • Aggregate Modeling<br>
-                        -  Entity Design with Class Diagrams
-                    </td>
-                    <td style="border-left: 1px solid #aaa;">
-                        • Eventstorming for various Domains<br><br>
-                        • Core-supporting-generic domain prioritization<br>
-                        - Wardlley mapping, Impact mapping<br><br>
-                        
-                        • 중요도에 따른 구현 전략<br>
-                        - Transaction Script<br><br>
-                        • Apply Ubiquitous Language 
-                    </td>
                 </tr>
                 <!-- <tr style="border-bottom: 1px solid #aaa;">
-                    <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">Dev</td>
-                    <td style="border-left: 1px solid #aaa;">
-                        • Obejct Oriented Programming<br>
-                        - Object Oriented Framework<br>
-                        - Spring boot, JDBC and JPA<br>
-                        - Web UI (VueJS)<br><br>
-                        • Understanding GitHub & GitPod<br><br>
-                        • Build automation tool<br>
-                        - Maven, Gradle<br><br>
-                        • Linux OS Basics
-                    </td>
-                    <td style="border-left: 1px solid #aaa;">
-                        • Microservice Clean Architecture<br>
-                        - ES Model and Implementation mapping<br><br>
-                        • Circuit Breaker Pattern<br>
-                        - Req/Res with FeignClient<br><br>
-                        • Event driven Microservice<br>
-                        - Event Pub/Sub, Compensation & CQRS<br><br>
-                        • Message Broker – Kafka<br><br>
-                        • Application Packaging & Dockerizing
-                    </td>
-                    <td style="border-left: 1px solid #aaa;">
-                        • Extending Event driven Microservice<br>
-                        - 멱등성, 트랜잭션, Kafka Parallel Processing, Deadline 처리<br>
-                        - Dedicated Framework (Eventuate, Axon)<br><br>
-                        • Inter-service communication<br>
-                        - CDC, gRPC Client/Server, Spring Reactive<br><br>
-                        • Microservice Authentication/ Authorization<br>
-                        - Centralized Session (Redis, Memcached)<br>
-                        - Client Token (JWT)
-                    </td>
-                </tr>
-                <tr style="border-bottom: 1px solid #aaa;">
                     <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">Ops</td>
                     <td style="border-left: 1px solid #aaa;">
                         • Cloud Infra, VM<br>
@@ -169,22 +143,6 @@
                     <td>
                         <div style="text-align:center;">
                             <a href="/operation/education/curriculum/">
-                            <button style="background-color:#fff;
-                                border-radius: 4px;
-                                border:2px solid #147c7f;
-                                height: 36px;
-                                width: 90px;
-                                text-align: center;
-                                line-height: 1.2;
-                                font-size: 14px;
-                                font-weight: 700;">세부사항
-                            </button>
-                            </a>
-                        </div>
-                    </td>
-                    <td>
-                        <div style="text-align:center;">
-                            <a href="/operation/education/advanced/">
                             <button style="background-color:#fff;
                                 border-radius: 4px;
                                 border:2px solid #147c7f;
