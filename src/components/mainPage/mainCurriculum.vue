@@ -18,7 +18,6 @@
                         <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/fundamental/">Standard</a>
                     </div>
                 </th>
-<<<<<<< HEAD
                 <th style="padding: 0;">
                     <div class="tbl-title">
                         <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/curriculum/">Advanced</a>
@@ -54,11 +53,6 @@
                 </tr>
                 <tr style="border-bottom: 1px solid #aaa;">
                     <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">LLM Application<br><br>Development</td>
-=======
-                
-                <tr style="border-bottom: 1px solid #aaa;">
-                    <td class="main-table-subtitle" style="padding-left:15px; text-align:center;"></td>
->>>>>>> b26f3fc3500a61bac372e04f4e4379c6eae1a688
                     <td style="border-left: 1px solid #aaa;">
                         • Prompt Engineering의 기본<br>
                         &nbsp;&nbsp;- In-Context Learning<br>
@@ -97,10 +91,6 @@
                         • 파인튜닝<br>
                         &nbsp;&nbsp;- LORA<br><br>
                     </td>
-<<<<<<< HEAD
-=======
-                    
->>>>>>> b26f3fc3500a61bac372e04f4e4379c6eae1a688
                 </tr>
                 <!-- <tr style="border-bottom: 1px solid #aaa;">
                     <td class="main-table-subtitle" style="padding-left:15px; text-align:center;">Ops</td>
@@ -150,7 +140,6 @@
                             </a>
                         </div>
                     </td>
-<<<<<<< HEAD
                     <td>
                         <div style="text-align:center;">
                             <a href="/operation/education/curriculum/">
@@ -167,8 +156,6 @@
                             </a>
                         </div>
                     </td>
-=======
->>>>>>> b26f3fc3500a61bac372e04f4e4379c6eae1a688
                 </tr>
             </table>
             <div style="width:100%; margin-top:20px; display:inline-flex; justify-content: space-evenly; border: 1px dashed #E2E8F0; border-radius:5px; padding: 10px; box-shadow: 0 2px 2px 0 rgba(22,22,22, 0.1);">

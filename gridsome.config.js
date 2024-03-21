@@ -54,15 +54,6 @@ module.exports = {
             //         {
             //             title: "LLM School",
             //             items: [
-<<<<<<< HEAD
-            //                 '/msaschool/operation/llm-msaez/',
-            //                 '/msaschool/operation/introduction/',
-            //                 '/msaschool/operation/planning/',
-            //                 '/msaschool/operation/implement/',
-            //                 '/msaschool/operation/operate/',
-            //                 '/msaschool/operation/llm/',
-            //                 '/msaschool/operation/course/',
-=======
             //                 '/llmschool/operation/introduction/',
             //                 '/llmschool/operation/planning/',
             //                 '/llmschool/operation/implement/',
@@ -70,7 +61,6 @@ module.exports = {
             //                 '/llmschool/operation/llm/',
             //                 '/llmschool/operation/llm-msaez/',
             //                 '/llmschool/operation/course/',
->>>>>>> b26f3fc3500a61bac372e04f4e4379c6eae1a688
             //             ]
             //         },
             //     ]
