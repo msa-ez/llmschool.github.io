@@ -157,12 +157,12 @@
                         }
                     });
                     const orderedKeys = [
+                        "operation/llm-msaez",
                         "operation/introduction",
                         "operation/planning",
                         "operation/implement",
                         "operation/operate",
                         "operation/llm",
-                        "operation/llm-msaez",
                         "operation/course"
                     ];
                     let orderedTreeObj = {};
