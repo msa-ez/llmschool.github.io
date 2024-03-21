@@ -49,11 +49,12 @@ module.exports = {
                 ]
             },
             // {
-            //     name: "msaschool",
+            //     name: "llmschool",
             //     sections: [
             //         {
             //             title: "LLM School",
             //             items: [
+<<<<<<< HEAD
             //                 '/msaschool/operation/llm-msaez/',
             //                 '/msaschool/operation/introduction/',
             //                 '/msaschool/operation/planning/',
@@ -61,6 +62,15 @@ module.exports = {
             //                 '/msaschool/operation/operate/',
             //                 '/msaschool/operation/llm/',
             //                 '/msaschool/operation/course/',
+=======
+            //                 '/llmschool/operation/introduction/',
+            //                 '/llmschool/operation/planning/',
+            //                 '/llmschool/operation/implement/',
+            //                 '/llmschool/operation/operate/',
+            //                 '/llmschool/operation/llm/',
+            //                 '/llmschool/operation/llm-msaez/',
+            //                 '/llmschool/operation/course/',
+>>>>>>> b26f3fc3500a61bac372e04f4e4379c6eae1a688
             //             ]
             //         },
             //     ]
@@ -86,7 +96,7 @@ module.exports = {
             use: "@gridsome/source-filesystem",
             options: {
                 typeName: "VuePage",
-                baseDir: "./src/content/msaschool",
+                baseDir: "./src/content/llmschool",
                 path: "**/*.vue",
                 plugins: ["@gridsome/remark-prismjs"]
                 // remark: {

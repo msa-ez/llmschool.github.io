@@ -4,5 +4,5 @@ steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run' , 'build']
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ["-m", "rsync", "-r", "-c", "-d", "./dist", "gs://dev.llmschool.io"]
+    args: ["-m", "rsync", "-r", "-c", "-d", "./dist", "gs://dev.llmschool.ai"]
 timeout: 6000s
