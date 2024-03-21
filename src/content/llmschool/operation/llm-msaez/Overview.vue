@@ -28,9 +28,10 @@ LLM School에서는 대표적인 오픈 소스 LLM 프로바이더인 Ollama, GP
 맞춤형 튜닝과 최적화: 공개 모델을 기업 특정 데이터셋에 맞게 세밀하게 조정하고 최적화하여, 특정 업무나 산업 분야에 더 적합한 성능을 제공할 수 있습니다.
 
 비용 관리:클라우드 기반 서비스의 사용량이 늘어날수록 비용이 증가하는 반면, 자체 서버에서 모델을 운영할 경우 장기적으로 비용을 절감할 수 있습니다.
-
+</mark-down>
+<mark-down class="content" source='
 <img src="https://github.com/acmexii/demo/assets/35618409/4a3cb1c5-b2a5-4be2-b536-f086be57f084" alt="">
-      </mark-down>
+'></mark-down>
     </div>
   </template>
   
