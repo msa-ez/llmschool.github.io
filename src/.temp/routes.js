@@ -1,12 +1,8 @@
 const c1 = () => import(/* webpackChunkName: "page--src--templates--vue-page-vue" */ "/Users/user/Desktop/llmschool.github.io/src/templates/VuePage.vue")
-const c2 = () => import(/* webpackChunkName: "page--src--pages--404-vue" */ "/Users/user/Desktop/llmschool.github.io/src/pages/404.vue")
+const c2 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/user/Desktop/llmschool.github.io/node_modules/gridsome/app/pages/404.vue")
 const c3 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/user/Desktop/llmschool.github.io/src/pages/Index.vue")
 
 export default [
-  {
-    path: "/operation/llm/open-web-ui/",
-    component: c1
-  },
   {
     path: "/operation/introduction/sw/",
     component: c1
@@ -16,19 +12,23 @@ export default [
     component: c1
   },
   {
-    path: "/operation/llm/ollama/",
-    component: c1
-  },
-  {
     path: "/operation/operate/kubectl-ai/",
     component: c1
   },
   {
-    path: "/operation/llm/llm-model/",
+    path: "/llm/llm/open-web-ui/",
     component: c1
   },
   {
-    path: "/operation/llm/llm-setting/",
+    path: "/llm/llm/ollama/",
+    component: c1
+  },
+  {
+    path: "/llm/llm/llm-model/",
+    component: c1
+  },
+  {
+    path: "/llm/llm/llm-setting/",
     component: c1
   },
   {
@@ -84,7 +84,7 @@ export default [
     component: c1
   },
   {
-    path: "/operation/llm/",
+    path: "/llm/llm/",
     component: c1
   },
   {

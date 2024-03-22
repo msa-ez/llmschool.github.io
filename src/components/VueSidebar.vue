@@ -7,47 +7,101 @@
             <VueSearch v-if="small" style="margin-bottom:20px;"></VueSearch>
         </ClientOnly>
         <div
-                v-if="thisSides"
+        >
+            <h2 style="font-size: 20px; margin-left: -5px;"
+            >
+                AI Coding
+            </h2>
+            <div
+                    v-if="parent.header.path.includes('operation')"
+                    v-for="parent in thisSides"
+                    class="pb-4 mb-4 border-ui-border "
+                    :class="getClassesForHeader(parent)"
+                    @click="closeSideByClicked()"
+            >
+                <g-link
+                        v-if="parent.header.path.includes('operation')"
+                        class="flex items-center py-1 font-semibold"
+                        :style="styleBySize"
+                >
+                    <h3 class="pt-0 ml-2 mt-0 mb-1 tracking-tight border-none  "
+                        style="font-size: 17px;"
+                        :class="getDetailForHeader(parent)"
+                    >
+                        {{parent.header.props[0].name}}
+                    </h3>
+                </g-link>
+    
+                <ul class="max-w-full pl-5 ml-1 mb-0">
+                    <li
+                            v-for="child in parent.children"
+                            :key="child.path"
+                            :class="getDetailForChildren(child)"
+                    >
+                        <g-link
+                                :to="child.path"
+                                class="flex items-center py-1 font-semibold"
+                                :style="styleBySize"
+                        >
+                           <span
+                                   class="absolute w-2 h-2 -ml-3 rounded-full opacity-0 bg-ui-primary transition transform scale-0 origin-center"
+                           ></span>
+                            {{child.props[0].name}} <pen-tool-icon v-if="checkLinks(child)" size="1x" style="margin-left: 3px; color: #147c7f;"></pen-tool-icon>
+                        </g-link>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+        >
+            <h2 style="font-size: 20px; margin-left: -5px;"
+            >
+                LLM
+            </h2>
+            <div
+                v-if="!parent.header.path.includes('operation')"
                 v-for="parent in thisSides"
                 class="pb-4 mb-4 border-ui-border "
                 :class="getClassesForHeader(parent)"
                 @click="closeSideByClicked()"
-        >
-            <g-link
+            >
+                <g-link
+                    v-if="!parent.header.path.includes('operation')"
                     class="flex items-center py-1 font-semibold"
                     :style="styleBySize"
-            >
-                <h3 class="pt-0 mt-0 mb-1 tracking-tight border-none  "
-                    style="font-size: 17px;"
-                    :class="getDetailForHeader(parent)"
                 >
-                    {{parent.header.props[0].name}}
-                </h3>
-            </g-link>
-
-            <ul class="max-w-full pl-5 mb-0">
-                <li
+                    <h3 class="pt-0 ml-3 mt-0 mb-1 tracking-tight border-none  "
+                        style="font-size: 17px;"
+                        :class="getDetailForHeader(parent)"
+                    >
+                        {{parent.header.props[0].name}}
+                    </h3>
+                </g-link>
+    
+                <ul class="max-w-full pl-5 ml-1 mb-0" v-if="!parent.header.path.includes('operation')">
+                    <li
+                        v-if="!parent.header.path.includes('operation')"
                         v-for="child in parent.children"
                         :key="child.path"
                         :class="getDetailForChildren(child)"
-                >
-                    <g-link
+                    >
+                        <g-link
                             :to="child.path"
                             class="flex items-center py-1 font-semibold"
                             :style="styleBySize"
-                    >
-                       <span
-                               class="absolute w-2 h-2 -ml-3 rounded-full opacity-0 bg-ui-primary transition transform scale-0 origin-center"
-                       ></span>
-                        {{child.props[0].name}} <pen-tool-icon v-if="checkLinks(child)" size="1x" style="margin-left: 3px; color: #147c7f;"></pen-tool-icon>
-                    </g-link>
-                </li>
-            </ul>
+                        >
+                           <span
+                                class="absolute w-2 h-2 -ml-3 rounded-full opacity-0 bg-ui-primary transition transform scale-0 origin-center"
+                           ></span>
+                            {{child.props[0].name}} <pen-tool-icon v-if="checkLinks(child)" size="1x" style="margin-left: 3px; color: #147c7f;"></pen-tool-icon>
+                        </g-link>
+                    </li>
+                </ul>
+            </div>
         </div>
+        
     </div>
-
 </template>
-
 <static-query>
     query {
     allVuePage{
@@ -63,10 +117,8 @@
     }
     }
 </static-query>
-
 <script>
     import {PenToolIcon} from 'vue-feather-icons'
-
     export default {
         data() {
             return {
@@ -88,7 +140,6 @@
                     me.innerWidth()
                 })
             }
-
         },
         computed: {
             styleBySize() {
@@ -115,7 +166,6 @@
                 }
                 return null
             },
-
         },
         methods: {
             checkLinks(child){
@@ -140,12 +190,10 @@
             },
             insertTree(path, branches) {
                 var treeObj = {}
-
                 if (branches) {
                     branches.forEach(function (branchNode) {
                         var branch = branchNode.node;
                         var branchPath = branch.path.substr(0, branch.path.length - 1).slice(1);
-
                         if (branchPath.split('/').length < 3) {
                             if (!treeObj[branchPath]) treeObj[branchPath] = {};
                             treeObj[branchPath].header = branch;
@@ -162,7 +210,7 @@
                         "operation/planning",
                         "operation/implement",
                         "operation/operate",
-                        "operation/llm",
+                        "llm/llm",
                         "operation/course"
                     ];
                     let orderedTreeObj = {};
@@ -171,7 +219,6 @@
                             orderedTreeObj[key] = treeObj[key];
                         }
                     });
-
                     return orderedTreeObj;
                 }
                 return null;

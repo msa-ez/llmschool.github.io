@@ -10,7 +10,7 @@
   
     export default {
       name: 'index',
-      directory:'operation_llm',
+      directory:'llm_llm',
       props: {
           "설치형 LLM": {
               type: String
