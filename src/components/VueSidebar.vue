@@ -211,7 +211,7 @@
                         "operation/implement",
                         "operation/operate",
                         "llm/llm",
-                        "operation/course"
+                        // "operation/course"
                     ];
                     let orderedTreeObj = {};
                     orderedKeys.forEach(key => {
