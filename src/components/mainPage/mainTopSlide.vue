@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="is-not-mobile-main-top">
-            <v-row style="background-color:#d3eff0; padding:30px; margin-left:0px; height:390px;">
+            <v-row style="background-color:#e7f2f2; padding:30px; margin-left:0px; height:390px;">
                 <v-row style="position:absolute;
                 left: 44%;
                 transform: translate(-50%, 0%);
@@ -72,7 +72,7 @@
                                     Kubernetes 기반의 클라우드 런타임에서 AI 도구를 활용한 <br/>
                                     서비스 운영(Ops) 최적화 방법과 리자일런스 피처 소개
                                 </div> -->
-                                <g-image style="width:500px; height:330px;" class="image-style" src="https://github.com/msa-ez/llmschool.github.io/assets/113568664/eb3cbb3a-7b40-41e3-95e0-d1ece9ceec86"/>
+                                <g-image style="width:500px; height:330px;" class="image-style" src="https://github.com/msa-ez/llmschool.github.io/assets/113568664/9aa4c635-a36e-472c-828c-4a55febda2c9"/>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
         </div>
 
         <div class="is-mobile-main-top">
-            <div style="background-color:#d3eff0; padding:30px; padding-left:30px; box-shadow: 0 -7px 7px -7px #999 inset;">
+            <div style="background-color:#e7f2f2; padding:30px; padding-left:30px; box-shadow: 0 -7px 7px -7px #999 inset;">
                 <h2 style="color:#147c7f;
                 font-family:'NanumSquareNeo';
                 line-height:45px;
@@ -93,7 +93,7 @@
                     <br/>전문 교육 플랫폼
                 </h2>
 
-                <button @click="mobileClickBtn1"
+                <!-- <button @click="mobileClickBtn1"
                 :style="mobileBtn1 == true ? 'color:#147c7f;text-decoration:underline;font-weight:bold;':''"
                 class="clearfix main-page-slide-mobile-btn"
                 type="button"
@@ -138,7 +138,10 @@
                         </div>
                         <g-image class="mobile-image-style" src="https://github.com/msa-ez/msaschool.github.io/assets/149130268/77970538-9a18-4e8b-9cfe-b6cbf9826e20"/>
                     </div>
-                </button>
+                </button> -->
+                <div>   
+                    <g-image class="mobile-image-style" src="https://github.com/msa-ez/llmschool.github.io/assets/113568664/9aa4c635-a36e-472c-828c-4a55febda2c9"/>
+                </div>
             </div>
         </div>
     </div>

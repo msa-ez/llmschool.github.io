@@ -71,10 +71,10 @@
                         line-height: 36px;
                         font-size: 14px;
                         font-weight: 700;"
-                        :href="'/operation/education/one-point-lesson/'"
+                        :href="'https://forms.gle/bY7d4PDK7Ym2wU1f6'"
                     ><span style="color:white;">컨설팅 문의</span>
                     </v-btn>
-                    <v-btn style="background-color:#147c7f !important;
+                    <!-- <v-btn style="background-color:#147c7f !important;
                         border-radius: 4px;
                         margin-right:40px;
                         height: 36px;
@@ -85,7 +85,7 @@
                         font-weight: 700;"
                         :href="'/operation/education/schedule/'"
                     ><span style="color:white;">교과정 안내</span>
-                    </v-btn>
+                    </v-btn> -->
                 </div>
 
             </div>
@@ -108,7 +108,6 @@
                     <g-link
                             to="/operation/introduction/"
                             title="Home"
-                            style="margin-right:190px;"
                     >
                     <img src="../img/llmschool_logo.png" style="width:208px; height:50px;">
                     </g-link>
@@ -161,10 +160,10 @@
                         line-height: 36px;
                         font-size: 14px;
                         font-weight: 700;"
-                        :href="'/operation/education/one-point-lesson/'"
+                        :href="'https://forms.gle/bY7d4PDK7Ym2wU1f6'"
                     ><span style="color:white;">컨설팅 문의</span>
                     </v-btn>
-                    <v-btn style="background-color:#147c7f !important;
+                    <!-- <v-btn style="background-color:#147c7f !important;
                         border-radius: 4px;
                         margin-right:15px;
                         height: 33px;
@@ -174,8 +173,8 @@
                         font-size: 14px;
                         font-weight: 700;"
                         :href="'/operation/education/schedule/'"
-                    ><span style="color:white;">교과정 안내</span>
-                    </v-btn>
+                    ><span style="color:white;">교과정 안내</span> -->
+                    <!-- </v-btn> -->
                 </div>
 
             </div>

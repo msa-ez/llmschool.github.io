@@ -219,7 +219,7 @@ button:focus{
     height: 328px;
     overflow: hidden;
     border-radius: 7px;
-    border: 1px solid rgba(107, 59, 165, 1);
+    /* border: 1px solid rgba(107, 59, 165, 1); */
     margin-top: 10px;
     margin-left: 30px;
 }
@@ -265,7 +265,7 @@ button:focus{
 .mobile-image-style {
     width: 100%;
     border-radius: 5px;
-    border: 1px solid rgba(107, 59, 165, 1);
+    /* border: 1px solid rgba(107, 59, 165, 1); */
     margin-top: 10px;
 }
 
