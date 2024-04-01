@@ -1,18 +1,9 @@
 <template>
     <div>
-        <!-- <div class="content" style="margin-top:-40px;"> -->
-            <!-- <h3 class="con-tit w160">LLM School 은</h3>
-            <p>LLM(Large Language Model) School은 AI 기반의 협업 도구와 AI Backend를 활용하여 마이크로서비스를 좀더 쉽고 더욱 더 에자일하게 구현하는 다양한 분석, 설계 및 코딩 기법(Pair Programming)과 운영 방법론 배양을 그 목표로 합니다. </p>
-            <div style="margin-bottom: 15px; line-height: 1.5; color:#444d56;">
-                LLM(대규모 언어모델)이란, 방대한 양의 데이터를 기반으로 사전 학습된 머신 러닝 모델로 주어진 프롬프트에 대해 인간과 유사한 응답을 생성하기 위해 방대한 양의 텍스트 데이터로 훈련된 고급 AI 모델입니다. 이러한 LLM을 SW개발 아키텍처에 잘 활용하기 위해서는 양질의 응답을 위한 양질의 프롬프트(Prompt)로 질의해야 합니다. 그렇게 함으로써 LLM은 입력에 대한 포괄적인 이해를 활용, 상황에 대한 더 적절한 응답을 생성할 수 있습니다.
-                <br>
-                <br>
-                그러나, 이러한 대규모 언어 모델들은 한번에 처리 가능한 컨텍스트 사이즈가 한정되어 있을 뿐 아니라, 입력 컨텍스트가 길어지면 모델의 계산 속도는 느려지고 처리 비용이 증가함은 물론, 짧은 컨텍스트에 비해 상대적으로 응답 콘텐츠 측면에서 단위 품질이 낮아집니다. 
-                <br>
-                <br>
-                이는 마치 도메인의 복잡도를 낯추고 컨텍스트를 작은 단위로 쪼개어서 애자일한 방법으로 단위 서비스의 품질을 높이는 분할과 정복(Divide and Conquer) 패턴의 마이크로서비스와 유사한 점이라 할 수 있습니다. 
-            </div>
-            <h3 class="con-tit">LLM School 에서는</h3>
+        <div class="content" style="margin-top:-40px;">
+           <h3 class="con-tit w160">LLM School 은</h3>
+            <p style="font-weight: 700;">AI 코딩과 설치형 LLM에 기반한 소프트웨어 아키텍처링부터 레가시 전환, 다양한 AI 코딩 도구를 활용한 소프트웨어 아키텍처링과 프롬프트 엔지니어링 교육을 진행합니다.</p>
+             <!-- <h3 class="con-tit">LLM School 에서는</h3>
             <div style="margin-bottom: 15px; line-height: 1.5; color:#444d56;">
                 - 기획(Biz) 단계를 위한 AI 어시스트 모델링으로 시장 분석, 고객 세분화, 제품 개발에 AI를 활용하는 방법 등을 소개하고 있습니다.
                 <br>
@@ -46,90 +37,63 @@
                 <p>
                     - <span style="font-weight: 700;">비용 관리:</span> 클라우드 기반 서비스의 사용량이 늘어날수록 비용이 증가하는 반면, 자체 서버에서 모델을 운영할 경우 장기적으로 비용을 절감할 수 있습니다.
                 </p>
-                <img src="https://github.com/acmexii/demo/assets/35618409/4a3cb1c5-b2a5-4be2-b536-f086be57f084" alt="">
-            </div> -->
+                <img src="https://github.com/acmexii/demo/assets/35618409/4a3cb1c5-b2a5-4be2-b536-f086be57f084" alt=""> -->
+            </div>
                 
 
-            <!-- <div style="margin-bottom: 5px; line-height: 1.5; color:#444d56;">
+            <div style="margin-top: 50px; margin-bottom: 5px; line-height: 1.5; color:#444d56;">
+                <h3 class="con-tit w160">LLM School 맛보기</h3>
             </div>
             <div style="color:#444d56;">
                 
-            </div> -->
+            </div>
         <!-- </div> -->
-        <!-- <v-row style="margin:0;">
-            <a href="https://www.youtube.com/playlist?list=PLEr96Fo5umW_j5qld31Owdmf1XvqAinR1" target="_blank">
+        <v-row style="margin:0;">
+            <a href="https://youtu.be/qUb1BWnyfkw" target="_blank">
                 <div
                     class="clearfix youtube-card-box"
                     outlined
                 >
                     <g-image class="youtube-card-image" style="border: 1px solid #eee;"
-                        src="https://github.com/msa-ez/msaschool.github.io/assets/149130268/c080271b-d7dc-4e5e-ba90-ba8af41b792d">
+                        src="https://github.com/msa-ez/llmschool.github.io/assets/113568664/a0dea1d3-383f-45d5-80b8-1ddcd1eb8cba">
                     </g-image>
                     <div>
-                        <div class="card-main-text">24년 1월 웨비나</div>
-                        <div class="card-sub-text">생성형 AI를 이용한 SW아키텍처링과 마이크로서비스 구현</div>
+                        <div class="card-main-text">[Cursor IDE] 분석-구현-리팩토링</div>
+                        <div class="card-sub-text">디시전 테이블 활용</div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.youtube.com/playlist?list=PLEr96Fo5umW_N7xnmf4XDJv-G-APhjWa-" target="_blank">
+            <a href="https://youtu.be/D0rSP2S8hOk" target="_blank">
                 <div
                     class="clearfix youtube-card-box"
                     outlined
                 >
-                    <g-image class="youtube-card-image"
-                        src="https://github.com/msa-ez/msaschool.github.io/assets/149130268/517e2fc5-3064-4534-9e9c-bce75838404f">
+                    <g-image class="youtube-card-image" style="border: 1px solid #eee;"
+                        src="https://github.com/msa-ez/llmschool.github.io/assets/113568664/b56e3ba4-c4f1-40a3-88f3-22b526b4a96b">
                     </g-image>
                     <div>
-                        <div class="card-main-text">23년 11월 웨비나</div>
-                        <div class="card-sub-text">오픈소스 기반의 Private 온-프렘 클라우드 플랫폼 사례 및 소개</div>
+                        <div class="card-main-text">[Cursor IDE] 레가시 분석과 모더나이징</div>
+                        <div class="card-sub-text">디자인 패턴 적용과 클린 아키텍처 전환</div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.youtube.com/playlist?list=PLEr96Fo5umW9sTeDiSY_D3x7q2NE1f7vK" target="_blank">
+            <a href="https://youtu.be/XEhYW48WbBg" target="_blank">
                 <div
                     class="clearfix youtube-card-box"
                     outlined
                 >
-                    <g-image class="youtube-card-image"
-                        src="https://github.com/msa-ez/msaschool.github.io/assets/113568664/bc3467a2-2b1e-4eab-abd3-bdd490a3b6a6">
+                    <g-image class="youtube-card-image" style="border: 1px solid #eee;"
+                        src="https://github.com/msa-ez/llmschool.github.io/assets/113568664/eb1073cc-b3cf-4ade-a6d7-4b8e2353a618">
                     </g-image>
                     <div>
-                        <div class="card-main-text">23년 10월 웨비나</div>
-                        <div class="card-sub-text">ChatGPT와 MSAEZ로 쉽고 빠르게 애견용품 사업을 디지털 비즈니스로 바꿔보자!</div>
+                        <div class="card-main-text">[Cursor IDE] 레가시 분석과 모더나이징</div>
+                        <div class="card-sub-text">jsp 파일에 대한 모더나이징</div>
                     </div>
                 </div>
             </a>
-            <a href="https://www.youtube.com/playlist?list=PLEr96Fo5umW8CYIuf52d06BHfpgS6Q0-X" target="_blank">
-                <div
-                    class="clearfix youtube-card-box"
-                    outlined
-                >
-                    <g-image class="youtube-card-image"
-                        src="https://github.com/kykim97/factory-pattern/assets/113568664/1b393e58-f09d-4fdc-9126-244ac4a5d98c">
-                    </g-image>
-                    <div>
-                        <div class="card-main-text">23년 8월 웨비나</div>
-                        <div class="card-sub-text">ChatGPT와 MSAEZ를 활용해 1시간 만에 기업 기존 시스템을 SaaS로 전환해보기</div>
-                    </div>
-                </div>
-            </a>            
-            <a href="https://www.youtube.com/playlist?list=PLEr96Fo5umW_-Ke68S8pmiq8x1pP9qVOY" target="_blank">
-                <div
-                    class="clearfix youtube-card-box"
-                    outlined
-                >
-                    <g-image class="youtube-card-image"
-                        src="https://github.com/kykim97/factory-pattern/assets/113568664/271e0ff2-5aaf-4f73-a27b-c62e14a41fbb">
-                    </g-image>
-                    <div>
-                        <div class="card-main-text">23년 7월 웨비나</div>
-                        <div class="card-sub-text">ChatGPT를 활용하여 쉽고 빠르게 서비스 기획부터 사업 구현하기</div>
-                    </div>
-                </div>
-            </a>
-        </v-row> -->
-        <!-- <div style="width:100%; height:3px; background-color:#E2E8F0;margin-top: 20px;"></div>
-        <div style="width:100%; height:12px; background-color:#ebf0f4;"></div> -->
+        </v-row>
+        <!-- <div style="width:100%; height:3px; background-color:#E2E8F0;margin-top: 20px;"></div> -->
+        <!-- <div style="width:100%; height:12px; background-color:#ebf0f4;"></div> -->
     </div>
 </template>
 

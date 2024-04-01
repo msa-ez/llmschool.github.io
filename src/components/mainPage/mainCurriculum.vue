@@ -15,12 +15,12 @@
                 </th>
                 <th style="padding: 0;">
                     <div class="tbl-title">
-                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/fundamental/">Standard</a>
+                        <span class="tbl-title-txt" style="color: #fff;">Standard</span>
                     </div>
                 </th>
                 <th style="padding: 0;">
                     <div class="tbl-title">
-                        <a class="tbl-title-txt" style="color: #fff;" href="/operation/education/curriculum/">Advanced</a>
+                        <span class="tbl-title-txt" style="color: #fff;">Advanced</span>
                     </div>
                 </th>
                 <tr style="border-bottom: 1px solid #aaa;">
@@ -138,7 +138,7 @@
         <div class="is-mobile-main-top">
             <div style = "font-size:16px; font-weight: 600; margin-bottom: 10px;">교육 과정 Overview</div>
             <div class="tbl-title">
-                <a class="tbl-title-txt" style="color:#fff;" href="/operation/education/curriculum/">Standard</a>
+                <span class="tbl-title-txt" style="color:#fff;">Standard</span>
             </div>
             <table style="width: 100%;">
                 <tr style="border-bottom: 1px solid #aaa;">
@@ -202,7 +202,7 @@
                 </tr> -->
             </table>
             <div class="tbl-title">
-                <a class="tbl-title-txt" style="color:#fff;" href="/operation/education/advanced/">Advanced</a>
+                <span class="tbl-title-txt" style="color:#fff;">Advanced</span>
             </div>
             <table style="width: 100%;">
                 <tr style="border-bottom: 1px solid #aaa;">

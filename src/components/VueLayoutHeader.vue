@@ -62,30 +62,32 @@
                             <g-image class="g-images" src="~/img/05_Community/04_교육상담_및_신청/image10.png"></g-image>
                         </div>
                     </div>  -->
-                    <v-btn style="background-color:#147c7f !important;
-                        border-radius: 4px;
-                        margin-right:15px;
-                        height: 36px;
-                        width: 120px;
-                        text-align: center;
-                        line-height: 36px;
-                        font-size: 14px;
-                        font-weight: 700;"
-                        :href="'https://forms.gle/bY7d4PDK7Ym2wU1f6'"
-                    ><span style="color:white;">컨설팅 문의</span>
-                    </v-btn>
-                    <!-- <v-btn style="background-color:#147c7f !important;
-                        border-radius: 4px;
-                        margin-right:40px;
-                        height: 36px;
-                        width: 120px;
-                        text-align: center;
-                        line-height: 36px;
-                        font-size: 14px;
-                        font-weight: 700;"
-                        :href="'/operation/education/schedule/'"
-                    ><span style="color:white;">교과정 안내</span>
-                    </v-btn> -->
+                    <a href="https://forms.gle/bY7d4PDK7Ym2wU1f6" target="_blank">
+                        <v-btn style="background-color:#147c7f !important;
+                            border-radius: 4px;
+                            margin-right:15px;
+                            height: 36px;
+                            width: 120px;
+                            text-align: center;
+                            line-height: 36px;
+                            font-size: 14px;
+                            font-weight: 700;"
+                        ><span style="color:white;">컨설팅 문의</span>
+                        </v-btn>
+                    </a>
+                    <a href="https://www.msaschool.io/operation/education/schedule/" target="_blank">
+                        <v-btn style="background-color:#147c7f !important;
+                            border-radius: 4px;
+                            margin-right:40px;
+                            height: 36px;
+                            width: 120px;
+                            text-align: center;
+                            line-height: 36px;
+                            font-size: 14px;
+                            font-weight: 700;"
+                        ><span style="color:white;">교과정 안내</span>
+                        </v-btn>
+                    </a>    
                 </div>
 
             </div>
@@ -163,7 +165,7 @@
                         :href="'https://forms.gle/bY7d4PDK7Ym2wU1f6'"
                     ><span style="color:white;">컨설팅 문의</span>
                     </v-btn>
-                    <!-- <v-btn style="background-color:#147c7f !important;
+                    <v-btn style="background-color:#147c7f !important;
                         border-radius: 4px;
                         margin-right:15px;
                         height: 33px;
@@ -172,9 +174,9 @@
                         line-height: 36px;
                         font-size: 14px;
                         font-weight: 700;"
-                        :href="'/operation/education/schedule/'"
-                    ><span style="color:white;">교과정 안내</span> -->
-                    <!-- </v-btn> -->
+                        :href="'https://www.msaschool.io/operation/education/schedule/'"
+                    ><span style="color:white;">교과정 안내</span>
+                    </v-btn>
                 </div>
 
             </div>

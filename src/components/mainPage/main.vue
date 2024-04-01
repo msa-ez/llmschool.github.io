@@ -271,7 +271,7 @@ button:focus{
 
 .youtube-card-box {
     width: 300px;
-    height: 320px;
+    height: 270px;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
@@ -286,7 +286,7 @@ button:focus{
 }
 
 .youtube-card-image {
-    height: 180px;
+    height: 160px;
     width: 280px;
     max-width: 100%;
     margin: 0 auto;
