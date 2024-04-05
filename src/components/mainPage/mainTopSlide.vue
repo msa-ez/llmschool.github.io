@@ -72,7 +72,7 @@
                                     Kubernetes 기반의 클라우드 런타임에서 AI 도구를 활용한 <br/>
                                     서비스 운영(Ops) 최적화 방법과 리자일런스 피처 소개
                                 </div> -->
-                                <g-image style="width:500px; height:330px;" class="image-style" src="https://github.com/msa-ez/llmschool.github.io/assets/113568664/9aa4c635-a36e-472c-828c-4a55febda2c9"/>
+                                <g-image style="width:500px; height:330px;" class="image-style" src="https://github.com/msa-ez/llmschool.github.io/assets/123912988/9b705917-dc1b-4638-b884-dd259baa497f"/>
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                     </div>
                 </button> -->
                 <div>   
-                    <g-image class="mobile-image-style" src="https://github.com/msa-ez/llmschool.github.io/assets/113568664/9aa4c635-a36e-472c-828c-4a55febda2c9"/>
+                    <g-image class="mobile-image-style" src="https://github.com/msa-ez/llmschool.github.io/assets/123912988/9b705917-dc1b-4638-b884-dd259baa497f"/>
                 </div>
             </div>
         </div>
