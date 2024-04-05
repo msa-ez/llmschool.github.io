@@ -50,7 +50,7 @@ LLM School에서는 대표적인 오픈 소스 LLM 프로바이더인 Ollama, GP
             return {}
         },
         props: {
-            "AI 코딩 과정 개요": {
+            "과정개요": {
                 type: String
             },
         },

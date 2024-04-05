@@ -208,7 +208,7 @@ public class Main {
             return {}
         },
         props: {
-            "Cursor IDE- 테스트/ 디자인 패턴": {
+            "테스트생성과 패턴적용": {
                 type: String
             },
         },

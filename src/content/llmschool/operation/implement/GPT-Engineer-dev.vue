@@ -71,7 +71,7 @@ docker-compose up
             return {}
         },
         props: {
-            "GPT-Engineer를 활용한 MSA 구현": {
+            "MSA Chassis by Autopilot": {
                 type: String
             },
         },

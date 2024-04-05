@@ -2,7 +2,7 @@
     <div>
         <mark-down class="content">
             
-## 코파일럿을 활용한 클라우드 배포준비 (Dockerizing & CI)
+## Copilot을 활용한 클라우드 배포 준비
 오토 파일럿과 코파일럿으로 코드 작업이 완료된 후, 클라우드 배포를 위해 이미지를 생성하고 GitHub Action으로 CI 파이프라인을 생성하는 방법은 다음과 같습니다.
 
 ### application.yml 확장
@@ -72,7 +72,7 @@ Prompt : 여기에 maven package 스텝을 추가하되, 빌드시 테스트는 
             return {}
         },
         props: {
-            "Copilot을 활용한 클라우드 배포 준비": {
+            "Github Action 활용": {
                 type: String
             },
         },

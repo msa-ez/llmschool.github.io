@@ -92,7 +92,7 @@ k8sgpt analyze --explain
             return {}
         },
         props: {
-            "Kubectl-ai / K8sGPT": {
+            "쿠버네티스 AI 플러그인": {
                 type: String
             },
         },

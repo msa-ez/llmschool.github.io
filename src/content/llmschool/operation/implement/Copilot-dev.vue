@@ -100,7 +100,7 @@ http PATCH :8082/stores/1 cookingDt='2024-02-26'
             return {}
         },
         props: {
-            "Copilot을 활용한 비즈니스 로직 구현": {
+            "Business Logic by Copilot": {
                 type: String
             },
         },

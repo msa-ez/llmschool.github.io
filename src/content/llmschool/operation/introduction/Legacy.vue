@@ -289,7 +289,7 @@ export default CreatePaymentComponent;
             return {}
         },
         props: {
-            "Cursor IDE- 레거시 분석/ 전환": {
+            "레거시 분석과 전환": {
                 type: String
             },
         },

@@ -2,7 +2,7 @@
     <div>
         <mark-down class="content" source='
 
-## OpenAI K8sGPT 활용
+## K8sGPT를 활용한 k8s 트러블 슈팅
 
 CNCF에 등재된 K8sGPT OpenAI를 활용해 Kubernetes Cluster를 자동 진단하고 지속적인 운영을 위한 가이드로 내 클러스터의 문제점과 개선사항들을 자동으로 스캔하고 문제점을 해결할 수 있는 트러블 슈팅을 안내하겠습니다. 
 
@@ -222,7 +222,7 @@ kubectl port-forward service/prom-grafana -n k8sgpt-operator-system 3000:80
             return {}
         },
         props: {
-            "AI Ops Trouble shooting": {
+            "Kubernetes Trouble shooting": {
                 type: String
             },
         },

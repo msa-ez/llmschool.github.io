@@ -2,7 +2,7 @@
     <div>
         <mark-down class="content">
             
-## Kubectl OpenAI 활용
+## AI기반 YAML 자동생성&오케스트레이션
 
 Kubectl-ai를 활용하여 각 서비스들의 배포 Manifest를 자동 생성하고, 배포된 컨테이너 객체에 대하여 Kubectl-gpt를 통해 오케스트레이션을 수행하는 과정은 다음과 같습니다.
 
@@ -159,7 +159,7 @@ kubectl gpt "store 서비스에 적용된 HPA 설정이 있으면 확인해서 �
             return {}
         },
         props: {
-            "AI기반 YAML 자동생성&오케스트레이션": {
+            "Kubectl OpenAI Plugin": {
                 type: String
             },
         },

@@ -77,7 +77,7 @@ java Gugudan
             return {}
         },
         props: {
-            "Continue": {
+            "Continue 코파일럿": {
                 type: String
             },
         },
