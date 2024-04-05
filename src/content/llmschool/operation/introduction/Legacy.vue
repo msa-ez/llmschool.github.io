@@ -289,7 +289,7 @@ export default CreatePaymentComponent;
             return {}
         },
         props: {
-            "레거시 분석과 모더나이징": {
+            "레거시분석과 모더나이징": {
                 type: String
             },
         },
