@@ -8,10 +8,10 @@
         </ClientOnly>
         <div
         >
-            <h2 style="font-size: 22px; margin-left: -5px; margin-bottom: 0px;"
+            <h1 style="font-size: 20px; margin-left: -5px; margin-bottom: -1px;"
             >
                 AI Coding
-            </h2>
+            </h1>
             <div
                     v-if="parent.header.path.includes('operation')"
                     v-for="parent in thisSides"
