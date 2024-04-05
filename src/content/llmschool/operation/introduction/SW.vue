@@ -208,7 +208,7 @@ public class Main {
             return {}
         },
         props: {
-            "테스트생성과 패턴적용": {
+            "테스트생성과 리팩토링": {
                 type: String
             },
         },
