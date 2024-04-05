@@ -8,9 +8,9 @@
         </ClientOnly>
         <div
         >
-            <h1 style="font-size: 20px; margin-left: -5px; margin-bottom: -1px;"
+            <h1 style="font-size: 20px; margin-left: -5px; margin-bottom: -1px; "
             >
-                AI Coding
+                AI CODING
             </h1>
             <div
                     v-if="parent.header.path.includes('operation')"

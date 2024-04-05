@@ -91,7 +91,7 @@ MSAEZ는 Biz-Dev-Ops 풀 라이프사이클을 지원합니다. 설치가 필요
             return {}
         },
         props: {
-            "AI를 활용한 MSA설계": {
+            "AI-driven MSA 디자인": {
                 type: String
             },
         },
