@@ -119,7 +119,7 @@ NeurIPS 2023 논문지에 게재된 모델로, 마이크로소프트 외 다양�
             return {}
         },
         props: {
-            "Open source LLM": {
+            "Open Source LLM": {
                 type: String
             },
         },

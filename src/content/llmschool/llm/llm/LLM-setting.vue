@@ -40,7 +40,7 @@
             return {}
         },
         props: {
-            "설치형 LLM 기반 개발 환경 구성": {
+            "설치형 LLM 개발 환경 구성": {
                 type: String
             },
         },

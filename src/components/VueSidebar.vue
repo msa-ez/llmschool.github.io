@@ -8,7 +8,7 @@
         </ClientOnly>
         <div
         >
-            <h2 style="font-size: 20px; margin-left: -5px;"
+            <h2 style="font-size: 22px; margin-left: -5px;"
             >
                 AI Coding
             </h2>
@@ -27,6 +27,7 @@
                     <h3 class="pt-0 ml-2 mt-0 mb-1 tracking-tight border-none  "
                         style="font-size: 17px;"
                         :class="getDetailForHeader(parent)"
+                        v-if="!parent.header.props[0].name == 'Overview'"
                     >
                         {{parent.header.props[0].name}}
                     </h3>
@@ -54,10 +55,10 @@
         </div>
         <div
         >
-            <h2 style="font-size: 20px; margin-left: -5px;"
+            <h1 style="font-size: 20px; margin-left: -5px;"
             >
-                LLM
-            </h2>
+                Large Language Model
+            </h1>
             <div
                 v-if="!parent.header.path.includes('operation')"
                 v-for="parent in thisSides"
@@ -73,6 +74,7 @@
                     <h3 class="pt-0 ml-3 mt-0 mb-1 tracking-tight border-none  "
                         style="font-size: 17px;"
                         :class="getDetailForHeader(parent)"
+                        v-if="!parent.header.props[0].name == '설치형 LLM'"
                     >
                         {{parent.header.props[0].name}}
                     </h3>
