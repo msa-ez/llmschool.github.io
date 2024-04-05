@@ -55,7 +55,7 @@
         </div>
         <div
         >
-            <h1 style="font-size: 20px; margin-left: -5px;"
+            <h1 style="font-size: 20px; margin-left: -5px; margin-bottom: 0px;"
             >
                 Large Language Model
             </h1>
