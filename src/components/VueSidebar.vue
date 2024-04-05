@@ -8,7 +8,7 @@
         </ClientOnly>
         <div
         >
-            <h2 style="font-size: 22px; margin-left: -5px;"
+            <h2 style="font-size: 22px; margin-left: -5px; margin-bottom: 0px;"
             >
                 AI Coding
             </h2>
@@ -27,7 +27,7 @@
                     <h3 class="pt-0 ml-2 mt-0 mb-1 tracking-tight border-none  "
                         style="font-size: 17px;"
                         :class="getDetailForHeader(parent)"
-                        v-if="!parent.header.props[0].name == 'Overview'"
+                        v-if="!parent.header.props[0].name.includes('Overview')"
                     >
                         {{parent.header.props[0].name}}
                     </h3>
@@ -74,7 +74,7 @@
                     <h3 class="pt-0 ml-3 mt-0 mb-1 tracking-tight border-none  "
                         style="font-size: 17px;"
                         :class="getDetailForHeader(parent)"
-                        v-if="!parent.header.props[0].name == '설치형 LLM'"
+                        v-if="!parent.header.props[0].name.includes('설치형 LLM')"
                     >
                         {{parent.header.props[0].name}}
                     </h3>
