@@ -75,7 +75,7 @@
                         ><span style="color:white;">컨설팅 문의</span>
                         </v-btn>
                     </a>
-                    <a href="https://www.msaschool.io/operation/education/schedule/" target="_blank">
+                    <a href="https://www.msaschool.io/operation/introduction/schedule/" target="_blank">
                         <v-btn style="background-color:#147c7f !important;
                             border-radius: 4px;
                             margin-right:40px;
@@ -174,7 +174,7 @@
                         line-height: 36px;
                         font-size: 14px;
                         font-weight: 700;"
-                        :href="'https://www.msaschool.io/operation/education/schedule/'"
+                        :href="'https://www.msaschool.io/operation/introduction/schedule/'"
                     ><span style="color:white;">교과정 안내</span>
                     </v-btn>
                 </div>
