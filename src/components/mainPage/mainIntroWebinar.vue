@@ -38,23 +38,22 @@
                     - <span style="font-weight: 700;">비용 관리:</span> 클라우드 기반 서비스의 사용량이 늘어날수록 비용이 증가하는 반면, 자체 서버에서 모델을 운영할 경우 장기적으로 비용을 절감할 수 있습니다.
                 </p>
                 <img src="https://github.com/acmexii/demo/assets/35618409/4a3cb1c5-b2a5-4be2-b536-f086be57f084" alt=""> -->
-            </div>
+        </div>
                 
+        <div style="margin-top: 50px; margin-bottom: 5px; line-height: 1.5; color:#444d56;">
+            <h3 class="con-tit w160">LLM School 맛보기</h3>
+        </div>
+        <div style="color:#444d56;">                
+        </div>
 
-            <div style="margin-top: 50px; margin-bottom: 5px; line-height: 1.5; color:#444d56;">
-                <h3 class="con-tit w160">LLM School 맛보기</h3>
-            </div>
-            <div style="color:#444d56;">
-                
-            </div>
         <!-- </div> -->
-        <v-row style="margin:0;">
-            <v-col v-for="(previewCard, index) in previewCards" :key="index"
-                cols="12" md="4"
+        <div class="default-row">
+            <div v-for="(previewCard, index) in previewCards" :key="index"
+                class="default-col text-center"
             >
                 <a :href="previewCard.link" target="_blank">
-                    <div
-                        class="clearfix youtube-card-box"
+                    <v-card style="padding:10px; height:100%;"
+                        class="clearfix"
                         outlined
                     >
                         <g-image class="youtube-card-image" style="border: 1px solid #eee;"
@@ -64,9 +63,10 @@
                             <div class="card-main-text">{{ previewCard.mainText }}</div>
                             <div class="card-sub-text">{{ previewCard.subText }}</div>
                         </div>
-                    </div>
+                    </v-card>
                 </a>
-            </v-col>
+                
+            </div>
             
             <!-- 
                 <a href="https://youtu.be/qUb1BWnyfkw" target="_blank">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </a> -->
-        </v-row>
+        </div>
         <!-- <div style="width:100%; height:3px; background-color:#E2E8F0;margin-top: 20px;"></div> -->
         <!-- <div style="width:100%; height:12px; background-color:#ebf0f4;"></div> -->
     </div>

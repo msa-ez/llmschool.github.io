@@ -127,6 +127,20 @@ code{
     background: none !important;
     color: black !important;
 }
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (min-width: 600px) { /* sm */
+    .default-col {
+        flex: 0 0 100%; /* sm 크기에서 절반 너비 */
+    }
+}
+
+@media (min-width: 960px) { /* md */
+    .default-col {
+        flex: 0 0 33.3%; /* md 크기에서 절반 너비 */
+    }
+}
+
 @media only screen and (max-width:750px){
     .gs-the-entire-package {
         display:block !important;
