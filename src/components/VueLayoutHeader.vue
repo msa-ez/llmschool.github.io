@@ -92,7 +92,7 @@
 
             </div>
         </div>
-        <div class="is-mobile-main-top">
+        <div class="is-mobile-main-top is-mobile-main-top-640">
 
             <div class="flex item-center justify-center">
 
@@ -105,13 +105,13 @@
                 <!--                </div>-->
 
 
-                <div class="flex flex-col items-center  sm:flex-row" style="margin-left:40px; place-self:center; ">
+                <div class="flex flex-col items-center sm:flex-row is-mobile-main-top-img" style="margin-left: 40px; place-self:center; ">
                     <!--                <div class="flex flex-col items-center px-3  mr-auto  sm:flex-row" style="margin-left:5%;">-->
                     <g-link
                             to="/operation/introduction/"
                             title="Home"
                     >
-                    <img src="../img/llmschool_logo.png" style="width:208px; height:50px;">
+                        <img src="../img/llmschool_logo.png" style="width:208px; height:auto;">
                     </g-link>
                     <ClientOnly>
                         <VueSearch v-if="!isSmall"></VueSearch>
@@ -121,59 +121,11 @@
 
                 <div class="flex flex-col items-center px-3   mr-auto  sm:flex-row"
                      style="justify-content:flex-end;margin-right:1.5%;">
-                    <!-- <div class="modal-container">
-                        <input id="modal-toggle" type="checkbox">
-                        <label class="modal-btn"
-                            for="modal-toggle" 
-                            style="display: block;
-                                width:120px;
-                                height:36px;
-                                line-height: 36px;
-                                margin: 0 auto;
-                                font-weight: 500;
-                                font-size:24px;
-                                color: #fff;
-                                background: #147c7f;
-                                font-size: 14px;
-                                border: 0;
-                                border-radius: 4px;
-                                cursor: pointer;
-                                text-align: center;
-                                box-shadow: 0 5px 5px -5px #333;
-                                transition: background 0.3s ease-in;" 
-                            >커리큘럼 보기</label> 
-                        <label class="modal-backdrop" for="modal-toggle"></label>
-                        <div class="modal-content">
-                            <label class="modal-close" for="modal-toggle">&#x2715;</label>
-                            <h2>Cloud Native Modeling & Application 구현과정 교안</h2><hr />
-                            <g-image class="g-images" src="~/img/05_Community/04_교육상담_및_신청/image7.png"></g-image>
-                            <g-image class="g-images" src="~/img/05_Community/04_교육상담_및_신청/image8.png"></g-image>
-                            <g-image class="g-images" src="~/img/05_Community/04_교육상담_및_신청/image9.png"></g-image>
-                            <g-image class="g-images" src="~/img/05_Community/04_교육상담_및_신청/image10.png"></g-image>
-                        </div>
-                    </div>  -->
-                    <v-btn style="background-color:#147c7f !important;
-                        border-radius: 4px;
-                        margin-right:15px;
-                        margin-bottom: 4px;
-                        height: 33px;
-                        width: 120px;
-                        text-align: center;
-                        line-height: 36px;
-                        font-size: 14px;
-                        font-weight: 700;"
+                    <v-btn class="is-mobile-main-top-btn-box" 
                         :href="'https://forms.gle/bY7d4PDK7Ym2wU1f6'"
                     ><span style="color:white;">컨설팅 문의</span>
                     </v-btn>
-                    <v-btn style="background-color:#147c7f !important;
-                        border-radius: 4px;
-                        margin-right:15px;
-                        height: 33px;
-                        width: 120px;
-                        text-align: center;
-                        line-height: 36px;
-                        font-size: 14px;
-                        font-weight: 700;"
+                    <v-btn class="is-mobile-main-top-btn-box" 
                         :href="'https://www.msaschool.io/operation/introduction/schedule/'"
                     ><span style="color:white;">교과정 안내</span>
                     </v-btn>
@@ -272,11 +224,34 @@
         }
     }
     @media only screen and (max-width:1410px){
-    .is-not-mobile-main-top {
-      display:none;
+        .is-not-mobile-main-top {
+            display:none;
+        }
+        .is-mobile-main-top {
+            display:block;
+        }
+        .is-mobile-main-top-btn-box {
+            background-color:#147c7f !important;
+            border-radius: 4px;
+            margin-right: 15px;
+            height: 33px;
+            width: 120px;
+            text-align: center;
+            line-height: 36px;
+            font-size: 14px;
+            font-weight: 700;
+        }
     }
-    .is-mobile-main-top {
-      display:block;
+
+    @media only screen and (max-width:640px){
+        .is-mobile-main-top-640 .is-mobile-main-top-img {
+            display:block;
+            margin-left: 10px !important;
+        }
+        .is-mobile-main-top-btn-box {
+            margin-bottom: 4px;
+            margin-right: 0px !important;
+        }
     }
-  }
+    
 </style>

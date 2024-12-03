@@ -49,21 +49,41 @@
             </div>
         <!-- </div> -->
         <v-row style="margin:0;">
-            <a href="https://youtu.be/qUb1BWnyfkw" target="_blank">
-                <div
-                    class="clearfix youtube-card-box"
-                    outlined
-                >
-                    <g-image class="youtube-card-image" style="border: 1px solid #eee;"
-                        src="https://github.com/msa-ez/llmschool.github.io/assets/113568664/a0dea1d3-383f-45d5-80b8-1ddcd1eb8cba">
-                    </g-image>
-                    <div>
-                        <div class="card-main-text">[Cursor IDE] 분석-구현-리팩토링</div>
-                        <div class="card-sub-text">디시전 테이블 활용</div>
+            <v-col v-for="(previewCard, index) in previewCards" :key="index"
+                cols="12" md="4"
+            >
+                <a :href="previewCard.link" target="_blank">
+                    <div
+                        class="clearfix youtube-card-box"
+                        outlined
+                    >
+                        <g-image class="youtube-card-image" style="border: 1px solid #eee;"
+                            :src="previewCard.image">
+                        </g-image>
+                        <div>
+                            <div class="card-main-text">{{ previewCard.mainText }}</div>
+                            <div class="card-sub-text">{{ previewCard.subText }}</div>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="https://youtu.be/D0rSP2S8hOk" target="_blank">
+                </a>
+            </v-col>
+            
+            <!-- 
+                <a href="https://youtu.be/qUb1BWnyfkw" target="_blank">
+                    <div
+                        class="clearfix youtube-card-box"
+                        outlined
+                    >
+                        <g-image class="youtube-card-image" style="border: 1px solid #eee;"
+                            src="https://github.com/msa-ez/llmschool.github.io/assets/113568664/a0dea1d3-383f-45d5-80b8-1ddcd1eb8cba">
+                        </g-image>
+                        <div>
+                            <div class="card-main-text">[Cursor IDE] 분석-구현-리팩토링</div>
+                            <div class="card-sub-text">디시전 테이블 활용</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://youtu.be/D0rSP2S8hOk" target="_blank">
                 <div
                     class="clearfix youtube-card-box"
                     outlined
@@ -90,7 +110,7 @@
                         <div class="card-sub-text">jsp 파일에 대한 모더나이징</div>
                     </div>
                 </div>
-            </a>
+            </a> -->
         </v-row>
         <!-- <div style="width:100%; height:3px; background-color:#E2E8F0;margin-top: 20px;"></div> -->
         <!-- <div style="width:100%; height:12px; background-color:#ebf0f4;"></div> -->
@@ -108,30 +128,24 @@ export default {
     data() {
         return {
             model: null,
-            webinarCard : [
+            previewCards: [
                 {
-                    title: "11월 웨비나",
-                    subTitle: "오픈소스 기반의 Private 온-프렘 클라우드 플랫폼 사례 및 소개",
-                    youtubeUrl: "https://www.youtube.com/playlist?list=PLEr96Fo5umW_N7xnmf4XDJv-G-APhjWa-",
-                    imgUrl: "https://github.com/msa-ez/msaschool.github.io/assets/149130268/517e2fc5-3064-4534-9e9c-bce75838404f"
+                    link: "https://youtu.be/qUb1BWnyfkw",
+                    image: "https://github.com/msa-ez/llmschool.github.io/assets/113568664/a0dea1d3-383f-45d5-80b8-1ddcd1eb8cba",
+                    mainText: "[Cursor IDE] 분석-구현-리팩토링",
+                    subText: "디시전 테이블 활용"
                 },
                 {
-                    title: "10월 웨비나",
-                    subTitle: "ChatGPT와 MSAEZ로 쉽고 빠르게 애견용품 사업을 디지털 비즈니스로 바꿔보자!",
-                    youtubeUrl: "https://www.youtube.com/playlist?list=PLEr96Fo5umW9sTeDiSY_D3x7q2NE1f7vK",
-                    imgUrl: "https://github.com/msa-ez/msaschool.github.io/assets/149130268/a27eaa0b-1356-420c-91ed-7422e0935e1e"
+                    link: "https://youtu.be/D0rSP2S8hOk",
+                    image: "https://github.com/msa-ez/llmschool.github.io/assets/113568664/b56e3ba4-c4f1-40a3-88f3-22b526b4a96b",
+                    mainText: "[Cursor IDE] 레가시 분석과 모더나이징",
+                    subText: "디자인 패턴 적용과 클린 아키텍처 전환"
                 },
                 {
-                    title: "8월 웨비나",
-                    subTitle: "ChatGPT와 MSAEZ를 활용해 1시간 만에 기업 기존 시스템을 SaaS로 전환해보기",
-                    youtubeUrl: "https://www.youtube.com/playlist?list=PLEr96Fo5umW8CYIuf52d06BHfpgS6Q0-X",
-                    imgUrl: "https://github.com/msa-ez/msaschool.github.io/assets/149130268/09ebe08a-9c29-4a93-a1e6-e607d5568257"
-                },
-                {
-                    title: "7월 웨비나",
-                    subTitle: "ChatGPT를 활용하여 쉽고 빠르게 서비스 기획부터 사업 구현하기",
-                    youtubeUrl: "https://www.youtube.com/playlist?list=PLEr96Fo5umW_-Ke68S8pmiq8x1pP9qVOY",
-                    imgUrl: "https://github.com/msa-ez/msaschool.github.io/assets/149130268/4ab69e92-c87a-4acf-a722-0f175115ae81"
+                    link: "https://youtu.be/XEhYW48WbBg",
+                    image: "https://github.com/msa-ez/llmschool.github.io/assets/113568664/eb1073cc-b3cf-4ade-a6d7-4b8e2353a618",
+                    mainText: "[Cursor IDE] 레가시 분석과 모더나이징",
+                    subText: "jsp 파일에 대한 모더나이징"
                 }
             ]
         }

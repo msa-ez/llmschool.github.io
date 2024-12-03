@@ -270,8 +270,9 @@ button:focus{
 }
 
 .youtube-card-box {
-    width: 300px;
-    height: 270px;
+    width: 100%;
+    height: auto;
+    /* height: 270px; */
     margin: 0 auto;
     padding: 10px;
     text-align: center;
@@ -286,8 +287,9 @@ button:focus{
 }
 
 .youtube-card-image {
-    height: 160px;
-    width: 280px;
+    height: auto;
+    /* height: 180px; */
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
