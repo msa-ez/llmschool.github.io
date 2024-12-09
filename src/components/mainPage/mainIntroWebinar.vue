@@ -41,9 +41,7 @@
         </div>
                 
         <div style="margin-top: 50px; margin-bottom: 5px; line-height: 1.5; color:#444d56;">
-            <h3 class="con-tit w160">LLM School 맛보기</h3>
-        </div>
-        <div style="color:#444d56;">                
+            <h3 class="con-tit w190">LLM School 맛보기</h3>
         </div>
 
         <!-- </div> -->

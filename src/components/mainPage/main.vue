@@ -70,9 +70,14 @@ export default {
     clear: both;
 }
 
-.con-tit-webinar {
-    font-family: 'NanumSquareNeo';
-    color:#333;
+.main-slide-h2 {
+    margin-top: 20%;
+    color: #147c7f;
+    font-family: 'JalnanGothic';
+    line-height: 1.8;
+    font-size: 34px;
+    font-weight: 500;
+    /* margin: 10px 0 15px 0; */
 }
 .con-tit {
     font-family: 'NanumSquareNeo';
@@ -108,6 +113,50 @@ export default {
 .w400::after {
     width: 400px;
 }
+
+/* 기본 해상도 (1920px) */
+@media screen and (min-width: 1920px) {
+    .w280::after {
+        width: 20%;
+    }
+}
+/* 2K 해상도 (2560px) 이상 */
+@media screen and (min-width: 2560px) {
+    .main-slide-h2 {
+        margin-top: 15%;
+    }
+    .w160::after {
+        width: 14%;
+    } 
+    .w190::after {
+        width: 18%;
+    }
+    .w250::after {
+        width: 22.5%;
+    }
+    .w280::after {
+        width: 25%;
+    }
+}
+/* 4K 해상도 (3840px) 이상 */
+@media screen and (min-width: 3840px) {
+    .main-slide-h2 {
+        margin-top: 8%;
+    }
+    .w160::after {
+        width: 12%;
+    }  
+    .w190::after {
+        width: 15%;
+    }    
+    .w250::after {
+        width: 18.5%;
+    }    
+    .w280::after {
+        width: 20.5%;
+    }
+}
+
 .tbl-edu td {
     font-size: 14px;
 }

@@ -7,13 +7,7 @@
                 transform: translate(-50%, 0%);
                 ">
                     <div style="float: left;">
-                        <h2 style="color:#147c7f;
-                        font-family: 'JalnanGothic';
-                        line-height:55px;
-                        font-size:34px;
-                        font-weight: 500;
-                        margin:10px 0 15px 0;"
-                        >
+                        <h2 class="main-slide-h2">
                             생성형 AI와 LLM을
                             <br/>SW 아키텍처링에 적용한
                             <br/>전문 교육 플랫폼
