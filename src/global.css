@@ -1,8 +1,8 @@
 .clearfix::after{content:""; display:block; clear:both;}
 
-.container {
+.container-full {
     max-width: 100%;
-    padding:0px 5% 0px 5%;
+    padding: 0px 5% 0px 5%;
 }
 
 .default-row {
@@ -163,14 +163,14 @@ code{
 
 /* 2K 해상도 (2560px) 이상 */
 @media screen and (min-width: 2560px) {
-    h1 {
-        font-size: 3rem !important; /* 더 큰 크기로 조정 */
+    h1, .main-slide-h2 {
+        font-size: 2.7rem !important; /* 더 큰 크기로 조정 */
     }
     h2 {
         font-size: 2.5rem !important;
     }
     h3 {
-        font-size: 2.25rem !important;
+        font-size: 2.2rem !important;
     }
     h4 {
         font-size: 2rem !important;
@@ -189,7 +189,7 @@ code{
 }
 /* 4K 해상도 (3840px) 이상 */
 @media screen and (min-width: 3840px) {
-    h1 {
+    h1, .main-slide-h2 {
         font-size: 3.5rem !important; /* 더욱 큰 크기로 조정 */
     }
     h2 {

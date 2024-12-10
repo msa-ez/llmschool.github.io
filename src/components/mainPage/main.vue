@@ -70,15 +70,6 @@ export default {
     clear: both;
 }
 
-.main-slide-h2 {
-    margin-top: 20%;
-    color: #147c7f;
-    font-family: 'JalnanGothic';
-    line-height: 1.8;
-    font-size: 34px;
-    font-weight: 500;
-    /* margin: 10px 0 15px 0; */
-}
 .con-tit {
     font-family: 'NanumSquareNeo';
     color: #222;
@@ -261,15 +252,32 @@ button:focus{
     height: 40px;
 }
 
+/* 메인 슬라이드 전체 박스 */
+.main-top-box {
+    background-color: #e7f2f2; 
+    padding: 30px; 
+    margin-left: 0px; 
+    height: 390px;
+}
+.main-slide-h2 {
+    margin-top: 20%;
+    color: #147c7f;
+    font-family: 'JalnanGothic';
+    line-height: 1.8;
+    font-size: 34px;
+    font-weight: 500;
+    /* margin: 10px 0 15px 0; */
+}
+
 /* rgiht image stlye */
 .image-box-all {
     position: absolute;
     width: 500px;
-    height: 328px;
+    /* height: 328px; */
     overflow: hidden;
     border-radius: 7px;
     /* border: 1px solid rgba(107, 59, 165, 1); */
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 30px;
 }
 
@@ -293,6 +301,45 @@ button:focus{
     position: absolute;
     /* margin-left: 10px; */
 }
+
+.image-style {
+    width: 500px; 
+}
+
+/* 2K 해상도 (2560px) 이상 */
+@media screen and (min-width: 2560px) {
+    .main-top-box {
+        height: 500px;
+    }
+    .main-slide-h2 {
+        margin-top: 23%;
+    }
+    .image-box-all {
+        width: 700px;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .image-style {
+        width: 700px; 
+    }
+}
+/* 4K 해상도 (3840px) 이상 */
+@media screen and (min-width: 3840px) {
+    .main-top-box {
+        height: 700px;
+    }
+    .main-slide-h2 {
+        margin-top: 28%;
+    }
+    .image-box-all {
+        width: 1000px;
+        margin-left: 80px;
+    }
+    .image-style {
+        width: 1000px; 
+    }
+}
+
 
 .gs-mobile-btn-title {
     font-size: 22px;

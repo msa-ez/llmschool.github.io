@@ -1,6 +1,6 @@
 <template>
   <div class="py-2 border-t-2 border-ui-primary">
-    <div class="container">
+    <div class="container-full">
 <!--      <div class="flex items-center justify-between -mx-2 sm:-mx-4">-->
 <!--        <div class="flex flex-col items-center px-2 mr-auto sm:px-4 sm:flex-row">-->
 <!--          <g-link-->

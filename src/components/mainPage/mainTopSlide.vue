@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="is-not-mobile-main-top">
-            <v-row style="background-color:#e7f2f2; padding:30px; margin-left:0px; height:390px;">
+            <v-row class="main-top-box">
                 <v-row style="position:absolute;
                 left: 44%;
                 transform: translate(-50%, 0%);
@@ -12,36 +12,6 @@
                             <br/>SW 아키텍처링에 적용한
                             <br/>전문 교육 플랫폼
                         </h2>
-                        <!-- <div style="position:relative;">
-                            <span class="clearfix">
-                                <button @click="slideClickBtn1"
-                                :style="slideBtn1 == true ? 'color:#147c7f;text-decoration:underline;font-weight:bold;':''"
-                                class="clearfix main-page-slide-btn"
-                                type="button"
-                                >
-                                    AI 기획과 도메인 분석
-                                    <g-image class="clearfix slide-btn-image" src="https://github.com/msa-ez/msaschool.github.io/assets/149130268/209c7e65-2a6e-4e6d-b594-a21ea19761bd"></g-image>
-                                </button>
-
-                                <button @click="slideClickBtn2"
-                                :style="slideBtn2 == true ? 'color:#147c7f;text-decoration:underline;font-weight:bold;':''"
-                                class="clearfix main-page-slide-btn"
-                                type="button"
-                                >
-                                    AI-First 개발
-                                    <g-image class="clearfix slide-btn-image" src="https://github.com/msa-ez/msaschool.github.io/assets/149130268/30c71f68-aee0-4418-a1a9-3577a83017f3"></g-image>
-                                </button>
-
-                                <button @click="slideClickBtn3"
-                                :style="slideBtn3 == true ? 'color:#147c7f;text-decoration:underline;font-weight:bold;':''"
-                                class="clearfix main-page-slide-btn"
-                                type="button"
-                                >
-                                    클라우드 운영 최적화 
-                                    <g-image class="clearfix slide-btn-image" src="https://github.com/msa-ez/msaschool.github.io/assets/149130268/cc383714-f667-41d7-b278-a7fb0ebbf484"></g-image>
-                                </button>
-                            </span>
-                        </div> -->
                     </div>
 
                     <div style="font-family:system-ui,-apple-system;">
@@ -66,7 +36,7 @@
                                     Kubernetes 기반의 클라우드 런타임에서 AI 도구를 활용한 <br/>
                                     서비스 운영(Ops) 최적화 방법과 리자일런스 피처 소개
                                 </div> -->
-                                <g-image style="width:500px; height:330px;" class="image-style" src="https://github.com/msa-ez/llmschool.github.io/assets/123912988/9b705917-dc1b-4638-b884-dd259baa497f"/>
+                                <g-image class="image-style" src="https://github.com/user-attachments/assets/73820823-98d2-4ae8-824b-0ac994abf883"/>
                             </div>
                         </div>
                     </div>
